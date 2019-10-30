@@ -12,7 +12,7 @@ const dev = process.env.NODE_ENV !== "production";
 dotenv.config();
 
 const app = next({ dev });
-app.use(cors())
+
 const handle = app.getRequestHandler(); //part of next config
 
 //const db = mongoose.connect(Mongo_uri, { useFindAndModify: false })
@@ -20,7 +20,7 @@ app
   .prepare()
   .then(() => {
     const server = express();
-
+    server.use(cors());
     //  server.use(bodyParser.json());
     //server.use(bodyParser.urlencoded({ extended: true }))
 
