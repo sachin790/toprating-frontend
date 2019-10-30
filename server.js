@@ -6,12 +6,13 @@ const next = require("next");
 const PORT = process.env.PORT || 3001; //don't forget to change process.env.PORT value to 3001 for development
 //const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+var cors = require('cors')
 const dev = process.env.NODE_ENV !== "production";
 //const Mongo_uri = process.env.MONGO_URI || "mongodb://localhost:27017/work"
 dotenv.config();
 
 const app = next({ dev });
-
+app.use(cors())
 const handle = app.getRequestHandler(); //part of next config
 
 //const db = mongoose.connect(Mongo_uri, { useFindAndModify: false })
