@@ -1,0 +1,716 @@
+import React, { Component } from "react";
+//import {MainHeader} from "./header.js"
+import RecCard from "./RecCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import QuestionCard from "../components/QuestionCard";
+import RecComponent from "./recComponent"
+
+
+function NavSideBar(props) {
+  return (
+    <div className="nav-sidebar left">
+      <div className="nav-sidebar-content">
+        <div className="nav-sidebar-section">
+          <a
+            className="nav-sidebar-link selected"
+            href="#"
+            onClick={props.hide}
+          >
+            Recommendations
+          </a>
+          <a className="nav-sidebar-link" href="#" onClick={props.show}>
+            Questions
+          </a>
+          {/*<a className=" nav-sidebar-link" href="#">Top</a>
+                    <a className="nav-sidebar-link" href="#">Improve</a> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RecommendedCard(props) {
+  const caretIconSpanStyle = {
+    backgroundColor: "white",
+    borderRadius: "50%",
+    color: "#1b9ad1",
+    padding: "10px 15px",
+    marginLeft: 8,
+    marginRight: -4,
+    fontSize: "large"
+  };
+  return (
+    <div className="card-list-item">
+      {/*<button className="card-list-answer-skip">Next</button> */}
+      <h5 className="card-list-answer-subtitle">
+        What is your take on this question?
+      </h5>
+      <h4 className="card-list-answer-title">
+        <a href="#">What are the best JavaScript frameworks?</a>
+      </h4>
+      <div className="card-list-seperator" />
+      <div className="card-list-footer center">
+        <a>
+          <span>{props.recommend && "Recommend"}</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function HomePageFeed(props) {
+//  console.log(props.handleShowOverflow, true)
+  //console.log(props.topics.data, "is here");
+  return (
+    <div className="home-page-feed card-list">
+      <RecommendedCard />
+      <div className="rec-card-list">
+        <div
+          className="rec-card-list-header"
+          onClick={props.handleShowOverflow}
+        >
+          Recent
+        </div>
+
+        {props.showQuestion ? (
+          <React.Fragment>
+
+            {props.topics.data.map((item, index) => {
+              return (
+                <QuestionCard
+                  key={item._id}
+                  question={item.question}
+                  questionId={item._id}
+                  tag={item.tag}
+                  option={item.option}
+                />
+              );
+            })}
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+
+          <RecComponent />
+            {/*props.recommendations.result.map((item, index) => {
+              //console.log(item.option, "option is here");
+              return (
+                <RecCard
+                  id={item._id}
+                  key={item._id}
+                  tag={item.tag}
+                  question={item.question}
+                  data={props}
+                  key={item._id}
+                  option={item.option}
+                  userImage={item.userImage}
+                  username={item.username}
+                  experience={item.experience}
+                  pro={item.pro}
+                  con={item.con}
+                  proTitle={item.proTitle}
+                  conTitle={item.conTitle}
+                  handleShowOverflow={props.handleShowOverflow}
+                />
+              );
+            }) */}
+          </React.Fragment>
+        )}
+      </div>
+    </div>
+  );
+}
+
+class HomePageView extends Component {
+  state = {
+    showQuestion: false,
+    //showQues : this.props.showQues
+  };
+
+
+
+  showQuestionCard = () => {
+    this.setState({
+      showQuestion: true
+    });
+  };
+
+  hideQuestionCard = () => {
+    this.setState({
+      showQuestion: false
+    });
+  };
+
+  render() {
+    const { showQuestion } = this.state;
+
+    let highlight = "nav-header-item selected";
+
+    let customStyle = {
+      display: "flex",
+      justifyContent: "center"
+    };
+
+    return (
+      <div className="home-page-view">
+        <div className="nav-header scrollable show-mobile">
+          <div className="nav-header-content page-content">
+            <div className="nav-header-list" style={customStyle}>
+              <a
+                className={showQuestion ? `nav-header-item` : highlight}
+                href="#"
+                onClick={this.hideQuestionCard}
+              >
+                Recommendations
+              </a>
+              <a
+                className={showQuestion ? highlight : ` nav-header-item `}
+                href={"#"}
+                onClick={this.showQuestionCard}
+              >
+                Questions
+              </a>
+              {/*<a className=" nav-header-item" href="#">Top</a>
+                            <a className=" nav-header-item" href="#">Improve</a>*/}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="page-content">
+
+          <div className="home-page-feed card-list">
+            <RecommendedCard />
+            <div className="rec-card-list">
+              <div
+                className="rec-card-list-header"
+                onClick={props.handleShowOverflow}
+              >
+                Recent
+              </div>
+
+              {props.showQuestion ? (
+                <React.Fragment>
+
+                  {props.topics.data.map((item, index) => {
+                    return (
+                      <QuestionCard
+                        key={item._id}
+                        question={item.question}
+                        questionId={item._id}
+                        tag={item.tag}
+                        option={item.option}
+                      />
+                    );
+                  })}
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+
+                <RecComponent />
+                  {/*props.recommendations.result.map((item, index) => {
+                    //console.log(item.option, "option is here");
+                    return (
+                      <RecCard
+                        id={item._id}
+                        key={item._id}
+                        tag={item.tag}
+                        question={item.question}
+                        data={props}
+                        key={item._id}
+                        option={item.option}
+                        userImage={item.userImage}
+                        username={item.username}
+                        experience={item.experience}
+                        pro={item.pro}
+                        con={item.con}
+                        proTitle={item.proTitle}
+                        conTitle={item.conTitle}
+                        handleShowOverflow={props.handleShowOverflow}
+                      />
+                    );
+                  }) */}
+                </React.Fragment>
+              )}
+            </div>
+          </div>
+
+            {/*<HomePageFeed {...this.props} showQuestion={showQuestion} /> */}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default class HomePage extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <div className="home-page">
+          {/* <HomePageHeader /> */}
+          <HomePageView {...this.props} />
+
+          <style jsx global>
+            {`
+              .card-list-item {
+                overflow: hidden;
+                background-color: #fdfdfd;
+                margin-bottom: 0px;
+                padding: 18px;
+                border: 1px solid #e6e8eb;
+                border-radius: 5px;
+              }
+              h1,
+              h2,
+              h3,
+              h4,
+              h5,
+              h6 {
+                font-weight: inherit;
+                line-height: 24px;
+                font-size: inherit;
+                color: #0d0d0d;
+              }
+              .home-page {
+                height: 100vh;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                text-transform: none;
+              }
+
+              .home-page-view {
+                max-width: none;
+                min-width: 320px;
+                width: auto;
+                margin: 0 auto;
+                padding: 0;
+              }
+
+              .page-content {
+                max-width: 1280px;
+                margin: 0 auto;
+                padding-left: 36px;
+                padding-right: 36px;
+              }
+
+              .page-content:after {
+                content: "";
+                display: block;
+                clear: both;
+                flex-basis: 0;
+                flex-grow: 0;
+                flex-shrink: 0;
+              }
+
+              .tag-selector-header {
+                position: relative;
+                background-image: linear-gradient(135deg, #2b5876, #4e4376);
+                transition: height 0.2s;
+                min-height: 252px;
+              }
+
+              .tag-selector-tag-builder {
+                position: absolute;
+                left: 50%;
+                width: 100%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                color: #fff;
+                transition: opacity 0.2s;
+              }
+
+              .tag-selector-tag-builder-content {
+                display: flex;
+                flex: 1 0 100%;
+                max-width: 100%;
+              }
+
+              .tag-selector-tag-builder-section {
+                flex: 1 1;
+                max-width: 50%;
+                text-align: center;
+                margin: 0 36px;
+              }
+
+              .tag-selector-tag-builder-section:first-child {
+                margin-left: 0;
+              }
+
+              .tag-selector-tag-builder-label {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                margin-bottom: 12px;
+              }
+
+              .tag-selector-search {
+                position: relative;
+                display: flex;
+                align-items: center;
+                max-width: 624px;
+                margin: 0 12px;
+              }
+
+              .icon.tag-selector-search-icon {
+                position: absolute;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                color: #b3b3b3;
+                margin: 0 12px;
+                font-size: 18px;
+                line-height: 36px;
+              }
+
+              input[type="text"].tag-selector-search-input {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                border: 1px solid #d9d9d9;
+                outline: none;
+                border-radius: 4px;
+                display: block;
+                font-family: inherit;
+                line-height: 24px;
+                padding: 0 12px;
+                width: 100%;
+                margin-top: 12px;
+                height: 36px;
+                padding-left: 42px;
+                margin: 0;
+                line-height: 36px;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .tag-selector-tag-builder-copy {
+                margin-top: 18px;
+              }
+
+              .tag-selector-tag-builder-list {
+                margin-top: 12px;
+                overflow: hidden;
+              }
+
+              .tag-selector-tag-builder-list.suggested {
+                max-height: 108px;
+              }
+
+              .tag-selector-tag {
+                color: inherit;
+                cursor: pointer;
+                text-decoration: none;
+                transition: color 0.15s;
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 27px;
+                padding: 0 9px;
+                margin: 3px;
+                border-radius: 15px;
+                box-shadow: inset 0 0 0 1.5px #4d4d4d;
+                color: #4d4d4d;
+                white-space: nowrap;
+                transition: background-color 0.15s;
+                height: 21px;
+                line-height: 21px;
+                margin: 0 1.5px 3px;
+                color: #fff;
+                box-shadow: inset 0 0 0 1.5px hsla(0, 0%, 100%, 0.4);
+              }
+              .tag-selector-tag-builder-submit {
+                flex: 1 0 100%;
+                margin-top: 24px;
+                text-align: center;
+              }
+
+              button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                line-height: 36px;
+                padding: 0 18px;
+                background-color: transparent;
+                white-space: nowrap;
+                border-radius: 0;
+              }
+              button:hover {
+                cursor: pointer;
+              }
+              .text-button {
+                color: #fff;
+                min-width: 120px;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+              }
+              .text-button:hover {
+                background-color: transparent;
+              }
+              .primary-button {
+                min-width: 120px;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                box-shadow: none;
+                border-radius: 9px;
+                color: #fff;
+                background-color: #1b9ad1;
+              }
+
+              .nav-header {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 0 0 1px #e6e8eb;
+                line-height: 36px;
+                background-color: #fdfdfd;
+                transform: translateZ(0);
+                height: 36px;
+              }
+              .nav-header.scrollable {
+                overflow-x: auto;
+              }
+              .show-mobile {
+                display: none;
+              }
+              .nav-header-content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+              .nav-header.scrollable .nav-header-content {
+                flex-wrap: nowrap;
+                white-space: nowrap;
+              }
+              .nav-header-list {
+                flex-shrink: 1;
+                flex-grow: 1;
+                flex-basis: 100px;
+              }
+              .nav-header.scrollable .nav-header-list {
+                flex-shrink: 0;
+              }
+
+              a {
+                color: inherit;
+                cursor: pointer;
+                text-decoration: none;
+                transition: color 0.15s;
+              }
+              .nav-header-item {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                display: inline-flex;
+                align-items: center;
+                color: #58647b;
+                margin-right: 13px;
+                vertical-align: top;
+              }
+              .nav-header-item.selected {
+                position: relative;
+                color: #1b9ad1;
+              }
+
+              .nav-sidebar {
+                position: relative;
+                width: 258px;
+                min-height: 24px;
+                padding-top: 42px;
+              }
+              .nav-sidebar.left {
+                float: left;
+              }
+
+              .nav-sidebar.left .nav-sidebar-content {
+                padding-right: 60px;
+              }
+              .nav-sidebar-content {
+                width: 258px;
+              }
+
+              .home-page-feed {
+                padding-top: 42px;
+                padding-bottom: 48px;
+                margin-right: 300px;
+                margin-left: 258px;
+                padding-right: 27px;
+                box-shadow: none;
+              }
+              .card-list-answer-skip {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                float: right;
+                height: 36px;
+                border-radius: 9px;
+                color: #60338d;
+              }
+              .card-list-answer-subtitle {
+                line-height: 4px;
+                margin: auto;
+              }
+
+              .card-list-answer-title {
+                margin: auto;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                min-height: 102px;
+                padding: 6px 0;
+                text-align: center;
+              }
+              .card-list-footer {
+                padding-top: 18px;
+              }
+              .card-list-footer.center {
+                text-align: center;
+              }
+              .FAB {
+                display: inline-flex;
+                text-align: center;
+                height: 48px;
+                color: #fff !important;
+                text-align: center !important;
+                border-radius: 5px;
+                vertical-align: top;
+                font-size: 10px;
+                transition: background-color 0.15s;
+              }
+
+              .FAB.small {
+                height: 42px;
+                border-radius: 21px;
+              }
+
+              a {
+                color: #000 !important;
+              }
+
+              .rec-card-list {
+                margin-bottom: 30px;
+              }
+              .rec-card-list-header {
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0.4px;
+                text-transform: uppercase;
+                line-height: 48px;
+                margin-bottom: 10px;
+                color: #4d4d4d;
+              }
+              @media (max-width: 1279px) {
+                .home-page-feed {
+                  margin-left: 204px;
+                  margin-right: 240px;
+                }
+              }
+
+              @media (max-width: 1023px) {
+                .tag-selector-header {
+                  min-height: 270px;
+                }
+                .home-page-feed {
+                  padding-right: 0;
+                  margin-right: auto;
+                  box-shadow: none;
+                  padding-top: 42px;
+                }
+              }
+
+              @media (max-width: 767px) {
+                .page-content {
+                  padding-left: 12px;
+                  padding-right: 12px;
+                }
+
+                .tag-selector-header {
+                  min-height: 497px;
+                }
+
+                .tag-selector-tag-builder-content {
+                  flex-direction: column;
+                }
+
+                .tag-selector-tag-builder-section {
+                  margin: 0 0 36px;
+                  max-width: none;
+                }
+
+                .tag-selector-tag-builder-label {
+                  line-height: 27px;
+                  margin-bottom: 24px;
+                }
+                .tag-selector-tag-builder-list {
+                  margin-top: 18px;
+                }
+                .tag-selector-tag-builder-list {
+                  max-height: 80px;
+                }
+                .tag-selector-tag-builder-submit {
+                  margin-top: 0;
+                }
+                .show-mobile {
+                  display: flex;
+                }
+                .nav-sidebar {
+                  display: none;
+                }
+                .home-page-feed {
+                  margin-left: auto;
+                  padding-top: 30px;
+                }
+                .home-page-view {
+                  background-color: #efefef;
+                }
+                .card-list-item {
+                  margin: 0 0 30px;
+                  padding: 12px;
+                }
+                .card-list-answer-title {
+                  font-size: 21px;
+                  line-height: 30px;
+                }
+                .card-list-footer {
+                  padding-top: 12px;
+                }
+                .FAB-label {
+                  line-height: 42px;
+                  margin-left: 18px;
+                  margin-right: 6px;
+                }
+                .rec-card-list-header {
+                  font-size: 18px;
+                  line-height: 24px;
+                  line-height: 36px;
+                  margin-top: 24px;
+                  margin-bottom: 24px;
+                  padding-left: 12px;
+                }
+              }
+            `}
+          </style>
+        </div>
+      </React.Fragment>
+    );
+  }
+}
