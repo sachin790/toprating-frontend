@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["b067"],{hMb1:function(n,w,d){(window.__NEXT_P=window.__NEXT_P||[]).push(["/signin",function(){var n=d("DB6d");return{page:n.default||n}}])}},[["hMb1","5d41","9da1"]]]);
