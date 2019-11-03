@@ -14,20 +14,25 @@ class HelpRecommendCard extends Component {
   };
 
   componentDidMount() {
-    this.props.holdQuestion(this.question.innerHTML.replace("?", ""));
-    GetAQuestionFromQuestions()
-      .then(result => {
-        this.setState({
-          data: result.data
+    if(this.question){
+     // this.props.holdQuestion(this.question.innerHTML.replace("?", ""));
+      GetAQuestionFromQuestions()
+        .then(result => {
+          this.setState({
+            data: result.data
+          });
+          this.props.holdQuestion(this.state.data[0].question.replace("?", ""));
+          this.props.holdId(this.state.data[0]._id);
+        })
+        .catch(err => {
+          console.log(err);
         });
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    }
   }
 
   handleNextQuestion = () => {
-    const question = this.question.innerText.replace("?", "");
+    if(this.question){
+    const question =    this.state.data[0].question.replace("?", "")
     GetNextQuestion(question)
       .then(result => {
         this.setState({
@@ -35,16 +40,19 @@ class HelpRecommendCard extends Component {
         });
       })
       .then(() => {
-        this.props.holdQuestion(this.question.innerText.replace("?", ""));
+        this.props.holdQuestion(this.state.data[0].question.replace("?", ""));
+        this.props.holdId(this.state.data[0]._id);
       })
       .catch(err => console.log(err));
+    }
   };
 
   render() {
     const { data } = this.state;
-
     return (
-      <div className="card-list-item">
+    <div>
+      { data.length !=0
+        ?  <div className="card-list-item">
         {/*<button className="card-list-answer-skip">Next</button> */}
         <h5 className="card-list-answer-subtitle">
           <span>What is your take on this question?</span>
@@ -80,7 +88,7 @@ class HelpRecommendCard extends Component {
                 }
               >
                 <span>
-                  <Irecommend2
+                  <Irecommend2 
                     showIrecommendCard={this.props.showIrecommendCard}
                   />
                 </span>
@@ -184,7 +192,12 @@ class HelpRecommendCard extends Component {
           `}
         </style>
       </div>
-    );
+        : null
+      }
+    </div>
+    )
+     
+    
   }
 }
 

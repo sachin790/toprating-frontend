@@ -14,7 +14,6 @@
 
 const API_URL = "https://toprating790.herokuapp.com";
 
-
 export default API_URL;
 
 export const CLIENT_API =

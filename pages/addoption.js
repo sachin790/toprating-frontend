@@ -12,6 +12,7 @@ import Signup from "./signup";
 import { Placeholder, Card, Image } from "semantic-ui-react";
 import SuccessSnackbar from "../components/snackbar/SuccessSnackbar";
 import ErrorSnackbar from "../components/snackbar/ErrorSnackbar";
+import RemoveSpacesAddHyphen from "../lib/removeSpaces";
 
 class Option extends React.Component {
   static async getInitialProps({ query: { id } }) {
@@ -76,7 +77,7 @@ class Option extends React.Component {
         this.setState({
           added: true,
           showSnackbar: true,
-          message: "Question Added"
+          message: "Option Added"
         });
         //Synchronous
         setTimeout(() => {
@@ -84,6 +85,7 @@ class Option extends React.Component {
             showSnackbar: false
           });
         }, 4000);
+        window.location = `/topic/${RemoveSpacesAddHyphen(this.state.question)}`
       })
       .catch(error => {
         this.setState({

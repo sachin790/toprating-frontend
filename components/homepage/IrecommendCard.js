@@ -13,6 +13,9 @@ class IrecommendCard extends Component {
   };
 
   componentDidMount() {
+    console.log("++++++++++++");
+    console.log(this.props.question);
+    console.log("++++++++++++++");
     //Do something here
     this.getOptions(this.props.question);
     this.getAllOptions();

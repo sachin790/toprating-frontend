@@ -6,7 +6,6 @@ const next = require("next");
 const PORT = process.env.PORT || 3001; //don't forget to change process.env.PORT value to 3001 for development
 //const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-var cors = require('cors')
 const dev = process.env.NODE_ENV !== "production";
 //const Mongo_uri = process.env.MONGO_URI || "mongodb://localhost:27017/work"
 dotenv.config();
@@ -20,7 +19,7 @@ app
   .prepare()
   .then(() => {
     const server = express();
-    server.use(cors());
+
     //  server.use(bodyParser.json());
     //server.use(bodyParser.urlencoded({ extended: true }))
 

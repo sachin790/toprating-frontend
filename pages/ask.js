@@ -107,6 +107,8 @@ class Ask extends React.Component {
             showSnackbar: false
           });
         }, 4000);
+      window.location = "/";
+       
       })
       .catch(error => {
         this.setState({

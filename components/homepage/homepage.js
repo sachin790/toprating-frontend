@@ -29,7 +29,8 @@ export default class HomePage extends Component {
     selectedOptionQuestion: "",
     topics: this.props.topics,
     recommendations: this.props.recommendations,
-    question: ""
+    question: "",
+    id:""
   };
 
   /**==========================Sorting functions begin here===================================== */
@@ -119,11 +120,18 @@ export default class HomePage extends Component {
   };
 
   getQuestion = question => {
-    // console.log("yea am here", question);
+     console.log("yea am here", question);
     this.setState({
       question
     });
   };
+
+  getId = id => {
+    console.log("yea am here", id);
+   this.setState({
+     id
+   });
+ };
 
   render() {
     const {
@@ -191,6 +199,7 @@ export default class HomePage extends Component {
                     showIrecommendCard={this.handleShowIrecommend}
                     {...this.props}
                     holdQuestion={this.getQuestion}
+                    holdId={this.getId}
                   />
                   <div className="rec-card-list">
                     {showRec && (
@@ -350,6 +359,7 @@ export default class HomePage extends Component {
               <section className="section-theme section-theme-i-rec-1">
                 <IrecommendCard
                   question={this.state.question}
+                  questionId ={this.state.id}
                   handleShowIrecommend={this.handleAddRecommendation}
                   login={this.props.login}
                   closeIRecommendCard={this.handleShowIrecommend}

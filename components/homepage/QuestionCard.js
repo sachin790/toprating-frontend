@@ -412,6 +412,9 @@ class QuestionCard extends React.Component {
           </span>
           <span className="rounded question-rounded">•</span>
           {tag.map((item, i) => {
+            console.log("+++++++++");
+            console.log(item);
+            console.log("+++++++++");
             return (
               <a key={i} className="question-tab">
                 {item}
