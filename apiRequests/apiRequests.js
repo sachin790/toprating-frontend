@@ -160,9 +160,21 @@ export const AddUserReactionToOption = data => {
   return Axios.post(`${_optionRoute}/add/option_reaction`, data);
 };
 
-export const GetUserReactionToOption = id => {
-  return Axios.get(`${_optionRoute}/get/option_reaction?userId=${id}`);
+
+export const GetUserReactionToLikeOption = (id,option) => {
+  return Axios.post(`${_optionRoute}/get/likeoption_reaction`,{
+    userid : id,
+    option : option
+  });
 };
+
+export const GetUserReactionToDisLikeOption = (id,option) => {
+  return Axios.post(`${_optionRoute}/get/dislikeoption_reaction`,{
+    userid : id,
+    option : option
+  });
+};
+
 
 export const MarkOptionAsSpam = data => {
   return Axios.post(`${_optionRoute}/markAsSpam`, data);

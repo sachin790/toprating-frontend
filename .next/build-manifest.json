@@ -1,95 +1,27 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_f1e0f678a3d57bf02d93.js"
+  ],
   "pages": {
     "/": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_app": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/addoption": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/ask": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/index": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/option": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/profile": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/signin": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/signup": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/tag": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/topicview": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/updatePro": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/updateTag": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/updatedCon": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/updatedOption": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/updatedQuestion": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
-    ],
-    "/user": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.77b7d645c0aa5e997366.js",
-      "static/runtime/main-541f01c65744a5c2c60b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

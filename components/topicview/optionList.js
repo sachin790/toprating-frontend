@@ -13,7 +13,8 @@ import {
   GET_RELATED_TOPICS_URL,
   GET_SPECIFIC_TOPIC_URL,
   AddUserReactionToOption,
-  GetUserReactionToOption,
+  GetUserReactionToLikeOption,
+  GetUserReactionToDisLikeOption,
   MarkOptionAsSpam,
   UpdateOption,
   SaveUpdateHistory,
@@ -24,6 +25,7 @@ import {
   SaveConHistory,
   SaveProHistory,
   AddOptionImage
+
 } from "../../apiRequests/apiRequests";
 
 import Signin from "../../pages/signin";
@@ -69,11 +71,33 @@ export default class OptionList extends Component {
     optionId: "",
     updateImage: false,
     imageLink: "",
-    mediaArr: null
+    mediaArr: null,
+    LikeColor : {},
+    DisLikeColor : {},
+    LikeNumber : this.props.LikeNumber,
+    DisLikeNumber : this.props.DisLikeNumber,
+    user_id : this.props.user_id
   };
+
+async componentWillMount(){
+ 
+  console.log(this.state.user_id.then(async res=>{
+    const LikeColor =  await GetUserReactionToLikeOption(res,this.state.data);
+    const DisLikeColor = await GetUserReactionToDisLikeOption(res,this.state.data);
+    this.setState({
+      LikeColor : LikeColor.data,
+      DisLikeColor : DisLikeColor.data
+    })
+  
+  }));
+ 
+
+}
 
   componentDidMount() {
     this.getSocketResponse();
+   
+
   }
 
 
@@ -149,6 +173,114 @@ export default class OptionList extends Component {
       type: "dislike"
     });
   };
+
+  handlelike = (data) =>{
+       let color = this.state.LikeColor;
+       let colo = this.state.DisLikeColor;
+       let LikeNumber = this.state.LikeNumber;
+       let DisLikeNumber = this.state.DisLikeNumber;
+         if(color[data.option]=="grey" && colo[data.option] =="grey"){
+          color[data.option] = "blue";
+          LikeNumber[data.option] = LikeNumber[data.option] +1;
+          colo[data.option] = "grey";
+         }
+        else if(color[data.option]=="grey" && colo[data.option] =="blue"){
+          color[data.option] = "blue";
+          LikeNumber[data.option] = LikeNumber[data.option] +1;
+          DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
+          colo[data.option] = "grey";
+         }
+         else{
+          LikeNumber[data.option] = LikeNumber[data.option] -1;
+          color[data.option] = "grey";
+         }
+          this.setState({
+            LikeColor: color,
+            DisLikeColor : colo,
+            LikeNumber : LikeNumber,
+            DisLikeNumber : DisLikeNumber
+          });
+      const _user = JSON.parse(localStorage.getItem("user_details"));
+      const rxn = {
+        userId: _user._id,
+        option : data.option,
+        type: true
+      };
+      AddUserReactionToOption(rxn)
+        .then(res => {
+      
+        }
+            
+        )
+        .catch(err =>{
+          console.log(err);
+          console.log(err.response.data);
+        });
+   
+  }
+
+
+//  getLikeButtonColor= option =>  {
+//   // const _user = JSON.parse(localStorage.getItem("user_details"));
+//   // return  GetUserReactionToLikeOption("5dada7908a5390365411a11f",option)
+//   //   .then(res => {
+//   //     console.log(res.data)
+//   //    return "green";
+//   //   }
+        
+//   //   )
+//   //   .catch(err =>{
+//   //     console.log(err);
+//   //     console.log(err.response.data);
+//   //   });
+//     return "yellow";
+//   }
+
+  handleDislike = (data) =>{
+    let color = this.state.DisLikeColor;
+    let colo = this.state.LikeColor
+    let LikeNumber = this.state.LikeNumber;
+    let DisLikeNumber = this.state.DisLikeNumber;
+          if(color[data.option]=="grey" && colo[data.option] =="grey"){
+           color[data.option] = "blue";
+           colo[data.option] = "grey"
+           DisLikeNumber[data.option] = DisLikeNumber[data.option] +1;
+          }
+         else if(color[data.option]=="grey" && colo[data.option] =="blue"){
+            color[data.option] = "blue";
+            colo[data.option] = "grey"
+            DisLikeNumber[data.option] = DisLikeNumber[data.option] +1;
+            LikeNumber[data.option] = LikeNumber[data.option] -1;
+           }
+          else{
+           color[data.option] = "grey";
+           DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
+          }
+           this.setState({
+             DisLikeColor: color,
+             LikeColor : colo,
+             DisLikeNumber : DisLikeNumber,
+             LikeNumber:LikeNumber
+           });
+      const _user = JSON.parse(localStorage.getItem("user_details"));
+      const rxn = {
+        userId: _user._id,
+        option : data.option,
+        type: false
+      };
+      AddUserReactionToOption(rxn)
+        .then(res => {
+        
+        }
+            
+        )
+        .catch(err =>{
+          console.log(err);
+          console.log(err.response.data);
+        });
+   
+  }
+
 
   handleInputChange = ({ target: { value, name } }) => {
     this.setState({
@@ -446,7 +578,7 @@ export default class OptionList extends Component {
                         className={"score-card"}
                         style={{ marginRight: "15px", marginLeft: "10px" }}
                       >
-                        <span className="score">{item.rating}</span>
+                        <span className="score">{this.state.LikeNumber[item.option]-this.state.DisLikeNumber[item.option]}</span>
                       </span>
                     }
                     <Link prefetch href={`/option/${item.option}`}>
@@ -611,24 +743,27 @@ export default class OptionList extends Component {
                           question: item.question,
                           optionImage: item.mediaUrl,
                           optionId: item._id
+
                           ///OptionID and QuestionId may be added
                         };
-                        this.setState(
-                          {
-                            clickedOptionDetails: _unique,
-                            type: "like",
-                            showClass: true
-                          },
-                          () => {
-                            this.setState(previousState => ({
-                              inc: previousState.inc + 1
-                            }));
-                          }
-                        );
+                        // this.setState(
+                        //   {
+                        //     clickedOptionDetails: _unique,
+                        //     type: "like",
+                        //     showClass: true
+                        //   },
+                        //   () => {
+                        //     this.setState(previousState => ({
+                        //       inc: previousState.inc + 1
+                        //     }));
+                        //   }
+                        // );
+
+                        {this.handlelike(_unique)};
                       }}
                     >
                       <span className="thumb-icon lik">
-                        <Thumb_up color={Likecolor} />
+                        <Thumb_up color={this.state.LikeColor[item.option]} />
                       </span>
                       <span
                         className={
@@ -637,7 +772,7 @@ export default class OptionList extends Component {
                             : "btn-content"
                         }
                       >
-                        <span className="recommend-text num">{like}</span>
+                        <span className="recommend-text num">{this.state.LikeNumber[item.option]}</span>
                       </span>
                     </button>
 
@@ -661,25 +796,27 @@ export default class OptionList extends Component {
                             ///OptionID and QuestionId may be added
                           };
 
-                          this.setState(
-                            {
-                              clickedOptionDetails: _unique,
-                              type: "dislike",
-                              showClass: true
-                            },
-                            () => {
-                              this.setState(previousState => ({
-                                dec: previousState.dec + 1
-                              }));
-                            }
-                          );
+                          // this.setState(
+                          //   {
+                          //     clickedOptionDetails: _unique,
+                          //     type: "dislike",
+                          //     showClass: true
+                          //   },
+                          //   () => {
+                          //     this.setState(previousState => ({
+                          //       dec: previousState.dec + 1
+                          //     }));
+                          //   }
+                          // );
+
+                          {this.handleDislike(_unique)};
 
                           return;
                         }
                       }}
                     >
                       <span className="thumb-icon dis">
-                        <Thumb_down color={disLikeColor} />
+                        <Thumb_down color={this.state.DisLikeColor[item.option]} />
                       </span>
                       <span
                         className={
@@ -688,7 +825,7 @@ export default class OptionList extends Component {
                             : "btn-content"
                         }
                       >
-                        <span className="recommend-text numie">{dislike}</span>
+                       <span className="recommend-text num">{this.state.DisLikeNumber[item.option]}</span>
                       </span>
                     </button>
                   </span>
@@ -855,29 +992,30 @@ export default class OptionList extends Component {
 
                         ///OptionID and QuestionId may be added
                       };
-                      this.setState(
-                        {
-                          clickedOptionDetails: _unique,
-                          type: "like",
-                          showClass: true
-                        },
-                        () => {
-                          this.setState(previousState => ({
-                            inc: previousState.inc + 1
-                          }));
-                        }
-                      );
+                      // this.setState(
+                      //   {
+                      //     clickedOptionDetails: _unique,
+                      //     type: "like",
+                      //     showClass: true
+                      //   },
+                      //   () => {
+                      //     this.setState(previousState => ({
+                      //       inc: previousState.inc + 1
+                      //     }));
+                      //   }
+                      // );
+                      {this.handlelike(_unique)};
                     }}
                   >
                     <span className="thumb-icon lik">
-                      <Thumb_up color={Likecolor} />
+                    <Thumb_up color={this.state.LikeColor[item.option]} />
                     </span>
                     <span
                       className={
                         like ? "btn-content btn-content-active" : "btn-content"
                       }
                     >
-                      <span className="recommend-text num">{like}</span>
+                     <span className="recommend-text num">{this.state.LikeNumber[item.option]}</span>
                     </span>
                   </button>
 
@@ -901,25 +1039,26 @@ export default class OptionList extends Component {
                           ///OptionID and QuestionId may be added
                         };
 
-                        this.setState(
-                          {
-                            clickedOptionDetails: _unique,
-                            type: "dislike",
-                            showClass: true
-                          },
-                          () => {
-                            this.setState(previousState => ({
-                              dec: previousState.dec + 1
-                            }));
-                          }
-                        );
+                        // this.setState(
+                        //   {
+                        //     clickedOptionDetails: _unique,
+                        //     type: "dislike",
+                        //     showClass: true
+                        //   },
+                        //   () => {
+                        //     this.setState(previousState => ({
+                        //       dec: previousState.dec + 1
+                        //     }));
+                        //   }
+                        // );
+                         {this.handleDislike(_unique)};
 
                         return;
                       }
                     }}
                   >
                     <span className="thumb-icon dis">
-                      <Thumb_down color={disLikeColor} />
+                    <Thumb_down color={this.state.DisLikeColor[item.option]} />
                     </span>
                     <span
                       className={
@@ -928,7 +1067,7 @@ export default class OptionList extends Component {
                           : "btn-content"
                       }
                     >
-                      <span className="recommend-text numie">{dislike}</span>
+                      <span className="recommend-text num">{this.state.DisLikeNumber[item.option]}</span>
                     </span>
                   </button>
                 </span>

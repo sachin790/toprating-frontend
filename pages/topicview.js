@@ -21,16 +21,42 @@ import {
   GetQuestionNumOfRecs,
   GetTopicRecommendations,
   CheckIfUserAddedQuestion,
-  CheckIfQuestionHasBeenRejected
+  CheckIfQuestionHasBeenRejected,
+  GetUserReactionToLikeOption,
+  GetUserReactionToDisLikeOption,
 } from "../apiRequests/apiRequests";
 import Signin from "./signin";
 import Signup from "./signup";
 const socket = io(API_URL);
 
+function GetLikeNumber(data){
+  let obj = {};
+for(let i=0;i<data.length;i++){
+obj[data[i].option] = data[i].like
+}
+
+return obj;
+
+}
+
+function GetDisLikeNumber(data){
+  let obj = {};
+for(let i=0;i<data.length;i++){
+obj[data[i].option] = data[i].dislike
+}
+
+return obj;
+
+  }
+
 export default class extends Component {
   static async getInitialProps({ query: { name } }) {
     const question = AddSpacesRemoveHyphen(name);
     const res = await Axios(GET_SPECIFIC_TOPIC_URL(question));
+   // const LikeColor = await GetUserReactionToLikeOption("5dada7908a5390365411a11f",res.data);
+  //  const DisLikeColor = await GetUserReactionToDisLikeOption("5dada7908a5390365411a11f",res.data);
+    const LikeNumber = await GetLikeNumber(res.data.data.data);
+    const DisLikeNumber = await GetDisLikeNumber(res.data.data.data);
     const relatedTopicResponse = await Axios(GET_RELATED_TOPICS_URL(question));
     const questionUpdatedAt = await GetQuestionUpdatedAt(question);
     const questionNumOfRecs = await GetQuestionNumOfRecs(question);
@@ -46,7 +72,11 @@ export default class extends Component {
       numOfRecs: questionNumOfRecs.data,
       RecsActivity: recsActivity.data,
       topics: response.data,
-      questionRejected: rejectedResponse.data
+      questionRejected: rejectedResponse.data,
+     // LikeColor : LikeColor.data,
+     // DisLikeColor : DisLikeColor.data,
+      LikeNumber : LikeNumber,
+      DisLikeNumber : DisLikeNumber
     };
   }
 
@@ -61,7 +91,11 @@ export default class extends Component {
     recommendations: this.props.RecsActivity,
     user: {},
     UserClickedLogin: false,
-    UserClickedSignup: false
+    UserClickedSignup: false,
+  // LikeColor : this.props.LikeColor,
+  // DisLikeColor : this.props.DisLikeColor,
+   LikeNumber :  this.props.LikeNumber,
+   DisLikeNumber :  this.props.DisLikeNumber
   };
 
   //Check if user Added Question
@@ -78,7 +112,7 @@ export default class extends Component {
       });
   };
 
-  componentDidMount() {
+   componentDidMount() {
     if (JSON.parse(localStorage.getItem("user_details"))) {
       const user = JSON.parse(localStorage.getItem("user_details"));
       this.setState(
@@ -89,8 +123,11 @@ export default class extends Component {
           this.checkIfUserAddedQuestion(this.props.question, user._id);
         }
       );
+
     }
+
   }
+
 
   handleDivCloseSignIn = e => {
     if (e.target === this.div) {
@@ -135,6 +172,10 @@ export default class extends Component {
     });
   };
 
+  userId = async ()=>{
+   return  await JSON.parse(localStorage.getItem("user_details"))._id
+  }
+
   render() {
     const {
       optionConsidered,
@@ -176,7 +217,7 @@ export default class extends Component {
               <UserAddedQuestionCard url={question} />
             )}
           {optionConsidered !== 0 && questionRejected === false && (
-            <OptionList {...this.state} />
+            <OptionList {...this.state } user_id =  { this.userId()}  />
           )}
 
           {questionRejected === true && <ReactionBanner />}

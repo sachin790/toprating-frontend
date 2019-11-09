@@ -166,8 +166,8 @@ class QuestionCard extends React.Component {
                   return (
                     <Link
                       prefetch
-                      as={`/topic/${newQuestionString}`}
-                      href={`/topic/${newQuestionString}`}
+                      as={`/topic/${encodeURI(newQuestionString)}`}
+                      href={`/topic/${encodeURI(newQuestionString)}`}
                       key={itemie._id}
                     >
                       <div className="two">
