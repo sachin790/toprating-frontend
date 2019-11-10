@@ -49,12 +49,19 @@ return obj;
 
   }
 
+function color (data){
+  let obj = {};
+  for(let i=0;i<data.length;i++){
+    obj[data[i].option] = "grey"
+  }
+  return obj;
+}  
+
 export default class extends Component {
   static async getInitialProps({ query: { name } }) {
     const question = AddSpacesRemoveHyphen(name);
     const res = await Axios(GET_SPECIFIC_TOPIC_URL(question));
-   // const LikeColor = await GetUserReactionToLikeOption("5dada7908a5390365411a11f",res.data);
-  //  const DisLikeColor = await GetUserReactionToDisLikeOption("5dada7908a5390365411a11f",res.data);
+   const Color = await color(res.data.data.data);
     const LikeNumber = await GetLikeNumber(res.data.data.data);
     const DisLikeNumber = await GetDisLikeNumber(res.data.data.data);
     const relatedTopicResponse = await Axios(GET_RELATED_TOPICS_URL(question));
@@ -73,8 +80,8 @@ export default class extends Component {
       RecsActivity: recsActivity.data,
       topics: response.data,
       questionRejected: rejectedResponse.data,
-     // LikeColor : LikeColor.data,
-     // DisLikeColor : DisLikeColor.data,
+     LikeColor : Color,
+     DisLikeColor : Color,
       LikeNumber : LikeNumber,
       DisLikeNumber : DisLikeNumber
     };
@@ -92,8 +99,8 @@ export default class extends Component {
     user: {},
     UserClickedLogin: false,
     UserClickedSignup: false,
-  // LikeColor : this.props.LikeColor,
-  // DisLikeColor : this.props.DisLikeColor,
+  LikeColor : this.props.LikeColor,
+  DisLikeColor : this.props.DisLikeColor,
    LikeNumber :  this.props.LikeNumber,
    DisLikeNumber :  this.props.DisLikeNumber
   };
@@ -172,9 +179,7 @@ export default class extends Component {
     });
   };
 
-  userId = async ()=>{
-   return  await JSON.parse(localStorage.getItem("user_details"))._id
-  }
+  
 
   render() {
     const {
@@ -217,7 +222,7 @@ export default class extends Component {
               <UserAddedQuestionCard url={question} />
             )}
           {optionConsidered !== 0 && questionRejected === false && (
-            <OptionList {...this.state } user_id =  { this.userId()}  />
+            <OptionList {...this.state } user_id =  { this.state.user._id}  />
           )}
 
           {questionRejected === true && <ReactionBanner />}

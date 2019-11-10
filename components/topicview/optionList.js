@@ -72,33 +72,28 @@ export default class OptionList extends Component {
     updateImage: false,
     imageLink: "",
     mediaArr: null,
-    LikeColor : {},
-    DisLikeColor : {},
+    LikeColor : this.props.LikeColor,
+    DisLikeColor : this.props.DisLikeColor,
     LikeNumber : this.props.LikeNumber,
     DisLikeNumber : this.props.DisLikeNumber,
-    user_id : this.props.user_id
+    // user_id : this.props.user_id
   };
 
-async componentWillMount(){
- 
-  console.log(this.state.user_id.then(async res=>{
-    const LikeColor =  await GetUserReactionToLikeOption(res,this.state.data);
-    const DisLikeColor = await GetUserReactionToDisLikeOption(res,this.state.data);
+ async componentDidMount(){
+  this.getSocketResponse();
+  if(JSON.parse(localStorage.getItem("user_details"))){
+    const LikeColor =  await GetUserReactionToLikeOption(JSON.parse(localStorage.getItem("user_details"))._id,this.state.data);
+    const DisLikeColor = await  GetUserReactionToDisLikeOption(JSON.parse(localStorage.getItem("user_details"))._id,this.state.data);
     this.setState({
       LikeColor : LikeColor.data,
       DisLikeColor : DisLikeColor.data
     })
   
-  }));
+  }
  
 
 }
 
-  componentDidMount() {
-    this.getSocketResponse();
-   
-
-  }
 
 
   getSocketResponse = () => {
@@ -163,16 +158,16 @@ async componentWillMount(){
     }
   };
 
-  handleDislike = () => {
-    let user = JSON.parse(localStorage.getItem("user_details"));
-    if (!user) {
-      alert("Not registered");
-      return;
-    }
-    this.setState({
-      type: "dislike"
-    });
-  };
+  // handleDislike = () => {
+  //   let user = JSON.parse(localStorage.getItem("user_details"));
+  //   if (!user) {
+  //     alert("Not registered");
+  //     return;
+  //   }
+  //   this.setState({
+  //     type: "dislike"
+  //   });
+  // };
 
   handlelike = (data) =>{
        let color = this.state.LikeColor;
