@@ -169,41 +169,47 @@ export default class OptionList extends Component {
   //   });
   // };
 
-  handlelike = (data) =>{
-       let color = this.state.LikeColor;
-       let colo = this.state.DisLikeColor;
-       let LikeNumber = this.state.LikeNumber;
-       let DisLikeNumber = this.state.DisLikeNumber;
-         if(color[data.option]=="grey" && colo[data.option] =="grey"){
-          color[data.option] = "blue";
-          LikeNumber[data.option] = LikeNumber[data.option] +1;
-          colo[data.option] = "grey";
-         }
-        else if(color[data.option]=="grey" && colo[data.option] =="blue"){
-          color[data.option] = "blue";
-          LikeNumber[data.option] = LikeNumber[data.option] +1;
-          DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
-          colo[data.option] = "grey";
-         }
-         else{
-          LikeNumber[data.option] = LikeNumber[data.option] -1;
-          color[data.option] = "grey";
-         }
-          this.setState({
-            LikeColor: color,
-            DisLikeColor : colo,
-            LikeNumber : LikeNumber,
-            DisLikeNumber : DisLikeNumber
-          });
+  handlelike = async (data) =>{
+    let color = this.state.LikeColor;
+    let colo = this.state.DisLikeColor;
+    let LikeNumber = this.state.LikeNumber;
+    let DisLikeNumber = this.state.DisLikeNumber;
+      if(color[data.option]=="grey" && colo[data.option] =="grey"){
+       color[data.option] = "blue";
+       LikeNumber[data.option] = LikeNumber[data.option] +1;
+       colo[data.option] = "grey";
+      }
+     else if(color[data.option]=="grey" && colo[data.option] =="blue"){
+       color[data.option] = "blue";
+       LikeNumber[data.option] = LikeNumber[data.option] +1;
+       DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
+       colo[data.option] = "grey";
+      }
+      else{
+       LikeNumber[data.option] = LikeNumber[data.option] -1;
+       color[data.option] = "grey";
+      }
+      console.log("+++++++++++");
+      console.log(LikeNumber , "  " , DisLikeNumber);
+      console.log("+++++++++++++");
+
+     await   this.setState({
+         LikeColor: color,
+         DisLikeColor : colo,
+         LikeNumber : LikeNumber,
+         DisLikeNumber : DisLikeNumber
+       });
       const _user = JSON.parse(localStorage.getItem("user_details"));
       const rxn = {
         userId: _user._id,
         option : data.option,
-        type: true
+        type: true,
+        LikeNumber :  this.state.LikeNumber,
+        DisLikeNumber : this.state.DisLikeNumber
       };
-      AddUserReactionToOption(rxn)
+      await AddUserReactionToOption(rxn)
         .then(res => {
-      
+       
         }
             
         )
@@ -231,7 +237,7 @@ export default class OptionList extends Component {
 //     return "yellow";
 //   }
 
-  handleDislike = (data) =>{
+  handleDislike = async (data) =>{
     let color = this.state.DisLikeColor;
     let colo = this.state.LikeColor
     let LikeNumber = this.state.LikeNumber;
@@ -251,7 +257,12 @@ export default class OptionList extends Component {
            color[data.option] = "grey";
            DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
           }
-           this.setState({
+
+          console.log("+++++++++++");
+          console.log(LikeNumber , "  " , DisLikeNumber);
+          console.log("+++++++++++++");
+
+          await this.setState({
              DisLikeColor: color,
              LikeColor : colo,
              DisLikeNumber : DisLikeNumber,
@@ -261,11 +272,13 @@ export default class OptionList extends Component {
       const rxn = {
         userId: _user._id,
         option : data.option,
-        type: false
+        type: false , 
+        LikeNumber :  this.state.LikeNumber,
+        DisLikeNumber : this.state.DisLikeNumber
       };
-      AddUserReactionToOption(rxn)
-        .then(res => {
-        
+     await AddUserReactionToOption(rxn)
+        .then( async res => {
+       
         }
             
         )

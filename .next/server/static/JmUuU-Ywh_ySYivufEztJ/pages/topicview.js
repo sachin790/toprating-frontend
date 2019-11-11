@@ -2899,90 +2899,170 @@ function (_Component) {
       }
     });
 
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handlelike", function (data) {
-      var color = _this.state.LikeColor;
-      var colo = _this.state.DisLikeColor;
-      var LikeNumber = _this.state.LikeNumber;
-      var DisLikeNumber = _this.state.DisLikeNumber;
+    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handlelike",
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(asyncToGenerator["a" /* default */])(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(data) {
+        var color, colo, LikeNumber, DisLikeNumber, _user, rxn;
 
-      if (color[data.option] == "grey" && colo[data.option] == "grey") {
-        color[data.option] = "blue";
-        LikeNumber[data.option] = LikeNumber[data.option] + 1;
-        colo[data.option] = "grey";
-      } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
-        color[data.option] = "blue";
-        LikeNumber[data.option] = LikeNumber[data.option] + 1;
-        DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
-        colo[data.option] = "grey";
-      } else {
-        LikeNumber[data.option] = LikeNumber[data.option] - 1;
-        color[data.option] = "grey";
-      }
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                color = _this.state.LikeColor;
+                colo = _this.state.DisLikeColor;
+                LikeNumber = _this.state.LikeNumber;
+                DisLikeNumber = _this.state.DisLikeNumber;
 
-      _this.setState({
-        LikeColor: color,
-        DisLikeColor: colo,
-        LikeNumber: LikeNumber,
-        DisLikeNumber: DisLikeNumber
-      });
+                if (color[data.option] == "grey" && colo[data.option] == "grey") {
+                  color[data.option] = "blue";
+                  LikeNumber[data.option] = LikeNumber[data.option] + 1;
+                  colo[data.option] = "grey";
+                } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
+                  color[data.option] = "blue";
+                  LikeNumber[data.option] = LikeNumber[data.option] + 1;
+                  DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
+                  colo[data.option] = "grey";
+                } else {
+                  LikeNumber[data.option] = LikeNumber[data.option] - 1;
+                  color[data.option] = "grey";
+                }
 
-      var _user = JSON.parse(localStorage.getItem("user_details"));
+                console.log("+++++++++++");
+                console.log(LikeNumber, "  ", DisLikeNumber);
+                console.log("+++++++++++++");
+                _context.next = 10;
+                return _this.setState({
+                  LikeColor: color,
+                  DisLikeColor: colo,
+                  LikeNumber: LikeNumber,
+                  DisLikeNumber: DisLikeNumber
+                });
 
-      var rxn = {
-        userId: _user._id,
-        option: data.option,
-        type: true
+              case 10:
+                _user = JSON.parse(localStorage.getItem("user_details"));
+                rxn = {
+                  userId: _user._id,
+                  option: data.option,
+                  type: true,
+                  LikeNumber: _this.state.LikeNumber,
+                  DisLikeNumber: _this.state.DisLikeNumber
+                };
+                _context.next = 14;
+                return Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(function (res) {}).catch(function (err) {
+                  console.log(err);
+                  console.log(err.response.data);
+                });
+
+              case 14:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
       };
-      Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(function (res) {}).catch(function (err) {
-        console.log(err);
-        console.log(err.response.data);
-      });
-    });
+    }());
 
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDislike", function (data) {
-      var color = _this.state.DisLikeColor;
-      var colo = _this.state.LikeColor;
-      var LikeNumber = _this.state.LikeNumber;
-      var DisLikeNumber = _this.state.DisLikeNumber;
+    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDislike",
+    /*#__PURE__*/
+    function () {
+      var _ref2 = Object(asyncToGenerator["a" /* default */])(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee3(data) {
+        var color, colo, LikeNumber, DisLikeNumber, _user, rxn;
 
-      if (color[data.option] == "grey" && colo[data.option] == "grey") {
-        color[data.option] = "blue";
-        colo[data.option] = "grey";
-        DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
-      } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
-        color[data.option] = "blue";
-        colo[data.option] = "grey";
-        DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
-        LikeNumber[data.option] = LikeNumber[data.option] - 1;
-      } else {
-        color[data.option] = "grey";
-        DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
-      }
+        return regenerator_default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                color = _this.state.DisLikeColor;
+                colo = _this.state.LikeColor;
+                LikeNumber = _this.state.LikeNumber;
+                DisLikeNumber = _this.state.DisLikeNumber;
 
-      _this.setState({
-        DisLikeColor: color,
-        LikeColor: colo,
-        DisLikeNumber: DisLikeNumber,
-        LikeNumber: LikeNumber
-      });
+                if (color[data.option] == "grey" && colo[data.option] == "grey") {
+                  color[data.option] = "blue";
+                  colo[data.option] = "grey";
+                  DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
+                } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
+                  color[data.option] = "blue";
+                  colo[data.option] = "grey";
+                  DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
+                  LikeNumber[data.option] = LikeNumber[data.option] - 1;
+                } else {
+                  color[data.option] = "grey";
+                  DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
+                }
 
-      var _user = JSON.parse(localStorage.getItem("user_details"));
+                console.log("+++++++++++");
+                console.log(LikeNumber, "  ", DisLikeNumber);
+                console.log("+++++++++++++");
+                _context3.next = 10;
+                return _this.setState({
+                  DisLikeColor: color,
+                  LikeColor: colo,
+                  DisLikeNumber: DisLikeNumber,
+                  LikeNumber: LikeNumber
+                });
 
-      var rxn = {
-        userId: _user._id,
-        option: data.option,
-        type: false
+              case 10:
+                _user = JSON.parse(localStorage.getItem("user_details"));
+                rxn = {
+                  userId: _user._id,
+                  option: data.option,
+                  type: false,
+                  LikeNumber: _this.state.LikeNumber,
+                  DisLikeNumber: _this.state.DisLikeNumber
+                };
+                _context3.next = 14;
+                return Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(
+                /*#__PURE__*/
+                function () {
+                  var _ref3 = Object(asyncToGenerator["a" /* default */])(
+                  /*#__PURE__*/
+                  regenerator_default.a.mark(function _callee2(res) {
+                    return regenerator_default.a.wrap(function _callee2$(_context2) {
+                      while (1) {
+                        switch (_context2.prev = _context2.next) {
+                          case 0:
+                          case "end":
+                            return _context2.stop();
+                        }
+                      }
+                    }, _callee2);
+                  }));
+
+                  return function (_x3) {
+                    return _ref3.apply(this, arguments);
+                  };
+                }()).catch(function (err) {
+                  console.log(err);
+                  console.log(err.response.data);
+                });
+
+              case 14:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x2) {
+        return _ref2.apply(this, arguments);
       };
-      Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(function (res) {}).catch(function (err) {
-        console.log(err);
-        console.log(err.response.data);
-      });
-    });
+    }());
 
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleInputChange", function (_ref) {
-      var _ref$target = _ref.target,
-          value = _ref$target.value,
-          name = _ref$target.name;
+    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleInputChange", function (_ref4) {
+      var _ref4$target = _ref4.target,
+          value = _ref4$target.value,
+          name = _ref4$target.name;
 
       _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
     });
@@ -3026,10 +3106,10 @@ function (_Component) {
       });
     });
 
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "onOptionUpdateChange", function (_ref2) {
-      var _ref2$target = _ref2.target,
-          value = _ref2$target.value,
-          name = _ref2$target.name;
+    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "onOptionUpdateChange", function (_ref5) {
+      var _ref5$target = _ref5.target,
+          value = _ref5$target.value,
+          name = _ref5$target.name;
 
       _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
     });
@@ -3209,10 +3289,10 @@ function (_Component) {
       });
     });
 
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "addImageUrlToImageArray", function (_ref3) {
-      var _ref3$target = _ref3.target,
-          value = _ref3$target.value,
-          name = _ref3$target.name;
+    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "addImageUrlToImageArray", function (_ref6) {
+      var _ref6$target = _ref6.target,
+          value = _ref6$target.value,
+          name = _ref6$target.name;
 
       _this.setState({
         newImage: value
@@ -3235,29 +3315,29 @@ function (_Component) {
     value: function () {
       var _componentDidMount = Object(asyncToGenerator["a" /* default */])(
       /*#__PURE__*/
-      regenerator_default.a.mark(function _callee() {
+      regenerator_default.a.mark(function _callee4() {
         var LikeColor, DisLikeColor;
-        return regenerator_default.a.wrap(function _callee$(_context) {
+        return regenerator_default.a.wrap(function _callee4$(_context4) {
           while (1) {
-            switch (_context.prev = _context.next) {
+            switch (_context4.prev = _context4.next) {
               case 0:
                 this.getSocketResponse();
 
                 if (!JSON.parse(localStorage.getItem("user_details"))) {
-                  _context.next = 9;
+                  _context4.next = 9;
                   break;
                 }
 
-                _context.next = 4;
+                _context4.next = 4;
                 return Object(apiRequests["V" /* GetUserReactionToLikeOption */])(JSON.parse(localStorage.getItem("user_details"))._id, this.state.data);
 
               case 4:
-                LikeColor = _context.sent;
-                _context.next = 7;
+                LikeColor = _context4.sent;
+                _context4.next = 7;
                 return Object(apiRequests["U" /* GetUserReactionToDisLikeOption */])(JSON.parse(localStorage.getItem("user_details"))._id, this.state.data);
 
               case 7:
-                DisLikeColor = _context.sent;
+                DisLikeColor = _context4.sent;
                 this.setState({
                   LikeColor: LikeColor.data,
                   DisLikeColor: DisLikeColor.data
@@ -3265,10 +3345,10 @@ function (_Component) {
 
               case 9:
               case "end":
-                return _context.stop();
+                return _context4.stop();
             }
           }
-        }, _callee, this);
+        }, _callee4, this);
       }));
 
       function componentDidMount() {
