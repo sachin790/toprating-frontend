@@ -189,9 +189,9 @@ export default class OptionList extends Component {
        LikeNumber[data.option] = LikeNumber[data.option] -1;
        color[data.option] = "grey";
       }
-      console.log("+++++++++++");
-      console.log(LikeNumber , "  " , DisLikeNumber);
-      console.log("+++++++++++++");
+      // console.log("+++++++++++");
+      // console.log(LikeNumber , "  " , DisLikeNumber);
+      // console.log("+++++++++++++");
 
      await   this.setState({
          LikeColor: color,
@@ -203,9 +203,7 @@ export default class OptionList extends Component {
       const rxn = {
         userId: _user._id,
         option : data.option,
-        type: true,
-        LikeNumber :  this.state.LikeNumber,
-        DisLikeNumber : this.state.DisLikeNumber
+        type: true
       };
       await AddUserReactionToOption(rxn)
         .then(res => {
@@ -258,9 +256,9 @@ export default class OptionList extends Component {
            DisLikeNumber[data.option] = DisLikeNumber[data.option] -1;
           }
 
-          console.log("+++++++++++");
-          console.log(LikeNumber , "  " , DisLikeNumber);
-          console.log("+++++++++++++");
+          // console.log("+++++++++++");
+          // console.log(LikeNumber , "  " , DisLikeNumber);
+          // console.log("+++++++++++++");
 
           await this.setState({
              DisLikeColor: color,
@@ -273,8 +271,6 @@ export default class OptionList extends Component {
         userId: _user._id,
         option : data.option,
         type: false , 
-        LikeNumber :  this.state.LikeNumber,
-        DisLikeNumber : this.state.DisLikeNumber
       };
      await AddUserReactionToOption(rxn)
         .then( async res => {

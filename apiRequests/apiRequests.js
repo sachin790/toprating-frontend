@@ -168,6 +168,15 @@ export const GetUserReactionToLikeOption = (id,option) => {
   });
 };
 
+export const GetLikeNumber = (data) => {
+  return Axios.post(`${_optionRoute}/get/GetLikeNumber`, data);
+};
+
+export const GetDisLikeNumber = (data) => {
+  return Axios.post(`${_optionRoute}/get/GetDisLikeNumber`, data);
+};
+
+
 export const GetUserReactionToDisLikeOption = (id,option) => {
   return Axios.post(`${_optionRoute}/get/dislikeoption_reaction`,{
     userid : id,

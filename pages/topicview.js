@@ -24,30 +24,33 @@ import {
   CheckIfQuestionHasBeenRejected,
   GetUserReactionToLikeOption,
   GetUserReactionToDisLikeOption,
+  GetLikeNumber,
+  GetDisLikeNumber
+
 } from "../apiRequests/apiRequests";
 import Signin from "./signin";
 import Signup from "./signup";
 const socket = io(API_URL);
 
-function GetLikeNumber(data){
-  let obj = {};
-for(let i=0;i<data.length;i++){
-obj[data[i].option] = data[i].like
-}
+// function GetLikeNumber(data){
+//   let obj = {};
+// for(let i=0;i<data.length;i++){
+// obj[data[i].option] = data[i].like
+// }
 
-return obj;
+// return obj;
 
-}
+// }
 
-function GetDisLikeNumber(data){
-  let obj = {};
-for(let i=0;i<data.length;i++){
-obj[data[i].option] = data[i].dislike
-}
+// function GetDisLikeNumber(data){
+//   let obj = {};
+// for(let i=0;i<data.length;i++){
+// obj[data[i].option] = data[i].dislike
+// }
 
-return obj;
+// return obj;
 
-  }
+//   }
 
 function color (data){
   let obj = {};
@@ -82,8 +85,8 @@ export default class extends Component {
       questionRejected: rejectedResponse.data,
      LikeColor : Color,
      DisLikeColor : Color,
-      LikeNumber : LikeNumber,
-      DisLikeNumber : DisLikeNumber
+      LikeNumber : LikeNumber.data,
+      DisLikeNumber : DisLikeNumber.data
     };
   }
 

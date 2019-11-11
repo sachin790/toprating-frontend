@@ -65,6 +65,10 @@ app
     });
 
     server.get("/topic/:name", (req, res) => {
+      // console.log("++++++++++++++");
+      // console.log(" i m here");
+      // console.log(req.params.name);
+      // console.log("++++++++++++++");
       let actualPage = "/topicview";
       let queryParams = { name: req.params.name };
       // console.log(queryParams, " i am here");
