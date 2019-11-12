@@ -17,6 +17,7 @@ import Signup from "./signup";
 import SuccessSnackbar from "../components/snackbar/SuccessSnackbar";
 import ErrorSnackbar from "../components/snackbar/ErrorSnackbar";
 const socket = io(API_URL);
+var cyrillicToTranslitJs = require("cyrillic-to-translit-js");
 
 class Ask extends React.Component {
   static async getInitialProps() {
@@ -92,7 +93,7 @@ class Ask extends React.Component {
 
     let { tag, question } = this.state;
 
-    NewAddTopic(question, tag, user_data._id, socket.id)
+    NewAddTopic(cyrillicToTranslitJs().transform(question), tag, user_data._id, socket.id)
       .then(result => {
         this.setState({
           tag: [],

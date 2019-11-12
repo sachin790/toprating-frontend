@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -141,6 +141,14 @@ function _classCallCheck(instance, Constructor) {
     throw new TypeError("Cannot call a class as a function");
   }
 }
+
+/***/ }),
+
+/***/ 12:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("LvrZ");
+
 
 /***/ }),
 
@@ -248,14 +256,6 @@ function flush() {
   styleSheetRegistry.flush();
   return cssRules;
 }
-
-/***/ }),
-
-/***/ 4:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("imTN");
-
 
 /***/ }),
 
@@ -823,13 +823,6 @@ module.exports = require("semantic-ui-react");
 
 /***/ }),
 
-/***/ "IZS3":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap");
-
-/***/ }),
-
 /***/ "IfcR":
 /***/ (function(module, exports) {
 
@@ -1067,6 +1060,459 @@ module.exports = require("core-js/library/fn/is-iterable");
 
 /***/ }),
 
+/***/ "LvrZ":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ln6h");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("O40h");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("kOwS");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("dfwq");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("0iUn");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("sLSF");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("MI3g");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("a7VT");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("AT/M");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("Tit0");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("vYYK");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("zr5I");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("Sndy");
+/* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("qt1I");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("rhLc");
+/* harmony import */ var _layouts_Layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("JwBy");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("OcYQ");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("pI2v");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _signin__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__("DB6d");
+/* harmony import */ var _signup__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__("vL9u");
+/* harmony import */ var _components_snackbar_SuccessSnackbar__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__("NBss");
+/* harmony import */ var _components_snackbar_ErrorSnackbar__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__("T7hD");
+/* harmony import */ var _components_updateTag_landingPage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__("lT5q");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var socket = socket_io_client__WEBPACK_IMPORTED_MODULE_20___default()(_config_config__WEBPACK_IMPORTED_MODULE_19__[/* default */ "c"]);
+
+var Ask =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(Ask, _React$Component);
+
+  function Ask() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(this, Ask);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Ask)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "state", {
+      chipData: [],
+      questionId: _this.props.id,
+      tag: _this.props.specQuestion.tag,
+      tagie: "",
+      question: _this.props.specQuestion.question,
+      ask: false,
+      data: _this.props.data.data,
+      checkTagArray: [],
+      UserClickedLogin: false,
+      UserClickedSignup: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "getSpecificQuestion", function (id) {
+      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* GET_SPECIFIC_QUESTION */ "t"])(id).then(function (result) {
+        _this.setState({
+          question: result.data.question
+        });
+      }).catch(function (err) {
+        console.log(err);
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleDivClose", function (e) {
+      if (e.target === _this.div) {
+        _this.setState(function (previousState) {
+          return {
+            showClass: !previousState
+          };
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "openLoginOverlay", function () {
+      //alert("click");
+      _this.setState({
+        UserClickedLogin: !_this.state.UserClickedLogin,
+        UserClickedSignup: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "openSignupOverlay", function () {
+      _this.setState({
+        UserClickedSignup: !_this.state.UserClickedSignup,
+        UserClickedLogin: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "closeLoginOverlay", function () {
+      _this.setState({
+        UserClickedLogin: !_this.state.UserClickedLogin
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "closeSignupOverlay", function () {
+      _this.setState({
+        UserClickedSignup: !_this.state.UserClickedSignup
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleDelete", function (data) {
+      return function () {
+        _this.setState(function (state) {
+          var tag = Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(state.tag);
+
+          var chipToDelete = tag.indexOf(data);
+          tag.splice(chipToDelete, 1);
+          return {
+            tag: tag
+          };
+        });
+      };
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleSubmit", function (e) {
+      e.preventDefault();
+      var token = localStorage.getItem("user_token");
+      var user_data = JSON.parse(localStorage.getItem("user_details"));
+
+      if (!token) {
+        alert("Kindly Sign up to add a question");
+        return;
+      }
+
+      var _this$state = _this.state,
+          tag = _this$state.tag,
+          questionId = _this$state.questionId,
+          question = _this$state.question;
+      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* ManageTag */ "Y"])(questionId, tag, question).then(function (result) {
+        _this.setState({
+          showSnackbar: true,
+          message: "Tag Added"
+        }); //Synchronous
+
+
+        setTimeout(function () {
+          _this.setState({
+            showSnackbar: false
+          });
+        }, 4000);
+      }).catch(function (error) {
+        _this.setState({
+          showErrorSnackbar: true,
+          message: error.response.data || "Operation Unsuccessful "
+        }); //Synchronous
+
+
+        setTimeout(function () {
+          _this.setState({
+            showErrorSnackbar: false
+          });
+        }, 4000); // console.log(error.response);
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "addNewTag", function (e) {
+      //if user is unable to find tag in list
+      _this.setState(function (previousState) {
+        return {
+          tag: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(previousState.tag), [_this.state.tagie]),
+          tagie: "",
+          ask: false
+        };
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "add", function (value) {
+      _this.setState(function (previousState) {
+        return {
+          tag: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(previousState.tag), [value]),
+          tagie: "",
+          ask: false
+        };
+      }); //console.log(this.state.tag)
+
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "showButton", function (_ref) {
+      var _ref$target = _ref.target,
+          name = _ref$target.name,
+          value = _ref$target.value;
+
+      var hold = _this.state.data.map(function (item) {
+        return item.tag;
+      }); //This funtion flattens the array
+
+
+      var flattenArray = function flattenArray(arr) {
+        var _ref2;
+
+        return (_ref2 = []).concat.apply(_ref2, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(arr));
+      };
+
+      var flattenedArray = flattenArray(hold);
+      var checkTagArray = flattenedArray.filter(function (item) {
+        return item.toLowerCase().indexOf(value.toLowerCase()) !== -1;
+      }); // console.log(checkTagArray)
+
+      if (value === "") {
+        _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({
+          ask: false
+        }, name, ""));
+      } else {
+        _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({
+          checkTagArray: checkTagArray,
+          ask: true
+        }, name, value));
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleQuestionInput", function (_ref3) {
+      var _ref3$target = _ref3.target,
+          name = _ref3$target.name,
+          value = _ref3$target.value;
+
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({}, name, value));
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Ask, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.getSpecificQuestion(this.props.id);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state2 = this.state,
+          tagie = _this$state2.tagie,
+          ask = _this$state2.ask,
+          question = _this$state2.question,
+          checkTagArray = _this$state2.checkTagArray,
+          UserClickedLogin = _this$state2.UserClickedLogin,
+          UserClickedSignup = _this$state2.UserClickedSignup,
+          showSnackbar = _this$state2.showSnackbar,
+          showErrorSnackbar = _this$state2.showErrorSnackbar,
+          message = _this$state2.message; // console.log(this.props.specQuestion.question);
+
+      var CustomStrongElement = function CustomStrongElement(value, i) {
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("strong", {
+          style: {
+            display: "block"
+          },
+          key: i,
+          value: value,
+          onClick: function onClick() {
+            _this2.add(value);
+          }
+        }, value);
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_layouts_Layout__WEBPACK_IMPORTED_MODULE_17__[/* default */ "a"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])({
+        openSignup: this.openSignupOverlay,
+        openLogin: this.openLoginOverlay
+      }, this.state), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_updateTag_landingPage__WEBPACK_IMPORTED_MODULE_25__[/* default */ "a"], {
+        question: question
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "cont"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("form", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("textarea", {
+        name: "question",
+        placeholder: "Ask your question here",
+        value: question + "?",
+        readOnly: true // onChange={e => this.handleQuestionInput(e)}
+        ,
+        autoFocus: true,
+        className: "jsx-1783110031"
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("input", {
+        type: "text",
+        name: "tagie",
+        value: tagie,
+        onChange: function onChange(e) {
+          return _this2.showButton(e);
+        },
+        placeholder: "Add Tags",
+        className: "jsx-1783110031"
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "add-button-class"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
+        onClick: this.handleSubmit,
+        disabled: !question,
+        className: "jsx-1783110031" + " " + "add-question-btn"
+      }, "Submit"))), ask ? react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "show-tag"
+      }, checkTagArray.map(function (item, i) {
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_12__["Fragment"], {
+          key: i
+        }, CustomStrongElement(item, i));
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("em", {
+        className: "jsx-1783110031"
+      }, "Tag not found?", react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        onClick: this.addNewTag,
+        className: "jsx-1783110031" + " " + "but"
+      }, "Add Tag"))) : "", react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          padding: "2px",
+          borderRadius: "3px",
+          marginTop: "10px"
+        }
+      }, this.state.tag.map(function (data, index) {
+        var icon = null;
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          key: index,
+          icon: icon,
+          label: data,
+          onDelete: _this2.handleDelete(data)
+        });
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        onClick: function onClick(e) {
+          return _this2.handleDivClose(e);
+        },
+        ref: function ref(el) {
+          return _this2.div = el;
+        },
+        className: "jsx-1783110031" + " " + ((UserClickedSignup ? "overlayShowie" : "overlay") || "")
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        onClick: this.closeSignupOverlay,
+        className: "jsx-1783110031" + " " + "close-icon"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        className: "jsx-1783110031"
+      }, "\xD7")), UserClickedSignup && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_signup__WEBPACK_IMPORTED_MODULE_22__["default"], {
+        openLogin: this.openLoginOverlay
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        onClick: function onClick(e) {
+          return _this2.handleDivClose(e);
+        },
+        ref: function ref(el) {
+          return _this2.div = el;
+        },
+        className: "jsx-1783110031" + " " + ((UserClickedLogin ? "overlayShowie" : "overlay") || "")
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        onClick: this.closeLoginOverlay,
+        className: "jsx-1783110031" + " " + "close-icon"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        className: "jsx-1783110031"
+      }, "\xD7")), UserClickedLogin && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_signin__WEBPACK_IMPORTED_MODULE_21__["default"], {
+        openSignup: this.openSignupOverlay
+      })), showSnackbar && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_snackbar_SuccessSnackbar__WEBPACK_IMPORTED_MODULE_23__[/* default */ "a"], {
+        message: message
+      }), showErrorSnackbar && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_snackbar_ErrorSnackbar__WEBPACK_IMPORTED_MODULE_24__[/* default */ "a"], {
+        message: message
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        id: "1783110031"
+      }, [".add-button-class.jsx-1783110031{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".show-tag.jsx-1783110031{text-align:center;box-sizing:border-box;padding:5px;margin-top:10px;}", "em.jsx-1783110031{font-weight:100;font-family:inherit;display:block;}", ".but.jsx-1783110031{outline:none;cursor:pointer;font-weight:600;font-family:inherit;color:rgb(96,51,141) !important;margin-left:3px;padding:0.1em;}", ".overlay.jsx-1783110031{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgba(0,0,0,0.05);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".overlayShowie.jsx-1783110031{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:#fff;overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".close-icon.jsx-1783110031{position:absolute;top:20px;left:90%;min-height:20px;max-height:100px;padding:9px;background:#e6ecf0;font-size:55px !important;color:rgb(91,56,141);cursor:pointer;z-index:2000;border-radius:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".close-icon.jsx-1783110031>span.jsx-1783110031{position:relative;top:-2px;}", ".cont.jsx-1783110031{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;box-sizing:border-box;position:relative;top:70px;box-sizing:border-box;}", "input[type=\"text\"].jsx-1783110031{width:30vw;height:40px;border:2px solid rgb(96,51,141);border-radius:5px;outline:0;padding:10px;margin:10px 0;font-size:Cabin;font-weight:600;}", "textarea.jsx-1783110031{width:30vw;min-height:18px;height:40px;border:2px solid rgb(96,51,141);border-radius:5px;outline:0;padding:10px;resize:none;font-family:Cabin;font-weight:600;}", ".add-question-btn.jsx-1783110031{position:relative;width:120px;padding:10px;border:1px solid rgb(96,51,141);outline:none;cursor:pointer;border-radius:4px;background:rgb(96,51,141);font-weight:100;font-family:inherit;color:#fff;}", ".add-question-btn.jsx-1783110031:hover{background-color:#e6ecf0;color:rgb(96,51,141);border:1px solid rgb(96,51,141);-webkit-transition:1s;transition:1s;}", ".add-question-btn.jsx-1783110031:disabled{cursor:not-allowed;background:#e6e8eb;color:#8d959c;}", ".jsx-1783110031::-webkit-input-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031::-moz-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031:-ms-input-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031::placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", "h1.jsx-1783110031{font-size:1.3em;text-align:center;word-spacing:0.3px;font-family:inherit;}", "@media screen and (max-width:600px){input[type=\"text\"].jsx-1783110031{width:250px;}textarea.jsx-1783110031{width:250px;}.add-question-btn.jsx-1783110031{margin-top:5px;}}"])));
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function () {
+      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref4) {
+        var id, res, specifiQuestion;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                id = _ref4.query.id;
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_13___default()(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* _GET_TOPICS */ "ob"]);
+
+              case 3:
+                res = _context.sent;
+                _context.next = 6;
+                return Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* GET_SPECIFIC_QUESTION */ "t"])(id);
+
+              case 6:
+                specifiQuestion = _context.sent;
+                return _context.abrupt("return", {
+                  data: res.data,
+                  id: id,
+                  specQuestion: specifiQuestion.data
+                });
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function getInitialProps(_x) {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
+  }]);
+
+  return Ask;
+}(react__WEBPACK_IMPORTED_MODULE_12___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_18__["withRouter"])(Ask));
+
+/***/ }),
+
 /***/ "MI3g":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1147,6 +1593,32 @@ function _inherits(subClass, superClass) {
 }
 
 module.exports = _inherits;
+
+/***/ }),
+
+/***/ "NBss":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var SuccessSnackbar = function SuccessSnackbar(_ref) {
+  var message = _ref.message,
+      showclass = _ref.showclass;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "snackbar",
+    className: "jsx-820573979" + " " + "show"
+  }, message), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "820573979"
+  }, ["#snackbar.jsx-820573979{visibility:hidden;min-width:200px;margin-left:-125px;background-color:rgb(67,160,71);color:#fff;text-align:center;border-radius:2px;padding:14px;position:fixed;z-index:1;left:10%;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;bottom:44px;font-size:17px;}", "#snackbar.show.jsx-820573979{visibility:visible;-webkit-animation:fadein 0.5s,fadeout 0.5s 2.5s;-webkit-animation:fadein-jsx-820573979 0.5s,fadeout-jsx-820573979 0.5s 2.5s;animation:fadein-jsx-820573979 0.5s,fadeout-jsx-820573979 0.5s 2.5s;}", "@-webkit-keyframes fadein{from.jsx-820573979{bottom:0;opacity:0;}to.jsx-820573979{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadein-jsx-820573979{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@keyframes fadein-jsx-820573979{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadeout{from.jsx-820573979{bottom:30px;opacity:1;}to.jsx-820573979{bottom:0;opacity:0;}}", "@-webkit-keyframes fadeout-jsx-820573979{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@keyframes fadeout-jsx-820573979{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@media screen and (max-width:768px){#snackbar.jsx-820573979{left:30%;padding:10px;}}"]));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SuccessSnackbar);
 
 /***/ }),
 
@@ -1231,6 +1703,13 @@ var GOOGLE_CLIENT_KEY = "597561721865-s08p7p1gm09ripitr3a1h3fg34q1pfju.apps.goog
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "S41T":
+/***/ (function(module, exports) {
+
+module.exports = require("cyrillic-to-translit-js");
 
 /***/ }),
 
@@ -1525,10 +2004,29 @@ module.exports = __webpack_require__("o5io");
 
 /***/ }),
 
-/***/ "T22j":
-/***/ (function(module, exports) {
+/***/ "T7hD":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = require("core-js/library/fn/parse-float");
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var ErrorSnackbar = function ErrorSnackbar(_ref) {
+  var message = _ref.message,
+      showclass = _ref.showclass;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "snackbar",
+    className: "jsx-2457805773" + " " + "show"
+  }, message), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2457805773"
+  }, ["#snackbar.jsx-2457805773{visibility:hidden;min-width:200px;margin-left:-125px;background-color:#d32f2f;color:#fff;text-align:center;border-radius:2px;padding:13px;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;position:fixed;z-index:1;left:10%;bottom:44px;font-size:17px;}", "#snackbar.show.jsx-2457805773{visibility:visible;-webkit-animation:fadein 0.5s,fadeout 0.5s 2.5s;-webkit-animation:fadein-jsx-2457805773 0.5s,fadeout-jsx-2457805773 0.5s 2.5s;animation:fadein-jsx-2457805773 0.5s,fadeout-jsx-2457805773 0.5s 2.5s;}", "@-webkit-keyframes fadein{from.jsx-2457805773{bottom:0;opacity:0;}to.jsx-2457805773{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadein-jsx-2457805773{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@keyframes fadein-jsx-2457805773{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadeout{from.jsx-2457805773{bottom:30px;opacity:1;}to.jsx-2457805773{bottom:0;opacity:0;}}", "@-webkit-keyframes fadeout-jsx-2457805773{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@keyframes fadeout-jsx-2457805773{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@media screen and (max-width:768px){#snackbar.jsx-2457805773{left:30%;padding:10px;}}"]));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ErrorSnackbar);
 
 /***/ }),
 
@@ -1594,13 +2092,6 @@ function _inherits(subClass, superClass) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("dGr4");
-
-/***/ }),
-
-/***/ "Wa2I":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("T22j");
 
 /***/ }),
 
@@ -3123,2052 +3614,6 @@ module.exports = _typeof;
 
 /***/ }),
 
-/***/ "imTN":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/regenerator/index.js
-var regenerator = __webpack_require__("ln6h");
-var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js
-var asyncToGenerator = __webpack_require__("O40h");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js
-var esm_extends = __webpack_require__("kOwS");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__("0iUn");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js
-var createClass = __webpack_require__("sLSF");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js + 1 modules
-var possibleConstructorReturn = __webpack_require__("MI3g");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__("a7VT");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js
-var assertThisInitialized = __webpack_require__("AT/M");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__("Tit0");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__("vYYK");
-
-// EXTERNAL MODULE: ./node_modules/styled-jsx/style.js
-var style = __webpack_require__("MX0m");
-var style_default = /*#__PURE__*/__webpack_require__.n(style);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: external "next/router"
-var router_ = __webpack_require__("4Q3z");
-
-// EXTERNAL MODULE: ./layouts/Layout.js + 2 modules
-var Layout = __webpack_require__("JwBy");
-
-// EXTERNAL MODULE: external "axios"
-var external_axios_ = __webpack_require__("zr5I");
-var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./config/config.js
-var config = __webpack_require__("OcYQ");
-
-// EXTERNAL MODULE: external "socket.io-client"
-var external_socket_io_client_ = __webpack_require__("pI2v");
-
-// EXTERNAL MODULE: ./components/Icons.js
-var Icons = __webpack_require__("zUqs");
-
-// EXTERNAL MODULE: ./lib/removeSpaces.js
-var removeSpaces = __webpack_require__("oZBK");
-
-// CONCATENATED MODULE: ./components/optionView/optionViewLandingPage.js
-
-
-
-
-
-
-var optionViewLandingPage_OptionViewLandingPage = function OptionViewLandingPage(_ref) {
-  var OptionDetails = _ref.OptionDetails;
-  var newQuestionString = Object(removeSpaces["b" /* default */])(OptionDetails.question);
-  return external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "landing"
-  }, external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "landing-tag"
-  }), external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "landing-question"
-  }, OptionDetails ? OptionDetails.question + "?" : "loading..."), external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "landing-details"
-  }, external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "landing-stat-container"
-  }, external_react_default.a.createElement("div", {
-    className: "jsx-957930783" + " " + "details"
-  }, external_react_default.a.createElement(link_default.a, {
-    href: "/topic/".concat(newQuestionString)
-  }, external_react_default.a.createElement("span", {
-    className: "jsx-957930783" + " " + "option-considered "
-  }, external_react_default.a.createElement(Icons["j" /* LeftArrow */], null), "See All Options"))))), external_react_default.a.createElement(style_default.a, {
-    id: "957930783"
-  }, [".landing-stat-container.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;position:relative;top:16px;}", ".option-considered.jsx-957930783{font-size:0.9em;padding-right:10px;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-weight:600;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-transform:uppercase;color:rgb(91,56,141);}", ".option-considered.jsx-957930783:hover{color:rgb(91,56,141);cursor:pointer;}", ".option-considered-text.jsx-957930783{display:block;font-size:0.8em;width:60%;color:#8d959c;margin-right:15px;padding-right:13px;font-weight:400;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}", ".not.jsx-957930783{display:none;}", ".landing.jsx-957930783{width:100%;background:#fdfdfd !important;margin-top:1px;box-sizing:border-box;font-size:15px;font-family:inherit;border:1px solid transparent;}", ".time-added.jsx-957930783{padding-right:3px;}", ".landing-tag.jsx-957930783{padding:10px 20px;margin-bottom:5px;margin-left:15px;margin-top:15px;}", ".tagged.jsx-957930783{display:inline-block;margin-right:10px;padding-right:5px;text-transform:uppercase;font-size:1em;color:rgb(91,56,141);font-weight:600;font-family:inherit;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;}", ".landing-question.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.2em;font-weight:700;color:rgb(91,56,141);font-family:Cabin;}", ".landing-details.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-item:center;-webkit-box-align-item:center;-ms-flex-align-item:center;align-item:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:30px;}", ".details.jsx-957930783{padding:3px 10px;margin-top:30px;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-right:8px;}", "@media screen and (min-width:900px){.landing.jsx-957930783{max-width:100%;background:#fff !important;margin-top:1px auto;box-sizing:border-box;font-family:inherit;padding:24px 0;border:1px solid #e6e8eb;padding-left:48px;padding-right:48px;}.landing-question.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:40px;font-weight:700;font-family:Cabin;}}", "@media screen and (min-width:768px) and (max-width:900px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:30px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}", "@media screen and (max-width:768px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:25px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}", "@media only screen and (min-width:360px) and (max-width:600px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:16px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.landing-details.jsx-957930783 .details.jsx-957930783{padding:3px 9px;margin-top:30px;color:#637381;font-size:3.2vw;font-weight:600;text-transform:uppercase;}}"]));
-};
-
-/* harmony default export */ var optionViewLandingPage = (optionViewLandingPage_OptionViewLandingPage);
-// EXTERNAL MODULE: ./apiRequests/apiRequests.js
-var apiRequests = __webpack_require__("rhLc");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js + 3 modules
-var toConsumableArray = __webpack_require__("dfwq");
-
-// CONCATENATED MODULE: ./lib/flattenArray.js
-
-var flattenArray_FlatternArray = function FlatternArray(arr) {
-  var _ref;
-
-  return (_ref = []).concat.apply(_ref, Object(toConsumableArray["a" /* default */])(arr));
-};
-// CONCATENATED MODULE: ./components/optionView/relatedOptionsComponent.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var relatedOptionsComponent_RelatedOptions =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(RelatedOptions, _React$Component);
-
-  function RelatedOptions() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, RelatedOptions);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(RelatedOptions)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      options: [],
-      relatedTopics: [],
-      tags: []
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getSpecificTopicData", function (question) {
-      Object(apiRequests["v" /* GET_SPECIFIC_TOPIC */])(question).then(function (axiosResponse) {
-        var _tag = axiosResponse.data.data.tagie;
-
-        var _ta = _tag.map(function (item) {
-          return item.tag;
-        });
-
-        _this.setState({
-          options: axiosResponse.data.data.data,
-          tags: flattenArray_FlatternArray(_ta)
-        });
-      }).catch(function (err) {
-        return _this.setState({
-          err: err
-        });
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getRelatedQuestions", function (question) {
-      external_axios_default.a.get(Object(apiRequests["s" /* GET_RELATED_TOPICS_URL */])(question)).then(function (result) {
-        _this.setState({
-          relatedTopics: result.data.data
-        });
-      }).catch(function (err) {
-        _this.setState({
-          err: err
-        });
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(RelatedOptions, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.getSpecificTopicData(this.props.OptionDetails.question);
-      this.getRelatedQuestions(this.props.OptionDetails.question);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$state = this.state,
-          options = _this$state.options,
-          relatedTopics = _this$state.relatedTopics,
-          tags = _this$state.tags;
-      var OptionDetails = this.props.OptionDetails;
-      var OptionConsidered = options.filter(function (item) {
-        return item.option.indexOf(OptionDetails.option) != -1;
-      });
-      var Compared = options.filter(function (item) {
-        return item.option !== OptionDetails.option;
-      });
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-        style: {
-          marginTop: "15px"
-        },
-        className: "jsx-3765606658"
-      }, external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "30px"
-        },
-        className: "jsx-3765606658" + " " + "related-question"
-      }, "Tags"), external_react_default.a.createElement("div", {
-        style: {
-          display: "flex",
-          flexWrap: "wrap",
-          marginBottom: "4px"
-        },
-        className: "jsx-3765606658"
-      }, tags.map(function (item) {
-        return external_react_default.a.createElement("span", {
-          key: item,
-          className: "jsx-3765606658" + " " + "profile-image"
-        }, item);
-      }))), external_react_default.a.createElement("div", {
-        style: {
-          marginTop: "27px"
-        },
-        className: "jsx-3765606658"
-      }, external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "30px"
-        },
-        className: "jsx-3765606658" + " " + "related-question"
-      }, "Commonly Compared"), OptionConsidered.map(function (item) {
-        var bgImage = item.mediaUrl ? item.mediaUrl[0] : "/static/wor.jpg";
-        return external_react_default.a.createElement("div", {
-          style: {
-            // border: "1px solid green",
-            marginTop: "10px",
-            marginBottom: "6px",
-            padding: "6px",
-            width: "100%",
-            cursor: "pointer"
-          },
-          key: item.option,
-          className: "jsx-3765606658"
-        }, external_react_default.a.createElement(link_default.a, {
-          href: "/option/".concat(item.option)
-        }, external_react_default.a.createElement("div", {
-          style: {
-            display: "flex",
-            justifyContent: "flex-start"
-          },
-          className: "jsx-3765606658"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            backgroundImage: "url(".concat(bgImage, ")")
-          },
-          className: "jsx-3765606658" + " " + "option-image"
-        }), external_react_default.a.createElement("div", {
-          className: "jsx-3765606658" + " " + "option-title"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            marginTop: "8px",
-            marginBottom: "5px",
-            color: "#444"
-          },
-          className: "jsx-3765606658"
-        }, item.option), external_react_default.a.createElement("div", {
-          className: "jsx-3765606658" + " " + "option-rec-stat"
-        }, item.like, " Recommendations")))));
-      }), external_react_default.a.createElement("div", {
-        style: {
-          textAlign: "center",
-          marginTop: "6px"
-        },
-        className: "jsx-3765606658"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-3765606658" + " " + "vs"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          top: "8px",
-          fontWeight: 500
-        },
-        className: "jsx-3765606658"
-      }, "vs"))), Compared.map(function (item) {
-        var bgImage = item.mediaUrl ? item.mediaUrl[0] : "/static/wor.jpg";
-        return external_react_default.a.createElement("div", {
-          style: {
-            // border: "1px solid green",
-            marginTop: "10px",
-            marginBottom: "6px",
-            padding: "6px",
-            width: "100%",
-            cursor: "pointer"
-          },
-          key: item._id,
-          className: "jsx-3765606658"
-        }, external_react_default.a.createElement(link_default.a, {
-          href: "/option/".concat(item.option)
-        }, external_react_default.a.createElement("div", {
-          style: {
-            display: "flex",
-            justifyContent: "flex-start"
-          },
-          className: "jsx-3765606658"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            backgroundImage: "url(".concat(bgImage, ")")
-          },
-          className: "jsx-3765606658" + " " + "option-image"
-        }), external_react_default.a.createElement("div", {
-          className: "jsx-3765606658" + " " + "option-title"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            marginTop: "8px",
-            marginBottom: "5px",
-            color: "#444"
-          },
-          className: "jsx-3765606658"
-        }, item.option), external_react_default.a.createElement("div", {
-          className: "jsx-3765606658" + " " + "option-rec-stat"
-        }, item.like, " Recommendations")))));
-      })), external_react_default.a.createElement(style_default.a, {
-        id: "3765606658"
-      }, [".option-image.jsx-3765606658{border:1px solid #8d959c;width:50px;height:50px;border-radius:5px;background-position:center;background-repeat:no-repeat;background-size:cover;margin-right:10px;}", ".vs.jsx-3765606658{border:1px solid #e6e8eb;border-radius:35px;color:#58647b;display:inline-block;background:#f3f4f5;height:36px;width:36px;}", ".related-question.jsx-3765606658{font-size:1.2em;font-family:inherit;font-weight:470;position:relative;font-weight:bold;text-transform:Capitalize;}", ".option-title.jsx-3765606658{font-weight:600;line-height:16px;font-size:1.2em;}", ".option-rec-stat.jsx-3765606658{color:#8d959c;font-size:13px;font-weight:400;-webkit-letter-spacing:0.8px;-moz-letter-spacing:0.8px;-ms-letter-spacing:0.8px;letter-spacing:0.8px;}", ".related-question-list.jsx-3765606658{padding-bottom:8px;padding-top:8px;}", ".related-question-list.jsx-3765606658>a.jsx-3765606658{overflow-wrap:break-word;font-size:1.1em;font-family:inherit;font-weight:600;margin-top:10px;margin-bottom:10px;color:rgb(91,56,141);box-sizing:border-box;position:relative;word-spacing:2.5px;}", ".profile-image.jsx-3765606658{text-transform:uppercase;font-size:13px;font-weight:400;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;padding-right:20px;margin-top:10px;margin-bottom:10px;color:#58647b;}", ".user-image.jsx-3765606658{width:100%;padding:2px;}", ".details.jsx-3765606658{padding:3px 10px;margin-right:8px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin-bottom:20px;}", ".option-considered.jsx-3765606658{font-size:28px;position:relative;margin-right:16px;top:2px;text-align:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#8d959c;}", ".option-considered-text.jsx-3765606658{font-size:0.9em;color:#8d959c;display:block;font-weight:400;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}"]));
-    }
-  }]);
-
-  return RelatedOptions;
-}(external_react_default.a.Component);
-
-/* harmony default export */ var relatedOptionsComponent = (relatedOptionsComponent_RelatedOptions);
-// EXTERNAL MODULE: external "react-bootstrap"
-var external_react_bootstrap_ = __webpack_require__("IZS3");
-
-// CONCATENATED MODULE: ./components/optionView/carousel.js
-
-
-
-
-
-
-
-
-
-
-var im = ["https://cdn-images-1.medium.com/max/1600/1*-PlqbnwqjqJi_EVmrhmuDQ.jpeg", "https://code.visualstudio.com/assets/docs/nodejs/vuejs/welcome-to-vue.png", "https://vuejsdevelopers.com/images/posts/versions/rename_src_1200.webp"];
-
-var carousel_MediaCarousel =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(MediaCarousel, _React$Component);
-
-  function MediaCarousel(props, context) {
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, MediaCarousel);
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, Object(getPrototypeOf["a" /* default */])(MediaCarousel).call(this, props, context));
-    _this.handleSelect = _this.handleSelect.bind(Object(assertThisInitialized["a" /* default */])(_this));
-    _this.state = {
-      index: 0,
-      direction: null
-    };
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(MediaCarousel, [{
-    key: "handleSelect",
-    value: function handleSelect(selectedIndex, e) {
-      this.setState({
-        index: selectedIndex,
-        direction: e.direction
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$state = this.state,
-          index = _this$state.index,
-          direction = _this$state.direction;
-      var mediaUrl = this.props.mediaUrl;
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Carousel"], {
-        activeIndex: index,
-        direction: direction,
-        onSelect: this.handleSelect,
-        slide: false,
-        pauseOnHover: true
-      }, mediaUrl.map(function (item) {
-        return external_react_default.a.createElement(external_react_bootstrap_["Carousel"].Item, {
-          className: "image-slide",
-          key: item
-        }, external_react_default.a.createElement("img", {
-          src: item,
-          alt: "First slide",
-          className: "jsx-1082950817" + " " + "d-block w-100 image-slide "
-        }), external_react_default.a.createElement(external_react_bootstrap_["Carousel"].Caption, null));
-      })), external_react_default.a.createElement(style_default.a, {
-        id: "1082950817"
-      }, [".image-slide.jsx-1082950817{border-radius:10px;}", "@media (min-width:768px){.image-slide.jsx-1082950817{height:300px;}}"]));
-    }
-  }]);
-
-  return MediaCarousel;
-}(external_react_default.a.Component);
-
-
-// CONCATENATED MODULE: ./components/optionView/OptionMainCard.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-var OptionMainCard_OptionMainCard =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(OptionMainCard, _Component);
-
-  function OptionMainCard() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionMainCard);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionMainCard)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      data: _this.props.OptionDetails,
-      mediaUrl: _this.props.OptionDetails.mediaUrl
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionMainCard, [{
-    key: "render",
-    // componentDidMount() {
-    //   GET_OPTION_DETAILS(this.props.option)
-    //     .then(axiosResponse => {
-    //       this.setState({
-    //         data: axiosResponse.data,
-    //         mediaUrl: axiosResponse.data.mediaUrl
-    //       });
-    //     })
-    //     .catch(axiosResponseError => {
-    //       console.log(axiosResponseError);
-    //     });
-    // }
-    value: function render() {
-      var option = this.props.option;
-      var data = this.state.data;
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-        className: "jsx-3833400100" + " " + "option-card-list"
-      }, external_react_default.a.createElement("div", {
-        style: {
-          paddingBottom: "20px"
-        },
-        className: "jsx-3833400100" + " " + "option-header "
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-3833400100" + " " + "option-card-option"
-      }, option, " Review")), external_react_default.a.createElement("div", {
-        style: {
-          paddingBottom: "30px"
-        },
-        className: "jsx-3833400100" + " " + "option-header"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-3833400100"
-      }, external_react_default.a.createElement("button", {
-        className: "jsx-3833400100" + " " + "get-it-btn"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-3833400100" + " " + "thumb-icon"
-      }, external_react_default.a.createElement(Icons["i" /* InsertLink */], {
-        color: "#fff"
-      })), external_react_default.a.createElement(link_default.a, {
-        href: "http://".concat(data.link)
-      }, external_react_default.a.createElement("a", {
-        style: {
-          color: "#fff"
-        },
-        target: "_blank",
-        className: "jsx-3833400100" + " " + "btn-content get-it"
-      }, data.price && " $ ".concat(data.price), !data.price && " GET IT HERE")))), external_react_default.a.createElement("div", {
-        className: "jsx-3833400100"
-      }, external_react_default.a.createElement("button", {
-        className: "jsx-3833400100" + " " + "like-btn"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          left: "-15px"
-        },
-        className: "jsx-3833400100"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          color: "#1b9ad1",
-          left: "-10px",
-          fontSize: "20px"
-        },
-        className: "jsx-3833400100"
-      }, data.like ? data.like : 0), external_react_default.a.createElement(Icons["s" /* Thumb_up */], {
-        color: "#1b9ad1",
-        width: "18px",
-        height: "18px"
-      }))), external_react_default.a.createElement("button", {
-        className: "jsx-3833400100" + " " + "dislike-btn"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-3833400100"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          color: "#cb1a4a",
-          left: "-10px",
-          fontSize: "20px"
-        },
-        className: "jsx-3833400100"
-      }, data.dislike ? data.dislike : 0), external_react_default.a.createElement(Icons["r" /* Thumb_down */], {
-        color: "#cb1a4a",
-        width: "18px",
-        height: "18px"
-      }))))), external_react_default.a.createElement("div", {
-        className: "jsx-3833400100" + " " + "option-description"
-      }, "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS"), external_react_default.a.createElement("div", {
-        className: "jsx-3833400100" + " " + "option-media-container"
-      }, external_react_default.a.createElement(carousel_MediaCarousel, this.state))), external_react_default.a.createElement(style_default.a, {
-        id: "3833400100"
-      }, [".option-description.jsx-3833400100{font-size:16px;font-weight:450;line-height:24px;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;text-transform:none;word-break:break-word;color:#4d4d4d;margin-bottom:35px;}", ".option-header.jsx-3833400100{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".option-card-option.jsx-3833400100{font-size:25px;font-weight:600;line-height:24px;-webkit-letter-spacing:0.7px;-moz-letter-spacing:0.7px;-ms-letter-spacing:0.7px;letter-spacing:0.7px;}", ".get-it-btn.jsx-3833400100{font-family:Cabin;font-weight:600;font-size:13px;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;outline:0;padding-top:8px;padding-bottom:8px;padding-left:15px;padding-right:15px;border:0;cursor:pointer !important;background:#4a4a4a;text-transform:uppercase;border-radius:9px;}", ".get-it.jsx-3833400100{padding-right:6px;}", ".thumb-icon.jsx-3833400100{position:relative;top:2px;padding-right:2px;}", ".like-btn.jsx-3833400100{font-size:1.2em;font-family:Cabin;font-weight:600;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;border-top-left-radius:9px;border-bottom-left-radius:9px;outline:0;padding:0;border:0;height:40px;cursor:pointer !important;background:#fff;text-align:center;}", ".dislike-btn.jsx-3833400100{font-size:1.2em;font-family:Cabin;font-weight:600;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;border-top-right-radius:9px;border-bottom-right-radius:9px;height:40px;outline:0;border:0;cursor:pointer !important;color:grey;background:#fff;padding-left:20px;}", ".option-media-container.jsx-3833400100{margin-top:20px;background-image:linear-gradient( 180deg, rgba(0,0,0,0.3) 0, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.9) );width:100%;border-radius:10px;}"]));
-    }
-  }]);
-
-  return OptionMainCard;
-}(external_react_["Component"]);
-
-/* harmony default export */ var optionView_OptionMainCard = (OptionMainCard_OptionMainCard);
-// EXTERNAL MODULE: external "semantic-ui-react"
-var external_semantic_ui_react_ = __webpack_require__("FfxO");
-
-// CONCATENATED MODULE: ./components/optionView/optionCardCon.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var optionCardCon_OptionCon =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(OptionCon, _React$Component);
-
-  function OptionCon() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionCon);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionCon)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      avatar: null
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getUserAvatar", function (id) {
-      Object(apiRequests["m" /* FetchAvatar */])(id).then(function (data) {
-        // console.log(data.data.userImage);
-        _this.setState({
-          avatar: data.data.userImage
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionCon, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.getUserAvatar(this.props.userId);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var avatar = this.state.avatar;
-      var _this$props = this.props,
-          title = _this$props.title,
-          description = _this$props.description,
-          id = _this$props.id;
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "tab-content-holder"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "tab-content-item"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "profile-image"
-      }, !avatar && external_react_default.a.createElement("img", {
-        src: "/static/avatar.png",
-        alt: "user",
-        className: "jsx-1965770788" + " " + "user-image"
-      }), avatar && external_react_default.a.createElement("img", {
-        src: "".concat(avatar),
-        alt: "user",
-        className: "jsx-1965770788" + " " + "user-image"
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "user-rec-details"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1965770788" + " " + "rec-card-content-con"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          marginLeft: "50px"
-        },
-        className: "jsx-1965770788"
-      }, "Con ", external_react_default.a.createElement("span", {
-        className: "jsx-1965770788" + " " + "caption"
-      }, title))), external_react_default.a.createElement("p", {
-        className: "jsx-1965770788" + " " + "text"
-      }, description))))), external_react_default.a.createElement(style_default.a, {
-        id: "1965770788"
-      }, [".tabcontent.jsx-1965770788{display:block;padding:6px 0px;border-top:none;}", ".tab-content-holder.jsx-1965770788{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0;margin:auto;width:100%;box-sizing:border-box;}", ".tab-content-item.jsx-1965770788{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;overflow:hidden;word-break:break-word;}", ".tab-text.jsx-1965770788{overflow-wrap:break-word;box-sizing:border-box;white-space:normal;margin-bottom:4px;max-width:200px;height:auto;overflow-x:hidden;padding:2px;text-align:center;border-radius:4px;}", ".profile-image.jsx-1965770788{border-radius:60px;border:1px solid #595959;width:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;overflow:hidden;}", ".user-image.jsx-1965770788{max-width:100%;padding:2px;}", ".user-rec-details.jsx-1965770788{position:relative;width:100%;margin-bottom:10px;box-sizing:border-box;word-break:normal;}", ".caption.jsx-1965770788{font-weight:600;color:#0d0d0d;line-height:24px;text-transform:none;font-size:1em;position:relative;left:5px;word-break:normal;}", ".text.jsx-1965770788{font-size:18px;font-weight:500;color:#595959;word-break:break-word;position:relative;left:52px;}", ".more-icon.jsx-1965770788{border:0;cursor:pointer;border-radius:35px;outline:0;padding:0;height:25px;width:25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin-left:94%;margin-top:-20px;}", ".rec-card-content-con.jsx-1965770788,.rec-card-content-pro.jsx-1965770788,.rec-card-content-experience.jsx-1965770788{font-weight:bold;margin-right:15px;margin-bottom:10px;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;font-size:14px;text-transform:uppercase;}", ".rec-card-content-con.jsx-1965770788{color:#cb1a4a;}", ".rec-card-content-pro.jsx-1965770788{color:#1d9127;box-sizing:border-box;word-break:break-word;}"]));
-    }
-  }]);
-
-  return OptionCon;
-}(external_react_default.a.Component);
-
-
-// CONCATENATED MODULE: ./components/optionView/optionProComponent.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var optionProComponent_OptionPro =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(OptionPro, _React$Component);
-
-  function OptionPro() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionPro);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionPro)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      avatar: null
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getUserAvatar", function (id) {
-      Object(apiRequests["m" /* FetchAvatar */])(id).then(function (data) {
-        // console.log(data.data.userImage);
-        _this.setState({
-          avatar: data.data.userImage
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionPro, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.getUserAvatar(this.props.userId);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var avatar = this.state.avatar;
-      var _this$props = this.props,
-          title = _this$props.title,
-          description = _this$props.description,
-          id = _this$props.id;
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "tab-content-holder"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "tab-content-item"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "profile-image"
-      }, !avatar && external_react_default.a.createElement("img", {
-        src: "/static/avatar.png",
-        alt: "user",
-        className: "jsx-78232719" + " " + "user-image"
-      }), avatar && external_react_default.a.createElement("img", {
-        src: "".concat(avatar),
-        alt: "user",
-        className: "jsx-78232719" + " " + "user-image"
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "user-rec-details"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-78232719" + " " + "rec-card-content-pro"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          marginLeft: "50px"
-        },
-        className: "jsx-78232719"
-      }, "Pro ", external_react_default.a.createElement("span", {
-        className: "jsx-78232719" + " " + "caption"
-      }, title))), external_react_default.a.createElement("p", {
-        className: "jsx-78232719" + " " + "text"
-      }, description))))), external_react_default.a.createElement(style_default.a, {
-        id: "78232719"
-      }, [".tabcontent.jsx-78232719{display:block;padding:6px 0px;border-top:none;}", ".tab-content-holder.jsx-78232719{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0;margin:auto;width:100%;box-sizing:border-box;}", ".tab-content-item.jsx-78232719{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0;height:auto;width:100%;}", ".tab-text.jsx-78232719{overflow-wrap:break-word;box-sizing:border-box;white-space:normal;margin-bottom:4px;max-width:200px;height:auto;overflow-x:hidden;padding:2px;text-align:center;border-radius:4px;}", ".profile-image.jsx-78232719{border-radius:60px;border:1px solid #595959;width:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;overflow:hidden;}", ".user-image.jsx-78232719{max-width:100%;padding:2px;}", ".user-rec-details.jsx-78232719{position:relative;width:100%;margin-bottom:10px;box-sizing:border-box;word-break:normal;}", ".caption.jsx-78232719{font-weight:600;color:#0d0d0d;line-height:24px;text-transform:none;font-size:1em;position:relative;left:5px;word-break:normal;}", ".text.jsx-78232719{font-size:18px;font-weight:500;color:#595959;word-break:break-word;position:relative;left:52px;}", ".more-icon.jsx-78232719{border:0;cursor:pointer;border-radius:35px;outline:0;padding:0;height:25px;width:25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;float:right;margin-top:-20px;}", ".rec-card-content-con.jsx-78232719,.rec-card-content-pro.jsx-78232719,.rec-card-content-experience.jsx-78232719{font-weight:bold;margin-right:15px;margin-bottom:10px;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;font-size:14px;text-transform:uppercase;}", ".rec-card-content-con.jsx-78232719{color:#cb1a4a;}", ".rec-card-content-pro.jsx-78232719{color:#1d9127;box-sizing:border-box;word-break:break-word;}"]));
-    }
-  }]);
-
-  return OptionPro;
-}(external_react_default.a.Component);
-
-
-// EXTERNAL MODULE: ./pages/signin.js + 2 modules
-var signin = __webpack_require__("DB6d");
-
-// EXTERNAL MODULE: ./pages/signup.js
-var signup = __webpack_require__("vL9u");
-
-// EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__("uhWA");
-
-// EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
-var free_solid_svg_icons_ = __webpack_require__("No/t");
-
-// CONCATENATED MODULE: ./components/optionView/alternativeOptions.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function NoRecs(props) {
-  return external_react_default.a.createElement("div", {
-    className: "empty-state compact"
-  }, external_react_default.a.createElement("div", {
-    className: "empty-state-icon"
-  }, external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
-    className: "icon thumbtack-icon",
-    icon: free_solid_svg_icons_["faThumbtack"]
-  })), external_react_default.a.createElement("span", null, "No pinned recommendations yet!"));
-}
-
-function Rec(_ref) {
-  var question = _ref.question,
-      option = _ref.option,
-      optionImage = _ref.optionImage;
-  var newQuestion = Object(removeSpaces["b" /* default */])(question);
-  var bgImage = optionImage ? optionImage[0] : "/static/wor.jpg";
-  return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(link_default.a, {
-    href: "/option/".concat(option)
-  }, external_react_default.a.createElement("div", {
-    className: "rec card-list-item image-list-item"
-  }, external_react_default.a.createElement("a", {
-    className: "rec-card-option-content"
-  }, external_react_default.a.createElement("div", {
-    className: "rec-image",
-    style: {
-      backgroundImage: "url(".concat(bgImage, ")")
-    }
-  }), external_react_default.a.createElement("div", {
-    className: "rec-card-header"
-  }, option)), external_react_default.a.createElement("a", {
-    className: "rec-question-link"
-  }, external_react_default.a.createElement("div", {
-    className: "rec-card-subheader secondary-detailed-header"
-  }, "In The Question"), external_react_default.a.createElement(link_default.a, {
-    href: "/topic/".concat(newQuestion)
-  }, external_react_default.a.createElement("div", {
-    className: "rec-card-text"
-  }, question, "?"))))));
-}
-
-function RecsView(_ref2) {
-  var options = _ref2.options,
-      oldOption = _ref2.oldOption;
-  var alternative = options.filter(function (item) {
-    return item.option !== oldOption;
-  }); // if (!recHistory) return <NoRecs />;
-
-  return external_react_default.a.createElement("div", {
-    className: "profile-page-recs-view"
-  }, external_react_default.a.createElement("div", {
-    className: "pinned-recs card-list"
-  }), external_react_default.a.createElement("div", {
-    className: "other-recs card-list"
-  }, external_react_default.a.createElement("div", {
-    className: "view-section"
-  }, external_react_default.a.createElement("div", {
-    className: "profile-page-title card-list-section-label"
-  }, "Alternative Products"), alternative ? external_react_default.a.createElement(external_react_default.a.Fragment, null, alternative.map(function (item) {
-    return external_react_default.a.createElement(Rec, {
-      key: item._id,
-      question: item.question,
-      option: item.option,
-      optionImage: item.mediaUrl
-    });
-  })) : "")));
-}
-
-var alternativeOptions_AlternativeOptions =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(AlternativeOptions, _React$Component);
-
-  function AlternativeOptions() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, AlternativeOptions);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(AlternativeOptions)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      options: []
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getSpecificTopicData", function (question) {
-      Object(apiRequests["v" /* GET_SPECIFIC_TOPIC */])(question).then(function (axiosResponse) {
-        // console.log(axiosResponse.data.data.data);
-        _this.setState({
-          options: axiosResponse.data.data.data
-        });
-      }).catch(function (err) {
-        return console.log(err);
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(AlternativeOptions, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      //To do something here
-      this.getSpecificTopicData(this.props.OptionDetails.question);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return external_react_default.a.createElement("div", {
-        className: "jsx-173053696" + " " + "profile-page-body"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-173053696" + " " + "page-content profile-page-content"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-173053696" + " " + "profile-sections-wrapper"
-      }, external_react_default.a.createElement(RecsView, Object(esm_extends["a" /* default */])({}, this.state, {
-        oldOption: this.props.OptionDetails.option
-      })))), external_react_default.a.createElement(style_default.a, {
-        id: "173053696"
-      }, [".page-content{max-width:1280px;margin:0 auto;padding-left:36px;padding-right:36px;}", "h1,h2,h3,h4,h5,h6{font-weight:inherit;line-height:24px;font-size:inherit;color:#0d0d0d;}", ".overlay{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgba(0,0,0,0.05);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".overlayShowie{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:#fff;overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".close-icon{position:absolute;top:25px;left:90%;font-size:80px !important;color:#000;cursor:pointer;z-index:2000;}", "form .update-div{margin-top :10px;display :-webkit-box;display :-webkit-flex;display :-ms-flexbox;display :flex;-webkit-box-pack:center;-webkit-justify-content :center;-ms-flex-pack:center;justify-content :center;}", ".image-container-body{position :relative;top :50px !important;}", ".level{position :relative;top :-12px;left :10px;}", ".choose{position :relative;top :45%;}", ".added{border :1px dotted green !important;}", ".fileContainer{border :1px dotted red;width :150px;height :150px;text-align :center;}", ".custom-file-input:hover::before{border-color:black;}", ".custom-file-input:active::before{background:-webkit-linear-gradient(top,#e3e3e3,#f9f9f9);}", ".custom-file-input::-webkit-file-upload-button{visibility:hidden;}", ".custom-file-input::before{content:'Select some files';display:inline-block;background:linear-gradient(top,#f9f9f9,#e3e3e3);border:1px solid #999;border-radius:3px;padding:5px 8px;outline:none;white-space:nowrap;-webkit-user-select:none;cursor:pointer;text-shadow:1px 1px #fff;font-weight:700;font-size:10pt;}", ".progress-style{padding :1.2em;margin-left :50px;}", "strong{font-weight:600;font-style:normal;}", "a{color:inherit;cursor:pointer;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:color 0.15s;transition:color 0.15s;}", "a:hover{color:#167ba7;}", "@media (max-width:767px){.page-content{padding-left:12px;padding-right:12px;}}", ".profile-page{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:calc(100vh - 84px);}", ".profile-page-body{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;background-color:#fafbfb;}", ".sidebar{float:left;position:relative;width:258px;min-height:24px;padding-top:42px;}", ".sidebar-content{padding-right:60px;width:258px;}", ".sidebar-section{padding-bottom:36px;margin-bottom:36px;}", ".sidebar-link.selected{font-weight:700;color:#1b9ad1;box-shadow:inset 3px 0 #1b9ad1;}", ".sidebar-link,.sidebar-link.selected{font-size:14px;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;line-height:18px;line-height:30px;}", ".sidebar-link{font-weight:400;display:block;height:30px;padding-left:12px;margin-bottom:12px;}", ".sidebar-link:hover{color:#1b9ad1;}", ".sidebar~.profile-sections-wrapper{margin-left:258px;}", ".profile-sections-wrapper{padding-top:30px;padding-bottom:48px;}", ".profile-page-title{margin-bottom:24px;}", ".card-list-section-label{font-size:21px;font-weight:700;line-height:27px;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;margin-bottom:24px;color:#58647b;}", ".view-section{margin-bottom:90px;}", ".empty-state.compact{padding:18px;}", ".empty-state{text-align:center;padding:24px;background-color:#e7f5fc;border:2px dashed #86cfef;color:#58647b;}", ".empty-state-icon{display:inline-block;margin-right:18px;margin-bottom:0;vertical-align:middle;width:60px;height:60px;color:#96a1b4;}", ".icon.thumbtack-icon{font-size:large;height:48px !important;width:24px !important;}", ".icon.thumbtack-icon-sm{height:12px !important;width:12px !important;color:#58647b;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:25%;left:25%;}", ".thumbtack-icon{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}", ".rec{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-right:24px;margin-bottom:24px;width:calc(33.333% - 24px);height:342px;padding:18px;}", ".card-list-item{overflow:hidden;background-color:#fff;margin-bottom:36px;padding:18px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);border:1px solid #e6e8eb;border-radius:15px;}", ".rec-card-option-content{width:100%;}", ".rec-image{position:relative;height:162px;margin-bottom:24px;background:50% / cover no-repeat;box-shadow:inset 0 0 0 1px #f2f2f2;border-radius:9px;}", ".rec-pin-link{position:absolute;top:6px;right:6px;width:24px;height:24px;background-color:#fff;border-radius:2px;box-shadow:0 1px 2px #a8b0c1;}", ".rec-card-header{font-size:24px;font-weight:600;line-height:30px;text-align:center;margin-bottom:18px;padding:0 12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}", ".rec-card-subheader{margin-bottom:3px;}", ".secondary-detailed-header{font-size:14px;font-weight:400;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;line-height:18px;margin-bottom:18px;color:#58647b;text-align:start;}", ".rec-card-text{font-size:14px;font-weight:400;line-height:18px;max-height:54px;overflow:hidden;}", ".card-list.contained{max-width:708px;}", ".activity-list-item{padding:18px 0;}", ".activity-list-item:first-child{padding-top:0;}", ".activity-list-item:after{content:\"\";display:block;border-top:1px solid #e6e8eb;height:0;width:calc(100% + 36px);position:relative;left:-18px;bottom:-18px;}", ".activity-list-question-title{font-size:16px;color:#8d959c;margin-left:48px;margin-bottom:6px;}", ".karma-activity-body{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".karma-activity-event{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;}", ".event-avatar{margin-right:12px;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:36px;height:36px;}", ".event,.event-avatar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".icon.plus-circle-icon{width:24px !important;height:20px;margin:0 6px;color:#8d959c;}", ".event-content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;min-width:0;line-height:18px;word-break:break-word;}", ".event-time{font-size:14px;font-weight:400;line-height:18px;margin-left:6px;color:#8d959c;white-space:nowrap;}", ".karma-activity-bonus-count{height:30px;margin-top:3px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:0 9px;margin-left:36px;background-color:#f47264;color:#fff;font-weight:700;border-radius:3px;}", ".avatar.big{height:36px;width:36px;}", "@media (max-width:1279px){.rec{margin-right:18px;margin-bottom:18px;width:calc(33.333% - 18px);height:330px;}.card-list-item{margin:0 0 30px;padding:12px;}}", "@media (max-width:1023px){.rec{width:calc(50% - 24px);height:312px;}}", "@media (max-width:767px){.profile-page-body{background-color:#efefef;}.profile-sections-wrapper{margin-left:auto !important;}.mobile-navbar{background-color:white;}.mobile-navbar-link{padding:15px;font-size:18px;color:#5f5b5b !important;}.mobile-navbar-dropdown-link-icon{margin-left:2px;position:relative;bottom:2px;}.mobile-nav-select-wrapper{width:100%;height:100%;position:fixed;top:0;left:0;background-color:white;z-index:9999;}.mobile-nav-select{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0px 18px;border-bottom:1px solid gainsboro;}.mobile-nav-select-title{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;font-weight:bold;}.mobile-nav-close-icon{position:relative;top:13px;width:36px !important;height:36px;}.mobile-nav-select-link-item{padding:15px;padding-bottom:5px;border-bottom:1px solid #eee;}.rec{width:100%;height:inherit;min-height:306px;max-height:360px;margin-right:0;margin-left:0;}.card-list-item{margin:0 0 30px;padding:12px;}.card-list.contained{max-width:none;}}", ".profile-page-header-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background:rgb(105,112,254);}", ".profile-header{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#fff;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}", ".profile-page-header-avatar.avatar{position:relative;margin:30px;margin-left:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:240px;height:240px;border-radius:0;box-shadow:none;}", ".profile-page-header-avatar-image{position:absolute;top:0;left:0;width:100%;height:100%;}", ".profile-page-header-user-stats{position:absolute;bottom:0;left:0;right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:6px 0;color:#fff;background-color:rgba(88,100,123,0.5);}", ".profile-page-header-content{padding:27px 36px 0 0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:calc(100% - 300px);-ms-flex-preferred-size:calc(100% - 300px);flex-basis:calc(100% - 300px);}", ".profile-page-header-name{font-size:40px;font-weight:700;line-height:48px;display:inline-block;margin-right:12px;line-height:40px;}", ".profile-page-header-username{font-size:18px;font-weight:600;line-height:24px;display:inline-block;margin-top:6px;}", ".profile-page-header-edit-links{font-size:14px;font-weight:600;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;margin-top:12px;line-height:16px;}", ".link-seperator:before{content:\"\xB7\";}", ".link-seperator{position:relative;display:inline-block;margin:0 6px;vertical-align:top;}", ".profile-page-header-bio{margin-top:24px;}", ".profile-page-header-bio-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}", ".main-header-search-toggle{width:78px;height:78px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}", "@media (max-width:1023px){.main-header-profile.avatar{top:0;}.main-header-dropdown{top:48px;}}", "@media (max-width:767px){.main-header{height:66px;}.main-header-search{height:42px;margin-left:12px;margin-right:12px;}.profile-header{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:24px 0 0;text-align:center;margin-top:24px;}.profile-page-header-avatar.avatar{width:126px;height:126px;border-radius:2px;margin:0;margin-left:0;}.profile-page-header-content{-webkit-flex-basis:calc(100% - 126px);-ms-flex-preferred-size:calc(100% - 126px);flex-basis:calc(100% - 126px);padding:18px;}.profile-page-header-name{font-size:30px;line-height:34px;}.profile-page-header-user-stats{position:relative;width:calc(100% + 24px);}.main-header-search-toggle,.main-header-search-toggle:hover{width:60px;height:60px;color:#4e4376;}.main-header-profile-link{margin:0;}@media (max-width:424px) .main-header-section:first-child{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}@media (max-width:424px) .main-header-dropdown{top:47px;margin-right:5px;}@media (max-width:424px) .icon.times{color:#372f53;font-size:large;}}"]));
-    }
-  }]);
-
-  return AlternativeOptions;
-}(external_react_default.a.Component);
-
-
-// CONCATENATED MODULE: ./components/optionView/OptionSpecs.js
-
-
-
-
-
-
-
-
-
-
-var dummy = [{
-  spec: "Default Desktop Environment",
-  detail: "Any"
-}, {
-  spec: "Package Manager",
-  detail: "Yarn/Npm"
-}, {
-  spec: "Main Usage",
-  detail: "Desktop"
-}, {
-  spec: "Last Official Release",
-  detail: "10-06-2019"
-}];
-
-var OptionSpecs_OptionSpecs =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(OptionSpecs, _Component);
-
-  function OptionSpecs() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionSpecs);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionSpecs)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      showUpIcon: false,
-      maxItem: 2
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShowMore", function () {
-      _this.setState({
-        maxItem: 10,
-        showUpIcon: true
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShowLess", function () {
-      _this.setState({
-        maxItem: 2,
-        showUpIcon: false
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionSpecs, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state = this.state,
-          maxItem = _this$state.maxItem,
-          showUpIcon = _this$state.showUpIcon;
-      var spec = this.props.spec;
-      return external_react_default.a.createElement(external_react_["Fragment"], null, external_react_default.a.createElement("div", {
-        className: "jsx-1035186824" + " " + "option-spec-container"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1035186824" + " " + "option-spec-header"
-      }, external_react_default.a.createElement("span", {
-        style: {
-          // marginBottom: "20px",
-          fontWeight: 600,
-          letterSpacing: "0.6px",
-          fontSize: "18px",
-          display: "inline-block",
-          textTransform: "uppercase"
-        },
-        className: "jsx-1035186824"
-      }, "Specs"), external_react_default.a.createElement("span", {
-        onClick: function onClick() {
-          return _this2.props.OpenUpdateModal(true);
-        },
-        className: "jsx-1035186824" + " " + "update"
-      }, spec.length === 0 && "Add Spec", spec.length > 0 && "Update")), external_react_default.a.createElement("div", {
-        className: "jsx-1035186824" + " " + ((showUpIcon ? "option-spec-content showOverflow" : "option-spec-content") || "")
-      }, spec.slice(0, maxItem).map(function (item) {
-        return external_react_default.a.createElement("div", {
-          style: {
-            marginBottom: "20px"
-          },
-          className: "jsx-1035186824"
-        }, external_react_default.a.createElement("span", {
-          className: "jsx-1035186824" + " " + "spec-title"
-        }, item.spec), external_react_default.a.createElement("span", {
-          className: "jsx-1035186824" + " " + "spec-description"
-        }, item.value));
-      }))), !showUpIcon && spec.length >= 5 && external_react_default.a.createElement("span", {
-        onClick: this.handleShowMore,
-        className: "jsx-1035186824" + " " + "view-more-item"
-      }, "See All Specs", external_react_default.a.createElement(Icons["e" /* CardDownArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), showUpIcon && external_react_default.a.createElement("span", {
-        onClick: this.handleShowLess,
-        className: "jsx-1035186824" + " " + "view-more-item"
-      }, "Hide Specs", external_react_default.a.createElement(Icons["f" /* CardUpArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1035186824" + " " + "fix"
-      }), external_react_default.a.createElement(style_default.a, {
-        id: "1035186824"
-      }, ["option-spec-container.jsx-1035186824{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;box-sizing:border-box;width:100%;}", ".fix.jsx-1035186824{margin-bottom:30px;}", ".option-spec-header.jsx-1035186824{width:100%;margin-bottom:35px;}", ".update.jsx-1035186824{float:right;display:inline-block;font-size:15px;color:rgb(91,56,141);font-weight:600;-webkit-letter-spacing:0.7px;-moz-letter-spacing:0.7px;-ms-letter-spacing:0.7px;letter-spacing:0.7px;cursor:pointer;}", ".option-spec-content.jsx-1035186824{width:100%;font-size:16px;-webkit-letter-spacing:0.6px;-moz-letter-spacing:0.6px;-ms-letter-spacing:0.6px;letter-spacing:0.6px;font-weight:500;word-break:normal;min-height:100px;max-height:150px;overflow:hidden;}", ".showOverflow.jsx-1035186824{overflow:visible;max-height:400px;}", ".spec-title.jsx-1035186824{font-size:16px;-webkit-letter-spacing:0.6px;-moz-letter-spacing:0.6px;-ms-letter-spacing:0.6px;letter-spacing:0.6px;font-weight:600;color:#595959;text-transform:captitalize;}", ".spec-description.jsx-1035186824{float:right;font-size:16px;font-weight:400;color:#595959;-webkit-letter-spacing:0.6px;-moz-letter-spacing:0.6px;-ms-letter-spacing:0.6px;letter-spacing:0.6px;}", ".view-more-item.jsx-1035186824{font-size:14px;font-weight:600;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#fff;position:relative;left:42%;cursor:pointer;background-color:rgb(91,56,141);border-radius:8px;padding:3px 12px 3px 18px;-webkit-transition:background-color 0.15s;transition:background-color 0.15s;}"]));
-    }
-  }]);
-
-  return OptionSpecs;
-}(external_react_["Component"]);
-
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/parse-float.js
-var parse_float = __webpack_require__("Wa2I");
-var parse_float_default = /*#__PURE__*/__webpack_require__.n(parse_float);
-
-// CONCATENATED MODULE: ./components/optionView/style.js
-var CustomStyle = {
-  div: {
-    display: "flex",
-    width: "100%",
-    maxWidth: "100%" // border: "1px solid red"
-
-  },
-  span: {
-    position: "relative",
-    top: "25px",
-    left: "10px",
-    border: "1px solid #d9d9d9",
-    display: "inline-block",
-    color: "#d9d9d9",
-    width: "25px",
-    height: "25px",
-    textAlign: "center",
-    fontSize: "22px",
-    cursor: "pointer"
-  },
-  AddNewRow: {
-    float: "right",
-    marginTop: "8px",
-    color: "rgb(91, 56, 141)",
-    fontWeight: "500",
-    letterSpacing: "0.6px",
-    textTransform: "uppercase",
-    fontSize: "14px",
-    cursor: "pointer"
-  },
-  divider: {
-    border: "1px solid #d9d9d9",
-    marginTop: "40px",
-    position: "relative",
-    fontSize: "0px",
-    fontWeight: 0
-  },
-  CallToAction: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "20px"
-  },
-  Update: {
-    fontSize: "14px",
-    fontWeight: 600,
-    textTransform: "uppercase",
-    letterSpacing: "0.4px",
-    display: "inline-flex",
-    color: "#fff",
-    position: "relative",
-    left: "20px",
-    cursor: "pointer",
-    backgroundColor: "rgb(91, 56, 141)",
-    borderRadius: "9px",
-    padding: "10px 18px 10px 18px",
-    transition: "backgroundColor 0.15s"
-  }
-};
-/* harmony default export */ var optionView_style = (CustomStyle);
-// CONCATENATED MODULE: ./components/optionView/UpdateSpec.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var UpdateSpec_AddSpec =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(AddSpec, _Component);
-
-  function AddSpec() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, AddSpec);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(AddSpec)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      spec: _this.props.test,
-      value: _this.props.detail
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "onChange", function (_ref) {
-      var _ref$target = _ref.target,
-          name = _ref$target.name,
-          value = _ref$target.value;
-
-      _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "doMagic", function () {
-      var _this$state = _this.state,
-          spec = _this$state.spec,
-          value = _this$state.value;
-      var o = {};
-      o.spec = spec;
-      o.value = value;
-      o.id = parse_float_default()(_this.input.id);
-      o.option = _this.props.option;
-      o.optionId = _this.props.optionId;
-
-      _this.props.tempArr(o);
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(AddSpec, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      Object(apiRequests["J" /* GetOptionSpecs */])();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state2 = this.state,
-          value = _this$state2.value,
-          spec = _this$state2.spec;
-      var _this$props = this.props,
-          index = _this$props.index,
-          detail = _this$props.detail;
-      return external_react_default.a.createElement("div", {
-        key: index,
-        style: optionView_style.div,
-        className: "jsx-2865330644"
-      }, external_react_default.a.createElement("input", {
-        name: "spec",
-        value: spec,
-        type: "text",
-        onChange: this.onChange,
-        placeholder: "Add Spec",
-        className: "jsx-2865330644" + " " + "input-text"
-      }), external_react_default.a.createElement("input", {
-        placeholder: "Value",
-        type: "text",
-        name: "value",
-        value: value,
-        id: index,
-        ref: function ref(e) {
-          return _this2.input = e;
-        },
-        onBlur: this.doMagic,
-        onChange: this.onChange,
-        className: "jsx-2865330644" + " " + "second-input-text"
-      }), external_react_default.a.createElement("span", {
-        style: optionView_style.span,
-        onClick: function onClick() {
-          return _this2.props.removeItem(index);
-        },
-        className: "jsx-2865330644" + " " + "span-tag"
-      }, "\xD7"), external_react_default.a.createElement(style_default.a, {
-        id: "2865330644"
-      }, [".card-list-item.jsx-2865330644{overflow:hidden;background-color:#fdfdfd;margin-bottom:10px;padding:18px;border:1px solid #e6e8eb;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);box-sizing:border-box;}", ".view-more-item.jsx-2865330644{font-size:14px;font-weight:600;text-transform:uppercase !important;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#fff;position:relative;left:42%;cursor:pointer;background-color:rgb(91,56,141);border-radius:9px;padding:3px 12px 3px 18px;-webkit-transition:background-color 0.15s;transition:background-color 0.15s;}", "input[type=\"text\"].jsx-2865330644{font-size:14px;font-weight:400;line-height:18px;border:1px solid #d9d9d9;outline:none;-webkit-appearance:none;-moz-appearance:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:4px;display:block;font-family:inherit;line-height:24px;padding:0 12px;margin-top:12px;}", ".input-text.jsx-2865330644{height:50px;width:30%;margin-right:10px;}", ".second-input-text.jsx-2865330644{height:50px;width:60%;}", ".span-tag.jsx-2865330644:hover{background:rgb(91,56,141);color:#fff;}", ".overlay.jsx-2865330644{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.5);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".showOverlay.jsx-2865330644{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.5);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}"]));
-    }
-  }]);
-
-  return AddSpec;
-}(external_react_["Component"]);
-
-var UpdateSpec_dummy = [{
-  spec: "Default Desktop Environment",
-  detail: "Any",
-  id: 1
-}, {
-  spec: "Package Manager",
-  detail: "Yarn/Npm",
-  id: 2
-}, {
-  spec: "Main Usage",
-  detail: "Desktop",
-  id: 3
-}, {
-  spec: "Last Official Release",
-  detail: "10-06-2019",
-  id: 4
-}];
-var UpdateSpec_UpdateSpecComponent =
-/*#__PURE__*/
-function (_Component2) {
-  Object(inherits["a" /* default */])(UpdateSpecComponent, _Component2);
-
-  function UpdateSpecComponent() {
-    var _getPrototypeOf3;
-
-    var _this3;
-
-    Object(classCallCheck["a" /* default */])(this, UpdateSpecComponent);
-
-    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-      args[_key2] = arguments[_key2];
-    }
-
-    _this3 = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf3 = Object(getPrototypeOf["a" /* default */])(UpdateSpecComponent)).call.apply(_getPrototypeOf3, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "state", {
-      arr: _this3.props.specs,
-      spec: "",
-      value: ""
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "inputSpec", function (spec) {
-      _this3.setState({
-        spec: spec
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "inputValue", function (value) {
-      _this3.setState({
-        value: value
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "tempArr", function (obj) {
-      var arr = _this3.state.arr;
-      var i = arr.findIndex(function (o) {
-        return o.spec === obj.spec;
-      });
-
-      if (arr[i]) {
-        arr[i] = obj;
-      } else {
-        arr.push(obj);
-      }
-
-      console.log(arr);
-
-      _this3.setState({
-        tempArr: arr
-      }); // const temp = [];
-      // temp.push(obj);
-      // this.setState({
-      //   tempArr: temp
-      // });
-
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "handleAddSpec", function () {
-      var obj = {
-        spec: "",
-        detail: "",
-        id: Math.random(10)
-      };
-
-      _this3.setState(function (previousState) {
-        return {
-          arr: [].concat(Object(toConsumableArray["a" /* default */])(previousState.arr), [obj])
-        };
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "handleRemoveItem", function (index) {
-      _this3.setState(function (previousState) {
-        var temp = Object(toConsumableArray["a" /* default */])(previousState.arr);
-
-        var arr = temp.filter(function (item) {
-          return item.spec !== index;
-        });
-        return {
-          arr: arr
-        };
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "showUpdate", function (visible) {
-      _this3.setState({
-        showUpdateModal: visible
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this3), "handleSave", function () {
-      var tempArr = _this3.state.tempArr;
-
-      var newArr = Object(toConsumableArray["a" /* default */])(tempArr);
-
-      var cleaned = newArr.filter(function (item) {
-        return item.spec !== "";
-      });
-      Object(apiRequests["e" /* AddOptionSpec */])(cleaned).then(function (result) {
-        _this3.setState({
-          specAdded: true
-        });
-      }).catch(function (err) {
-        _this3.setState({
-          err: err
-        }); //console.log(err);
-
-      });
-    });
-
-    return _this3;
-  }
-
-  Object(createClass["a" /* default */])(UpdateSpecComponent, [{
-    key: "render",
-    value: function render() {
-      var _this4 = this;
-
-      var _this$state3 = this.state,
-          arr = _this$state3.arr,
-          specAdded = _this$state3.specAdded;
-      var specs = this.props.specs;
-      return external_react_default.a.createElement("div", {
-        className: "card-list-item",
-        style: {
-          borderRadius: "0px"
-        }
-      }, arr.map(function (item, index) {
-        return external_react_default.a.createElement("div", {
-          key: item._id
-        }, external_react_default.a.createElement(UpdateSpec_AddSpec, {
-          inputSpec: _this4.inputSpec,
-          inputValue: _this4.inputValue,
-          index: item.spec,
-          removeItem: _this4.handleRemoveItem,
-          test: item.spec,
-          tempArr: _this4.tempArr,
-          detail: item.value,
-          option: _this4.props.option,
-          optionId: _this4.props.optionId
-        }));
-      }), external_react_default.a.createElement("div", {
-        style: optionView_style.AddNewRow,
-        onClick: this.handleAddSpec
-      }, "Add Row"), external_react_default.a.createElement("br", null), external_react_default.a.createElement("div", {
-        style: optionView_style.divider
-      }), external_react_default.a.createElement("div", {
-        style: optionView_style.CallToAction
-      }, external_react_default.a.createElement("div", {
-        style: {
-          cursor: "pointer",
-          color: "rgb(91, 56, 141)",
-          fontSize: "16px"
-        },
-        onClick: function onClick() {
-          return _this4.props.CloseUpdateModal(false);
-        }
-      }, "Cancel"), arr.length === 0 && external_react_default.a.createElement("div", {
-        style: optionView_style.Update,
-        onClick: this.handleSave
-      }, "Save"), arr.length > 0 && !specAdded && external_react_default.a.createElement("div", {
-        style: optionView_style.Update,
-        onClick: this.handleSave
-      }, "Update"), arr.length > 0 && specAdded && external_react_default.a.createElement("div", {
-        style: optionView_style.Update
-      }, "Contribution Added")));
-    }
-  }]);
-
-  return UpdateSpecComponent;
-}(external_react_["Component"]);
-// CONCATENATED MODULE: ./pages/option.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return option_default; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- // import UpdateOptionModal from "../components/updateOptionModal";
-
-
-
-
-
-
-
-var option_default =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(_default, _Component);
-
-  function _default() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, _default);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      data: _this.props.data.data,
-      //relatedTopics: this.props.relatedTopic.data,
-      user: {},
-      UserClickedLogin: false,
-      UserClickedSignup: false,
-      show: false,
-      //Update pro popup,
-      updateCon: false,
-      conDescription: "",
-      conTitle: "",
-      proDescription: "",
-      proTitle: "",
-      HighlightOverview: true,
-      HighlightPro: false,
-      HighlightCon: false,
-      ShowUpdateModal: false,
-      pro: [],
-      con: []
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "fetchOptionPro", function (option) {
-      Object(apiRequests["k" /* FETCH_OPTION_PRO */])(option).then(function (result) {
-        _this.setState({
-          pro: result.data
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "fetchOptionCon", function (option) {
-      Object(apiRequests["j" /* FETCH_OPTION_Con */])(option).then(function (result) {
-        _this.setState({
-          con: result.data
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "fetchOptionRecommendation", function (option) {
-      Object(apiRequests["l" /* FETCH_OPTION_REC */])(option).then(function (result) {
-        _this.setState({
-          recs: result.data
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDivCloseSignIn", function (e) {
-      if (e.target === _this.div) {
-        _this.setState(function (previousState) {
-          return {
-            UserClickedLogin: !previousState.UserClickedLogin
-          };
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDivCloseSignUp", function (e) {
-      if (e.target === _this.div) {
-        _this.setState(function (previousState) {
-          return {
-            UserClickedSignup: !previousState.UserClickedSignup
-          };
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openLoginOverlay", function () {
-      //alert("click");
-      _this.setState({
-        UserClickedSignup: false,
-        UserClickedLogin: !_this.state.UserClickedLogin
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openSignupOverlay", function () {
-      _this.setState({
-        UserClickedLogin: false,
-        UserClickedSignup: !_this.state.UserClickedSignup
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeSignupOverlay", function () {
-      _this.setState({
-        UserClickedSignup: !_this.state.UserClickedSignup
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeLoginOverlay", function () {
-      _this.setState({
-        UserClickedLogin: !_this.state.UserClickedLogin
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleClose", function () {
-      _this.setState({
-        show: false
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShow", function (visible, caption, pro, id) {
-      // alert(id);
-      _this.setState({
-        show: visible,
-        proTitle: caption,
-        proDescription: pro,
-        proId: id
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleUpdateCon", function (visible, caption, con, id) {
-      _this.setState({
-        updateCon: visible,
-        conTitle: caption,
-        conDescription: con,
-        conId: id
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "onOptionUpdateChange", function (_ref) {
-      var _ref$target = _ref.target,
-          value = _ref$target.value,
-          name = _ref$target.name;
-
-      _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleUpdatePro", function () {
-      var _this$state = _this.state,
-          user = _this$state.user,
-          proTitle = _this$state.proTitle,
-          proDescription = _this$state.proDescription,
-          proId = _this$state.proId;
-      var _this$props = _this.props,
-          option = _this$props.option,
-          OptionDetails = _this$props.OptionDetails;
-
-      if (!user._id) {
-        alert("Login to carry out this action");
-        return;
-      }
-
-      if (proTitle === "" || proDescription === "") {
-        alert("It can't be empty");
-        return;
-      }
-
-      var data = {
-        option: option,
-        username: user.username,
-        optionId: OptionDetails._id,
-        title: proTitle,
-        description: proDescription,
-        userId: user._id,
-        question: OptionDetails.question,
-        proId: proId
-      };
-      Object(apiRequests["kb" /* UpdatePro */])(proId, user._id, proTitle.replace("%", " percent"), proDescription.replace("%", " percent"), option, OptionDetails._id, OptionDetails.question).then(function (result) {
-        alert("updated");
-
-        _this.setState({
-          show: false
-        });
-
-        Object(apiRequests["db" /* SaveProHistory */])(data).then(function () {
-          return console.log("saved");
-        }).catch(function (err) {
-          return console.log(err.response);
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleConUpdate", function () {
-      var _this$state2 = _this.state,
-          user = _this$state2.user,
-          conTitle = _this$state2.conTitle,
-          conDescription = _this$state2.conDescription,
-          conId = _this$state2.conId;
-      var _this$props2 = _this.props,
-          option = _this$props2.option,
-          OptionDetails = _this$props2.OptionDetails;
-
-      if (!user._id) {
-        alert("Login to carry out this action");
-        return;
-      }
-
-      if (conTitle === "" || conDescription === "") {
-        alert("It can't be empty");
-        return;
-      }
-
-      var data = {
-        option: option,
-        username: user.username,
-        optionId: OptionDetails._id,
-        title: conTitle,
-        description: conDescription,
-        userId: user._id,
-        question: OptionDetails.question,
-        conId: conId
-      };
-      Object(apiRequests["ib" /* UpdateCon */])(conId, user._id, conTitle.replace("%", " percent"), conDescription.replace("%", " percent"), option, OptionDetails._id, OptionDetails.question).then(function (result) {
-        alert("updated");
-
-        _this.setState({
-          updateCon: false
-        });
-
-        Object(apiRequests["cb" /* SaveConHistory */])(data).then(function (result) {
-          return console.log(result);
-        }).catch(function (err) {
-          return console.log(err.response);
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "HandleHighlight", function (first, second, third) {
-      _this.setState({
-        HighlightOverview: first,
-        HighlightPro: second,
-        HighlightCon: third
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "ShowUpdate", function (visible) {
-      _this.setState({
-        ShowUpdateModal: visible
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(_default, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      if (JSON.parse(localStorage.getItem("user_details"))) {
-        var user = JSON.parse(localStorage.getItem("user_details"));
-        this.setState({
-          user: user
-        });
-      }
-
-      this.fetchOptionCon(this.props.option);
-      this.fetchOptionPro(this.props.option);
-      this.fetchOptionRecommendation(this.props.option);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state3 = this.state,
-          UserClickedLogin = _this$state3.UserClickedLogin,
-          UserClickedSignup = _this$state3.UserClickedSignup,
-          updateCon = _this$state3.updateCon,
-          pro = _this$state3.pro,
-          show = _this$state3.show,
-          con = _this$state3.con,
-          HighlightCon = _this$state3.HighlightCon,
-          HighlightOverview = _this$state3.HighlightOverview,
-          HighlightPro = _this$state3.HighlightPro,
-          proDescription = _this$state3.proDescription,
-          proTitle = _this$state3.proTitle,
-          conDescription = _this$state3.conDescription,
-          conTitle = _this$state3.conTitle,
-          ShowUpdateModal = _this$state3.ShowUpdateModal,
-          recs = _this$state3.recs;
-      return external_react_default.a.createElement(external_react_["Fragment"], null, external_react_default.a.createElement(Layout["a" /* default */], Object(esm_extends["a" /* default */])({}, this.state, {
-        openSignup: this.openSignupOverlay,
-        openLogin: this.openLoginOverlay,
-        topicview: true,
-        title: this.props.option
-      })), external_react_default.a.createElement(optionViewLandingPage, this.props), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + "view-container"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + "option-actions"
-      }, external_react_default.a.createElement("ul", {
-        className: "jsx-1306814258" + " " + "actions-ul"
-      }, external_react_default.a.createElement("li", {
-        onClick: function onClick() {
-          return _this2.HandleHighlight(true, false, false);
-        },
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("a", {
-        href: "#section-1",
-        className: "jsx-1306814258" + " " + ((HighlightOverview ? "active-list" : "") || "")
-      }, "OVERVIEW")), external_react_default.a.createElement("li", {
-        onClick: function onClick() {
-          return _this2.HandleHighlight(false, true, false);
-        },
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("a", {
-        href: "#section-2",
-        className: "jsx-1306814258" + " " + ((HighlightPro ? "active-list" : "") || "")
-      }, "PROS")), external_react_default.a.createElement("li", {
-        onClick: function onClick() {
-          return _this2.HandleHighlight(false, false, true);
-        },
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("a", {
-        href: "#section-3",
-        className: "jsx-1306814258" + " " + ((HighlightCon ? "active-list" : "") || "")
-      }, "CONS")))), external_react_default.a.createElement("div", {
-        id: "section-1",
-        className: "jsx-1306814258" + " " + "option-container"
-      }, external_react_default.a.createElement(optionView_OptionMainCard, this.props), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + "option-rec-section"
-      }, external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "80px"
-        },
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement(OptionSpecs_OptionSpecs, {
-        spec: this.props.OptionSpecs,
-        OpenUpdateModal: this.ShowUpdate
-      })), external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "60px"
-        },
-        id: "section-2",
-        className: "jsx-1306814258"
-      }, pro.length > 0 && external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "20px",
-          fontWeight: 600,
-          letterSpacing: "0.6px",
-          fontSize: "18px"
-        },
-        className: "jsx-1306814258"
-      }, "PROS"), pro && external_react_default.a.createElement(external_react_default.a.Fragment, null, pro.map(function (item) {
-        return external_react_default.a.createElement(optionProComponent_OptionPro, {
-          title: item.title,
-          description: item.description,
-          key: item._id,
-          id: item._id,
-          userId: item.userId,
-          handleUpdate: _this2.handleShow
-        });
-      }))), external_react_default.a.createElement("div", {
-        id: "section-3",
-        style: {
-          marginTop: "40px"
-        },
-        className: "jsx-1306814258"
-      }, con.length > 0 && external_react_default.a.createElement("div", {
-        style: {
-          marginBottom: "20px",
-          fontWeight: 600,
-          letterSpacing: "0.6px",
-          fontSize: "18px"
-        },
-        className: "jsx-1306814258"
-      }, "CONS"), con && external_react_default.a.createElement(external_react_default.a.Fragment, null, con.map(function (item) {
-        return external_react_default.a.createElement(optionCardCon_OptionCon, {
-          title: item.title,
-          description: item.description,
-          key: item._id,
-          id: item._id,
-          userId: item.userId,
-          handleUpdate: _this2.handleUpdateCon
-        });
-      }))))), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + "related-questions"
-      }, external_react_default.a.createElement(relatedOptionsComponent, this.props))), external_react_default.a.createElement(alternativeOptions_AlternativeOptions, this.props), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this2.handleDivCloseSignUp(e);
-        },
-        ref: function ref(el) {
-          return _this2.div = el;
-        },
-        className: "jsx-1306814258" + " " + ((UserClickedSignup ? "overlayShow" : "overlay") || "")
-      }, external_react_default.a.createElement("span", {
-        onClick: this.closeSignupOverlay,
-        className: "jsx-1306814258" + " " + "close-icon"
-      }, "\xD7"), UserClickedSignup && external_react_default.a.createElement(signup["default"], {
-        openLogin: this.openLoginOverlay
-      })), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this2.handleDivCloseSignIn(e);
-        },
-        ref: function ref(el) {
-          return _this2.div = el;
-        },
-        className: "jsx-1306814258" + " " + ((UserClickedLogin ? "overlayShow showSignin-container" : "overlay") || "")
-      }, external_react_default.a.createElement("span", {
-        onClick: this.closeLoginOverlay,
-        className: "jsx-1306814258" + " " + "close-icon"
-      }, "\xD7"), UserClickedLogin && external_react_default.a.createElement(signin["default"], {
-        openSignup: this.openSignupOverlay
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + ((ShowUpdateModal ? "overlayShow" : "overlay") || "")
-      }, external_react_default.a.createElement("div", {
-        style: {
-          marginTop: "15%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "100%"
-        },
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1306814258" + " " + "Update-spec-container"
-      }, ShowUpdateModal && external_react_default.a.createElement(UpdateSpec_UpdateSpecComponent, {
-        specs: this.props.OptionSpecs,
-        CloseUpdateModal: this.ShowUpdate,
-        optionId: this.props.OptionDetails._id,
-        option: this.props.OptionDetails.option
-      })))), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: show,
-        onHide: this.handleClose
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Update Pro")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: "jsx-1306814258" + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        name: "proTitle",
-        value: proTitle,
-        style: {
-          width: "100px !important"
-        },
-        className: "jsx-1306814258" + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        value: proDescription,
-        name: "proDescription",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        className: "jsx-1306814258" + " " + "update-option"
-      })))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: this.handleClose
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "primary",
-        onClick: this.handleUpdatePro
-      }, "Save Changes")))), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: updateCon,
-        onHide: function onHide() {
-          return _this2.handleUpdateCon(false);
-        }
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Update Con")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: "jsx-1306814258" + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        name: "conTitle",
-        value: conTitle,
-        style: {
-          width: "100px !important"
-        },
-        className: "jsx-1306814258" + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1306814258"
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        value: conDescription,
-        name: "conDescription",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        className: "jsx-1306814258" + " " + "update-option"
-      })))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: function onClick() {
-          return _this2.handleUpdateCon(false);
-        }
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "primary",
-        onClick: function onClick() {
-          return _this2.handleConUpdate();
-        }
-      }, "Save Changes")))), external_react_default.a.createElement(style_default.a, {
-        id: "1306814258"
-      }, [".view-container.jsx-1306814258{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-right:60px;padding-left:60px;padding-top:35px;padding-bottom:10px;background:#fff;}", ".update-option.jsx-1306814258{width:300px;border:1px solid grey;border-radius:3px;padding:10px;outline:0;font-family:inherit;font-weight:600;}", ".update-option-form.jsx-1306814258{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}", ".update-option-form.jsx-1306814258 div.jsx-1306814258{padding:6px;}", ".actions-ul.jsx-1306814258 li.jsx-1306814258{padding:10px 10px;list-style-type:none;cursor:pointer;font-weight:400;}", ".option-rec-section.jsx-1306814258{margin-top:60px;margin-bottom:50px;}", "#pro.jsx-1306814258>div.jsx-1306814258{font-weight:700;font-size:20px;margin-bottom:40px;}", "#con.jsx-1306814258>div.jsx-1306814258{font-weight:700;font-size:20px;margin-bottom:40px;}", ".active-list.jsx-1306814258{color:rgb(91,56,141) !important;font-weight:600;-webkit-letter-spacing:0.6px;-moz-letter-spacing:0.6px;-ms-letter-spacing:0.6px;letter-spacing:0.6px;}", ".actions-ul.jsx-1306814258 li.jsx-1306814258 a.jsx-1306814258:hover{color:rgb(91,56,141);}", ".actions-ul.jsx-1306814258 li.jsx-1306814258:hover{color:rgb(91,56,141);}", ".related-questions.jsx-1306814258{width:20%;}", ".option-actions.jsx-1306814258{width:20%;}", "li.jsx-1306814258 a.jsx-1306814258{color:#58647b;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}", ".option-container.jsx-1306814258{border-right:1px dashed #e6e8eb;margin-bottom:10px;width:50%;padding-right:20px;}", ".close-icon.jsx-1306814258{position:absolute;top:25px;left:90%;font-size:80px !important;color:rgb(91,56,141);background:#e6ecf0;cursor:pointer;z-index:2000;}", ".overlay.jsx-1306814258{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgba(0,0,0,0.05);overflow-x:hidden;}", ".overlayShow.jsx-1306814258{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:#fdfdfd;overflow-x:hidden;overflow-y:visible;}", ".overlayShowie.jsx-1306814258{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:rgba(0,0,0,0.07);overflow-x:hidden;}", ".related-items-card.jsx-1306814258{position:absolute;left:920px;top:580px;}", "@media screen and (max-width:768px){.considered-option-card.jsx-1306814258{display:none;}.related-questions.jsx-1306814258{display:none;}.view-container.jsx-1306814258{width:100%;margin-top:1px;}.option-actions.jsx-1306814258{width:20%;display:none;}.option-container.jsx-1306814258{border-right:none;margin-bottom:10px;width:100%;padding-right:0;}}", "@media screen and (min-width:768px){.Update-spec-container.jsx-1306814258{min-width:600px;max-width:100%;}}"]));
-    }
-  }], [{
-    key: "getInitialProps",
-    value: function () {
-      var _getInitialProps = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee(_ref2) {
-        var option, response, optionResponse, OptionSpecsResponse;
-        return regenerator_default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                option = _ref2.query.option;
-                _context.next = 3;
-                return external_axios_default()(apiRequests["ob" /* _GET_TOPICS */]);
-
-              case 3:
-                response = _context.sent;
-                _context.next = 6;
-                return Object(apiRequests["r" /* GET_OPTION_DETAILS */])(option);
-
-              case 6:
-                optionResponse = _context.sent;
-                _context.next = 9;
-                return Object(apiRequests["J" /* GetOptionSpecs */])(option);
-
-              case 9:
-                OptionSpecsResponse = _context.sent;
-                return _context.abrupt("return", {
-                  option: option,
-                  data: response.data,
-                  OptionSpecs: OptionSpecsResponse.data,
-                  // relatedTopic: relatedTopicResponse.data,
-                  OptionDetails: optionResponse.data
-                });
-
-              case 11:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      function getInitialProps(_x) {
-        return _getInitialProps.apply(this, arguments);
-      }
-
-      return getInitialProps;
-    }()
-  }]);
-
-  return _default;
-}(external_react_["Component"]);
-
-
-
-/***/ }),
-
 /***/ "kOwS":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5197,6 +3642,52 @@ function _extends() {
 
 /***/ }),
 
+/***/ "lT5q":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("zUqs");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_removeSpaces__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("oZBK");
+
+
+
+
+
+
+var UpdateTagLandingPage = function UpdateTagLandingPage(_ref) {
+  var question = _ref.question;
+  var newQuestionString = Object(_lib_removeSpaces__WEBPACK_IMPORTED_MODULE_4__[/* default */ "b"])(question);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "landing"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "landing-tag"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "landing-question"
+  }, question ? question + "?" : "loading..."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "landing-details"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "landing-stat-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-957930783" + " " + "details"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/topic/".concat(newQuestionString)
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-957930783" + " " + "option-considered "
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Icons__WEBPACK_IMPORTED_MODULE_2__[/* LeftArrow */ "j"], null), "See All Options"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "957930783"
+  }, [".landing-stat-container.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;position:relative;top:16px;}", ".option-considered.jsx-957930783{font-size:0.9em;padding-right:10px;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-weight:600;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-transform:uppercase;color:rgb(91,56,141);}", ".option-considered.jsx-957930783:hover{color:rgb(91,56,141);cursor:pointer;}", ".option-considered-text.jsx-957930783{display:block;font-size:0.8em;width:60%;color:#8d959c;margin-right:15px;padding-right:13px;font-weight:400;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}", ".not.jsx-957930783{display:none;}", ".landing.jsx-957930783{width:100%;background:#fdfdfd !important;margin-top:1px;box-sizing:border-box;font-size:15px;font-family:inherit;border:1px solid transparent;}", ".time-added.jsx-957930783{padding-right:3px;}", ".landing-tag.jsx-957930783{padding:10px 20px;margin-bottom:5px;margin-left:15px;margin-top:15px;}", ".tagged.jsx-957930783{display:inline-block;margin-right:10px;padding-right:5px;text-transform:uppercase;font-size:1em;color:rgb(91,56,141);font-weight:600;font-family:inherit;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;}", ".landing-question.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.2em;font-weight:700;color:rgb(91,56,141);font-family:Cabin;}", ".landing-details.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-item:center;-webkit-box-align-item:center;-ms-flex-align-item:center;align-item:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:30px;}", ".details.jsx-957930783{padding:3px 10px;margin-top:30px;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-right:8px;}", "@media screen and (min-width:900px){.landing.jsx-957930783{max-width:100%;background:#fff !important;margin-top:1px auto;box-sizing:border-box;font-family:inherit;padding:24px 0;border:1px solid #e6e8eb;padding-left:48px;padding-right:48px;}.landing-question.jsx-957930783{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:40px;font-weight:700;font-family:Cabin;}}", "@media screen and (min-width:768px) and (max-width:900px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:30px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}", "@media screen and (max-width:768px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:25px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}", "@media only screen and (min-width:360px) and (max-width:600px){.landing-question.jsx-957930783{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:16px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.landing-details.jsx-957930783 .details.jsx-957930783{padding:3px 9px;margin-top:30px;color:#637381;font-size:3.2vw;font-weight:600;text-transform:uppercase;}}"]));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (UpdateTagLandingPage);
+
+/***/ }),
+
 /***/ "ln6h":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5218,15 +3709,32 @@ module.exports = require("core-js/library/fn/object/create");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RemoveSpacesAddHyphen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSpacesRemoveHyphen; });
+var cyrillicToTranslitJs = __webpack_require__("S41T");
+
 function RemoveSpacesAddHyphen(string) {
   //Removes spaces
-  var newString = string.replace(/\s+/g, "-");
+  var newString = string.replace(/\s+/g, "-"); // console.log("+++++++++++++++++++");
+  // console.log(cyrillicToTranslitJs().transform("что такое хорошая еда"));
+  // console.log(cyrillicToTranslitJs().transform("What are the good languages"));
+  // console.log("+++++++++++++++++++");
+
   return newString;
 }
 function AddSpacesRemoveHyphen(string) {
   var oldString = string.replace(/-/g, " ");
   return oldString;
-}
+} // var cyrillicToTranslitJs = require("cyrillic-to-translit-js")
+// export default function RemoveSpacesAddHyphen(string) {
+//   //Removes spaces
+//   const newString = string.replace(/\s+/g, "-");
+//  // console.log(cyrillicToTranslitJs().transform(newString));
+//   return  cyrillicToTranslitJs().reverse(newString);
+// }
+// export function AddSpacesRemoveHyphen(string) {
+//   const oldString = cyrillicToTranslitJs().transform(string);
+//  // console.log(oldString.replace(/-/g, " "));
+//   return oldString.replace(/-/g, " "); 
+// }
 
 /***/ }),
 
@@ -5248,6 +3756,13 @@ module.exports = require("next-server/dist/lib/utils");
 /***/ (function(module, exports) {
 
 module.exports = require("socket.io-client");
+
+/***/ }),
+
+/***/ "qt1I":
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 

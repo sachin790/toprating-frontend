@@ -3825,6 +3825,13 @@ module.exports = require("core-js/library/fn/array/is-array");
 
 /***/ }),
 
+/***/ "S41T":
+/***/ (function(module, exports) {
+
+module.exports = require("cyrillic-to-translit-js");
+
+/***/ }),
+
 /***/ "SevZ":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5885,15 +5892,32 @@ module.exports = require("core-js/library/fn/object/create");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RemoveSpacesAddHyphen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSpacesRemoveHyphen; });
+var cyrillicToTranslitJs = __webpack_require__("S41T");
+
 function RemoveSpacesAddHyphen(string) {
   //Removes spaces
-  var newString = string.replace(/\s+/g, "-");
+  var newString = string.replace(/\s+/g, "-"); // console.log("+++++++++++++++++++");
+  // console.log(cyrillicToTranslitJs().transform("что такое хорошая еда"));
+  // console.log(cyrillicToTranslitJs().transform("What are the good languages"));
+  // console.log("+++++++++++++++++++");
+
   return newString;
 }
 function AddSpacesRemoveHyphen(string) {
   var oldString = string.replace(/-/g, " ");
   return oldString;
-}
+} // var cyrillicToTranslitJs = require("cyrillic-to-translit-js")
+// export default function RemoveSpacesAddHyphen(string) {
+//   //Removes spaces
+//   const newString = string.replace(/\s+/g, "-");
+//  // console.log(cyrillicToTranslitJs().transform(newString));
+//   return  cyrillicToTranslitJs().reverse(newString);
+// }
+// export function AddSpacesRemoveHyphen(string) {
+//   const oldString = cyrillicToTranslitJs().transform(string);
+//  // console.log(oldString.replace(/-/g, " "));
+//   return oldString.replace(/-/g, " "); 
+// }
 
 /***/ }),
 
