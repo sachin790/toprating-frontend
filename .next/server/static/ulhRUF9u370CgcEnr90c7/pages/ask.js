@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -144,10 +144,10 @@ function _classCallCheck(instance, Constructor) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("SnVj");
+module.exports = __webpack_require__("o9Up");
 
 
 /***/ }),
@@ -273,13 +273,6 @@ module.exports = require("next/router");
 
 /***/ }),
 
-/***/ "5+fn":
-/***/ (function(module, exports) {
-
-module.exports = require("react-share");
-
-/***/ }),
-
 /***/ "9Jkg":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -331,13 +324,6 @@ function _assertThisInitialized(self) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("/+oN");
-
-/***/ }),
-
-/***/ "Cg2A":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("y6vh");
 
 /***/ }),
 
@@ -837,13 +823,6 @@ module.exports = require("semantic-ui-react");
 
 /***/ }),
 
-/***/ "IZS3":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap");
-
-/***/ }),
-
 /***/ "IfcR":
 /***/ (function(module, exports) {
 
@@ -1161,6 +1140,32 @@ function _inherits(subClass, superClass) {
 }
 
 module.exports = _inherits;
+
+/***/ }),
+
+/***/ "NBss":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var SuccessSnackbar = function SuccessSnackbar(_ref) {
+  var message = _ref.message,
+      showclass = _ref.showclass;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "snackbar",
+    className: "jsx-820573979" + " " + "show"
+  }, message), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "820573979"
+  }, ["#snackbar.jsx-820573979{visibility:hidden;min-width:200px;margin-left:-125px;background-color:rgb(67,160,71);color:#fff;text-align:center;border-radius:2px;padding:14px;position:fixed;z-index:1;left:10%;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;bottom:44px;font-size:17px;}", "#snackbar.show.jsx-820573979{visibility:visible;-webkit-animation:fadein 0.5s,fadeout 0.5s 2.5s;-webkit-animation:fadein-jsx-820573979 0.5s,fadeout-jsx-820573979 0.5s 2.5s;animation:fadein-jsx-820573979 0.5s,fadeout-jsx-820573979 0.5s 2.5s;}", "@-webkit-keyframes fadein{from.jsx-820573979{bottom:0;opacity:0;}to.jsx-820573979{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadein-jsx-820573979{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@keyframes fadein-jsx-820573979{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadeout{from.jsx-820573979{bottom:30px;opacity:1;}to.jsx-820573979{bottom:0;opacity:0;}}", "@-webkit-keyframes fadeout-jsx-820573979{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@keyframes fadeout-jsx-820573979{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@media screen and (max-width:768px){#snackbar.jsx-820573979{left:30%;padding:10px;}}"]));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SuccessSnackbar);
 
 /***/ }),
 
@@ -1532,3008 +1537,6 @@ function invariant(condition, message) {
 
 /***/ }),
 
-/***/ "SnVj":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/regenerator/index.js
-var regenerator = __webpack_require__("ln6h");
-var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js
-var asyncToGenerator = __webpack_require__("O40h");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js
-var esm_extends = __webpack_require__("kOwS");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__("0iUn");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js
-var createClass = __webpack_require__("sLSF");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js + 1 modules
-var possibleConstructorReturn = __webpack_require__("MI3g");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__("a7VT");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js
-var assertThisInitialized = __webpack_require__("AT/M");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__("Tit0");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__("vYYK");
-
-// EXTERNAL MODULE: ./node_modules/styled-jsx/style.js
-var style = __webpack_require__("MX0m");
-var style_default = /*#__PURE__*/__webpack_require__.n(style);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./layouts/Layout.js + 2 modules
-var Layout = __webpack_require__("JwBy");
-
-// EXTERNAL MODULE: external "axios"
-var external_axios_ = __webpack_require__("zr5I");
-var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
-
-// EXTERNAL MODULE: ./config/config.js
-var config = __webpack_require__("OcYQ");
-
-// EXTERNAL MODULE: external "socket.io-client"
-var external_socket_io_client_ = __webpack_require__("pI2v");
-var external_socket_io_client_default = /*#__PURE__*/__webpack_require__.n(external_socket_io_client_);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/date/now.js
-var now = __webpack_require__("Cg2A");
-var now_default = /*#__PURE__*/__webpack_require__.n(now);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js + 3 modules
-var toConsumableArray = __webpack_require__("dfwq");
-
-// EXTERNAL MODULE: ./lib/dateConversion.js
-var dateConversion = __webpack_require__("WaSu");
-
-// EXTERNAL MODULE: ./apiRequests/apiRequests.js
-var apiRequests = __webpack_require__("rhLc");
-
-// EXTERNAL MODULE: external "semantic-ui-react"
-var external_semantic_ui_react_ = __webpack_require__("FfxO");
-
-// EXTERNAL MODULE: ./components/Icons.js
-var Icons = __webpack_require__("zUqs");
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./lib/removeSpaces.js
-var removeSpaces = __webpack_require__("oZBK");
-
-// EXTERNAL MODULE: external "react-share"
-var external_react_share_ = __webpack_require__("5+fn");
-
-// CONCATENATED MODULE: ./components/topicview/reactionBanner.js
-
-
-
-
-var reactionBanner_ReactionBanner = function ReactionBanner() {
-  return external_react_default.a.createElement("div", {
-    className: "jsx-1031489175" + " " + "reaction-banner-container"
-  }, external_react_default.a.createElement("div", {
-    style: {
-      display: "flex",
-      paddingLeft: "15px" // justifyContent: "center"
-      // alignItems: "center"
-
-    },
-    className: "jsx-1031489175" + " " + "cont"
-  }, external_react_default.a.createElement("span", {
-    className: "jsx-1031489175" + " " + "banned-icon"
-  }, external_react_default.a.createElement(Icons["c" /* Banned */], {
-    color: "#4d4d4d"
-  })), external_react_default.a.createElement("span", {
-    className: "jsx-1031489175" + " " + "text"
-  }, "This question has been marked as", external_react_default.a.createElement("span", {
-    style: {
-      paddingLeft: "4px",
-      paddingRight: "4px"
-    },
-    className: "jsx-1031489175"
-  }, external_react_default.a.createElement("b", {
-    className: "jsx-1031489175"
-  }, "Not a Fit")), "for the format of Toprating.")), external_react_default.a.createElement(style_default.a, {
-    id: "1031489175"
-  }, [".reaction-banner-container.jsx-1031489175{width:100%;background-color:#fdfdfd;padding-top:20px;padding-bottom:20px;overflow:hidden;border:1px solid #e6e8eb;}", ".text.jsx-1031489175{font-size:16px;margin-left:30px;color:#4d4d4d;font-weight:400;line-height:24px;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;text-transform:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}", ".cont.jsx-1031489175{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", "@media (min-width:900px){.cont.jsx-1031489175{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;}}"]));
-};
-
-/* harmony default export */ var reactionBanner = (reactionBanner_ReactionBanner);
-// CONCATENATED MODULE: ./components/topicview/topicViewLandingPage.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var topicViewLandingPage_TopicViewLandingPage =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(TopicViewLandingPage, _Component);
-
-  function TopicViewLandingPage() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, TopicViewLandingPage);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(TopicViewLandingPage)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      recs: [],
-      follow: false,
-      copied: false,
-      url: "".concat(config["a" /* CLIENT_API */], "/topic/").concat(Object(removeSpaces["b" /* default */])(_this.props.question))
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getTotalRecs", function (question) {
-      Object(apiRequests["P" /* GetQuestionTotalRecs */])(question).then(function (result) {
-        _this.setState({
-          recs: result.data
-        });
-      }).catch(function (err) {
-        _this.setState({
-          error: err
-        });
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getQuestionId", function (id) {
-      Object(apiRequests["n" /* FetchSpecificQuestionId */])(id).then(function (result) {
-        _this.setState({
-          questionId: result.data.id
-        });
-      }).catch(function (err) {
-        _this.setState({
-          error: err
-        });
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "CheckWhetherQuestionIsFollowed", function (questionId) {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-
-      if (user) {
-        Object(apiRequests["E" /* GetFollowedQuestion */])(questionId, user._id).then(function (result) {
-          _this.setState({
-            follow: result.data
-          });
-        }).catch(function (err) {
-          _this.setState({
-            error: err
-          });
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleFollowLink", function () {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-
-      if (!user) {
-        alert("Kindly login");
-        return;
-      }
-
-      Object(apiRequests["p" /* FollowQuestion */])(_this.state.questionId, user._id).then(function (result) {
-        _this.setState({
-          follow: result.data.following
-        });
-      }).catch(function (err) {
-        _this.setState({
-          error: err
-        });
-      }); // this.setState(previouState => ({
-      //   follow: !previouState.follow
-      // }));
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "copyToClipboard", function () {
-      var copiedQuestion = "".concat(config["a" /* CLIENT_API */], "/topic/").concat(Object(removeSpaces["b" /* default */])(_this.props.question));
-
-      _this.setState({
-        copied: true
-      }, function () {
-        navigator.clipboard.writeText(copiedQuestion);
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(TopicViewLandingPage, [{
-    key: "componentDidMount",
-    value: function () {
-      var _componentDidMount = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee() {
-        var QuestId;
-        return regenerator_default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                //Do something here
-                this.getTotalRecs(this.props.question);
-                this.getQuestionId(this.props.question);
-                _context.next = 4;
-                return Object(apiRequests["n" /* FetchSpecificQuestionId */])(this.props.question);
-
-              case 4:
-                QuestId = _context.sent;
-                this.CheckWhetherQuestionIsFollowed(QuestId.data.id);
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function componentDidMount() {
-        return _componentDidMount.apply(this, arguments);
-      }
-
-      return componentDidMount;
-    }()
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.setState({
-        recs: []
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$state = this.state,
-          recs = _this$state.recs,
-          follow = _this$state.follow,
-          copied = _this$state.copied,
-          url = _this$state.url,
-          questionId = _this$state.questionId;
-      var _this$props = this.props,
-          question = _this$props.question,
-          data = _this$props.data,
-          lastUpdated = _this$props.lastUpdated,
-          numOfRecs = _this$props.numOfRecs,
-          optionConsidered = _this$props.optionConsidered,
-          tag = _this$props.tag;
-
-      var flattenArray = function flattenArray(arr) {
-        var _ref;
-
-        return (_ref = []).concat.apply(_ref, Object(toConsumableArray["a" /* default */])(arr));
-      };
-
-      var _tag = flattenArray(tag);
-
-      var d = new Date(lastUpdated);
-      var date = Object(dateConversion["a" /* default */])(now_default()(), d);
-      return external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "landing"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "landing-tag"
-      }, tag ? external_react_default.a.createElement(external_react_default.a.Fragment, null, _tag.map(function (item, i) {
-        return external_react_default.a.createElement(external_react_["Fragment"], {
-          key: i
-        }, external_react_default.a.createElement(link_default.a, {
-          prefetch: true,
-          href: "/tags/".concat(item),
-          as: "/tags/".concat(item)
-        }, external_react_default.a.createElement("span", {
-          key: i,
-          className: "jsx-2598117078" + " " + "tagged"
-        }, item)));
-      })) : "", external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "more-actions"
-      }, external_react_default.a.createElement("span", {
-        onClick: this.handleFollowLink,
-        className: "jsx-2598117078" + " " + ((follow ? "follow span bg" : "follow span") || "")
-      }, external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          top: "1.5px"
-        },
-        className: "jsx-2598117078"
-      }, follow ? "Following" : "Follow")), external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-        trigger: external_react_default.a.createElement("span", {
-          className: "jsx-2598117078" + " " + "more-links"
-        }, external_react_default.a.createElement(Icons["m" /* More */], {
-          color: "transparent",
-          width: "24",
-          height: "24"
-        })),
-        content: external_react_default.a.createElement("div", {
-          style: {
-            width: "200px",
-            color: "#4d4d4d",
-            fontSize: "16px"
-          },
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement(link_default.a, {
-          prefetch: true // as={`/manageTag`}
-          ,
-          href: "/updateTag/".concat(questionId)
-        }, external_react_default.a.createElement("p", {
-          className: "jsx-2598117078" + " " + "clickable"
-        }, "Add/Edit Tags")), external_react_default.a.createElement(link_default.a, {
-          prefetch: true,
-          href: "/update-history?id=".concat(questionId),
-          as: "/update-history?id=".concat(questionId) // as={`/updatedQuestion`}
-
-        }, external_react_default.a.createElement("p", {
-          className: "jsx-2598117078" + " " + "clickable"
-        }, "See Update History")), external_react_default.a.createElement(link_default.a, {
-          prefetch: true,
-          href: "/addoption/".concat(questionId)
-        }, external_react_default.a.createElement("p", {
-          className: "jsx-2598117078" + " " + "clickable"
-        }, "Add Option"))), external_react_default.a.createElement("hr", {
-          className: "jsx-2598117078"
-        }), external_react_default.a.createElement("div", {
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-2598117078"
-        }, "SHARE"), external_react_default.a.createElement("div", {
-          style: {
-            display: "flex",
-            flexDirection: " column" // border: "1px solid orange"
-
-          },
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            display: "flex",
-            padding: "10px",
-            color: "#4d4d4d",
-            fontSize: "16px"
-          },
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            marginRight: "20px"
-          },
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement(external_react_share_["FacebookShareButton"], {
-          url: url
-        }, external_react_default.a.createElement(external_react_share_["FacebookIcon"], {
-          size: 32,
-          round: true
-        })), external_react_default.a.createElement("span", {
-          className: "jsx-2598117078"
-        }, "Share")), external_react_default.a.createElement("div", {
-          className: "jsx-2598117078" + " " + "social-btn"
-        }, external_react_default.a.createElement(external_react_share_["TwitterShareButton"], {
-          url: url
-        }, external_react_default.a.createElement(external_react_share_["TwitterIcon"], {
-          size: 32,
-          round: true
-        })), external_react_default.a.createElement("span", {
-          className: "jsx-2598117078"
-        }, "Tweet"))), external_react_default.a.createElement("div", {
-          style: {
-            display: "flex",
-            padding: "10px",
-            color: "#4d4d4d",
-            fontSize: "16px"
-          },
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement("div", {
-          style: {
-            marginRight: "20px"
-          } // className="social-btn"
-          ,
-          className: "jsx-2598117078"
-        }, external_react_default.a.createElement(external_react_share_["EmailShareButton"], {
-          url: url
-        }, external_react_default.a.createElement(external_react_share_["EmailIcon"], {
-          size: 32,
-          round: true
-        })), external_react_default.a.createElement("span", {
-          className: "jsx-2598117078"
-        }, "Share")), external_react_default.a.createElement("div", {
-          onClick: this.copyToClipboard,
-          className: "jsx-2598117078" + " " + "social-btn"
-        }, external_react_default.a.createElement("i", {
-          className: "jsx-2598117078" + " " + "far fa-clipboard"
-        }), external_react_default.a.createElement("div", {
-          className: "jsx-2598117078"
-        }, copied && "Copied", !copied && "  Copy"))))), external_react_default.a.createElement("hr", {
-          className: "jsx-2598117078"
-        })),
-        on: "click",
-        hideOnScroll: true,
-        position: "bottom right"
-      }))), external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "landing-question"
-      }, question ? question + "?" : "loading..."), external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "landing-details"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "landing-stat-container"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "details"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-2598117078" + " " + "option-considered "
-      }, optionConsidered ? optionConsidered : 0), external_react_default.a.createElement("span", {
-        style: {
-          position: "relative",
-          left: "-10px"
-        },
-        className: "jsx-2598117078" + " " + "option-considered-text "
-      }, "Options ", external_react_default.a.createElement("br", {
-        className: "jsx-2598117078"
-      }), external_react_default.a.createElement("span", {
-        className: "jsx-2598117078"
-      }, "Considered"))), external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "details"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-2598117078" + " " + "option-considered"
-      }, recs ? recs.length : 0), external_react_default.a.createElement("span", {
-        className: "jsx-2598117078" + " " + "option-considered-text"
-      }, "User ", external_react_default.a.createElement("br", {
-        className: "jsx-2598117078"
-      }), external_react_default.a.createElement("span", {
-        className: "jsx-2598117078"
-      }, "Recs"))), external_react_default.a.createElement("div", {
-        className: "jsx-2598117078" + " " + "details"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-2598117078" + " " + "option-considered"
-      }, date ? date : 0), external_react_default.a.createElement("span", {
-        className: "jsx-2598117078" + " " + "option-considered-text"
-      }, "Last ", external_react_default.a.createElement("br", {
-        className: "jsx-2598117078"
-      }), external_react_default.a.createElement("span", {
-        className: "jsx-2598117078"
-      }, "Updated"))))), external_react_default.a.createElement(style_default.a, {
-        id: "2598117078"
-      }, [".landing-stat-container.jsx-2598117078{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;position:relative;top:16px;}", ".option-considered.jsx-2598117078{padding-right:10px;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:200;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#2b5876;width:50%;}", ".clickable.jsx-2598117078{cursor:pointer;}", ".far.jsx-2598117078{font-size:30px;position:relative;}", ".share-facebook.jsx-2598117078{box-shadow:none;color:#fff;background-color:#4267b2;}", ".share-twitter.jsx-2598117078{box-shadow:none;color:#fff;background-color:#1da1f2;}", ".social-btn.jsx-2598117078{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;cursor:pointer;}", ".option-considered-text.jsx-2598117078{display:block;width:60%;color:#2b5876;margin-right:15px;padding-right:13px;font-weight:400;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}", ".not.jsx-2598117078{display:none;}", ".landing.jsx-2598117078{width:100%;background:#fdfdfd !important;box-sizing:border-box;font-size:15px;font-family:inherit;border:1px solid transparent;}", ".time-added.jsx-2598117078{padding-right:3px;}", ".landing-tag.jsx-2598117078{padding:10px 20px;margin-bottom:5px;margin-left:15px;margin-top:15px;}", ".more-actions.jsx-2598117078{float:right;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;top:-4px;}", ".follow.jsx-2598117078{font-size:12px;diplay:flex;position:relative;visibility:visible;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:600;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;display:inline-block;color:#4d4d4d;border:1px solid #4d4d4d;border-radius:4px;cursor:pointer;padding-right:10px;padding-left:10px;}", ".bg.jsx-2598117078{background-color:#4d4d4d;color:#fff !important;}", ".follow.jsx-2598117078:hover{color:rgb(91,56,141);border:1px solid rgb(91,56,141);}", ".more-links.jsx-2598117078{background:#eee;border:0;cursor:pointer;border-radius:35px;outline:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".more-actions.jsx-2598117078 .span.jsx-2598117078{margin-right:12px;}", ".tagged.jsx-2598117078{display:inline-block;margin-right:10px;padding-right:5px;text-transform:uppercase;font-weight:600;font-family:inherit;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;font-size:13px;color:#2b5876;white-space:nowrap;cursor:pointer;}", ".landing-question.jsx-2598117078{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:40px;font-weight:700;color:rgb(91,56,141);font-family:Cabin;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;cursor:pointer;}", ".landing-question.jsx-2598117078:hover{color:#4e4376;}", ".landing-details.jsx-2598117078{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-item:center;-webkit-box-align-item:center;-ms-flex-align-item:center;align-item:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:30px;}", ".details.jsx-2598117078{padding:3px 10px;margin-top:30px;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-right:8px;}", "@media (min-width:768px){.landing.jsx-2598117078{max-width:100%;background:#fdfdfd !important;margin-top:1px auto;box-sizing:border-box;font-family:inherit;padding:24px 0;border:1px solid #e6e8eb;padding-left:48px;padding-right:48px;}.landing-question.jsx-2598117078{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:40px;font-weight:700;font-family:Cabin;}.option-considered.jsx-2598117078{font-size:1.4em;}.option-considered-text.jsx-2598117078{font-size:0.8em;}}", "@media (max-width:768px){.landing-question.jsx-2598117078{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:21px;padding-right:5px;padding-left:5px;position:relative;top:17px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.follow.jsx-2598117078{visibilty:hidden !important;}.landing-details.jsx-2598117078 .details.jsx-2598117078{padding:3px 9px;margin-top:30px;color:#637381;font-size:3.2vw;font-weight:600;text-transform:uppercase;}.option-considered.jsx-2598117078{font-size:12px;}.option-considered-text.jsx-2598117078{font-size:0.9em;}.tagged.jsx-2598117078{font-size:11px;color:#2b5876;white-space:nowrap;}}"]));
-    }
-  }]);
-
-  return TopicViewLandingPage;
-}(external_react_["Component"]);
-
-/* harmony default export */ var topicViewLandingPage = (topicViewLandingPage_TopicViewLandingPage);
-// CONCATENATED MODULE: ./components/topicview/recFeed.js
-
-
-
-
-var recFeed_RecFeedCard = function RecFeedCard(_ref) {
-  var recommendations = _ref.recommendations,
-      _ref$title = _ref.title,
-      title = _ref$title === void 0 ? "Recent Activities" : _ref$title,
-      _ref$bg = _ref.bg,
-      bg = _ref$bg === void 0 ? "#fdfdfd" : _ref$bg,
-      _ref$borderR = _ref.borderR,
-      borderR = _ref$borderR === void 0 ? "15px" : _ref$borderR;
-  return external_react_default.a.createElement(external_react_["Fragment"], null, external_react_default.a.createElement("div", {
-    className: "jsx-1281871301" + " " + "new-question-added"
-  }, external_react_default.a.createElement(external_semantic_ui_react_["Card"], {
-    style: {
-      width: "260px",
-      background: bg,
-      overflow: "hidden",
-      boxShadow: "none",
-      borderRadius: borderR
-    }
-  }, external_react_default.a.createElement(external_semantic_ui_react_["Card"].Content, null, external_react_default.a.createElement(external_semantic_ui_react_["Card"].Header, {
-    style: {
-      border: "none"
-    },
-    className: "card-header"
-  }, title)), external_react_default.a.createElement(external_semantic_ui_react_["Card"].Content, {
-    style: {
-      border: "none",
-      position: "relative",
-      left: "-15px",
-      zIndex: 1
-    }
-  }, external_react_default.a.createElement(external_semantic_ui_react_["Feed"], {
-    style: {
-      border: "none"
-    }
-  }, recommendations.map(function (activity) {
-    var _date = new Date(activity.createdAt);
-
-    var date = _date.toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
-
-    var _image = activity.user_image ? activity.user_image : "/static/avatar.png";
-
-    return external_react_default.a.createElement(external_semantic_ui_react_["Feed"].Event, {
-      key: activity._id
-    }, external_react_default.a.createElement(external_semantic_ui_react_["Feed"].Label, {
-      image: _image
-    }), external_react_default.a.createElement(external_semantic_ui_react_["Feed"].Content, null, external_react_default.a.createElement(external_semantic_ui_react_["Feed"].Date, {
-      content: "".concat(date)
-    }), external_react_default.a.createElement(external_semantic_ui_react_["Feed"].Summary, {
-      style: {
-        letterSpacing: "0.4px",
-        fontSize: "16px"
-      }
-    }, activity.username + " ", external_react_default.a.createElement("a", {
-      style: {
-        color: "rgb(0,0,0, 0.4)"
-      },
-      className: "jsx-1281871301"
-    }, "recommended "), external_react_default.a.createElement("br", {
-      className: "jsx-1281871301"
-    }), external_react_default.a.createElement("a", {
-      className: "jsx-1281871301"
-    }, activity.option, "."))));
-  }))))), external_react_default.a.createElement(style_default.a, {
-    id: "1281871301"
-  }, [".new-question-added{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;box-sizing:border-box;overflow:hidden;}", ".card-header{font-size:18px !important;font-family:Cabin !important;background:transparent;color:#000 !important;font-weight:470;position:relative;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;font-weight:600;text-transform:capitalize;left:-30px;}"]));
-};
-
-/* harmony default export */ var recFeed = (recFeed_RecFeedCard);
-// CONCATENATED MODULE: ./components/topicview/relatedOptionsComponent.js
-
-
-
-
-
-function RelatedOptions(_ref) {
-  var relatedTopics = _ref.relatedTopics,
-      recommendations = _ref.recommendations;
-  return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-    className: "jsx-2692949923" + " " + "related-question"
-  }, "Related Questions"), external_react_default.a.createElement("div", {
-    className: "jsx-2692949923" + " " + "related-question-list"
-  }, relatedTopics.map(function (related_topic) {
-    return external_react_default.a.createElement("div", {
-      key: related_topic._id,
-      style: {
-        marginBottom: "10px"
-      },
-      className: "jsx-2692949923"
-    }, external_react_default.a.createElement(link_default.a, {
-      prefetch: true,
-      href: "/topic/".concat(related_topic.question),
-      key: related_topic._id
-    }, external_react_default.a.createElement("a", {
-      className: "jsx-2692949923" + " " + "related-topic-question"
-    }, related_topic.question, "?")));
-  }), external_react_default.a.createElement("div", {
-    style: {
-      marginTop: "45px"
-    },
-    className: "jsx-2692949923"
-  }, external_react_default.a.createElement(recFeed, {
-    title: "Activity",
-    bg: "transparent",
-    borderR: 0,
-    recommendations: recommendations
-  }))), external_react_default.a.createElement(style_default.a, {
-    id: "2692949923"
-  }, [".related-question.jsx-2692949923{font-size:18px;font-family:inherit;font-weight:470;position:relative;-webkit-letter-spacing:0.7px;-moz-letter-spacing:0.7px;-ms-letter-spacing:0.7px;letter-spacing:0.7px;top:40px;left:20px;font-weight:bold;text-transform:capitalize;}", ".card-header.jsx-2692949923{color:#000;background:transparent;font-family:Cabin;border-bottom:none;position:relative;left:-20px;}", ".related-topic-question.jsx-2692949923{-webkit-letter-spacing:0.6px;-moz-letter-spacing:0.6px;-ms-letter-spacing:0.6px;letter-spacing:0.6px;line-height:18px;}", ".related-question-list.jsx-2692949923 div.jsx-2692949923{overflow-wrap:break-word;width:400px;font-size:0.95em;font-family:inherit;font-weight:600;margin-top:10px;margin-bottom:10px;box-sizing:border-box;position:relative;top:40px;left:20px;}"]));
-}
-
-/* harmony default export */ var relatedOptionsComponent = (RelatedOptions);
-// CONCATENATED MODULE: ./components/topicview/optionCardComponent.js
-
-
-
-
-
-
-
-
-
-
-
-var ScoreCard = {
-  display: "inline-block",
-  height: "40px",
-  width: "40px",
-  borderRadius: "4px",
-  backgroundImage: "linear-gradient(135deg,#737373,#171717)"
-};
-var Score = {
-  position: "relative",
-  top: "5px",
-  padding: "0px 8px",
-  textAlign: "center",
-  display: "flex",
-  justifyContent: "center",
-  color: "#fff",
-  fontSize: "16px"
-};
-var customStyle = {
-  width: "850px",
-  borderRadius: "15px",
-  overflow: "hidden",
-  backgroundColor: "#fdfdfd",
-  marginBottom: "36px",
-  padding: "18px",
-  boxShadow: "0 4px 16px 0 rgba(0, 0, 0, .05)",
-  border: "1px solid #e6e8eb",
-  color: "#4d4d4d",
-  fontSize: "16px"
-};
-var TableHeadCustomStyle = {
-  textTransform: "uppercase"
-};
-var TableOption = {
-  cursor: "pointer"
-};
-var ViewMoreStyle = {
-  textAlign: "center",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center"
-};
-var InfoCircleStyle = {
-  position: "relative",
-  top: "5px",
-  marginLeft: " 4px",
-  cursor: "pointer"
-};
-
-var optionCardComponent_OptionCardie =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(OptionCardie, _React$Component);
-
-  function OptionCardie() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionCardie);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionCardie)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      InfoCircleColor: false
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleChangeCircleInfoColor", function (bool) {
-      _this.setState({
-        InfoCircleColor: bool
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionCardie, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var InfoCircleColor = this.state.InfoCircleColor;
-      var _this$props = this.props,
-          optionConsidered = _this$props.optionConsidered,
-          data = _this$props.data;
-      return external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement("div", {
-        className: "jsx-2259390477" + " " + "option-considered-container"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-2259390477"
-      }, optionConsidered, " Options Considered"), external_react_default.a.createElement("span", {
-        style: InfoCircleStyle,
-        onMouseEnter: function onMouseEnter() {
-          _this2.handleChangeCircleInfoColor(true);
-        },
-        onMouseLeave: function onMouseLeave() {
-          _this2.handleChangeCircleInfoColor(false);
-        },
-        className: "jsx-2259390477"
-      }, external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-        trigger: external_react_default.a.createElement("span", {
-          className: "jsx-2259390477"
-        }, external_react_default.a.createElement(Icons["h" /* InfoCircle */], {
-          color: InfoCircleColor ? "rgb(91, 56, 141)" : "#000"
-        })),
-        content: "These ".concat(optionConsidered, " options are being considered by the community.\n                     Please vote for the option you think should be highly recommended."),
-        position: "bottom center",
-        style: {
-          backgroundColor: "#444",
-          color: " #fff"
-        }
-      }))), external_react_default.a.createElement(style_default.a, {
-        id: "2259390477"
-      }, [".option-considered-card.jsx-2259390477{width:750px !important, border-radius:15px, overflow:hidden, background-color:#fdfdfd, margin-bottom:36px, padding:18px, box-shadow:0 4px 16px 0 rgba(0,0,0,.05), border:1px solid #e6e8eb;}", ".option-considered-container.jsx-2259390477{font-size:20px;font-weight:700;line-height:27px;position:relative;text-transform:uppercase;-webkit-letter-spacing :0.4px;-moz-letter-spacing :0.4px;-ms-letter-spacing :0.4px;letter-spacing :0.4px;}", "@media screen and (max-width:768px){.option-considered-container.jsx-2259390477{display:none;}}"]));
-    }
-  }]);
-
-  return OptionCardie;
-}(external_react_default.a.Component);
-
-/* harmony default export */ var optionCardComponent = (optionCardComponent_OptionCardie);
-// CONCATENATED MODULE: ./components/topicview/tab.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var tab_CustomTab =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(inherits["a" /* default */])(CustomTab, _React$Component);
-
-  function CustomTab() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, CustomTab);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(CustomTab)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      experiences: [],
-      pros: [],
-      cons: [],
-      showUpIcon: false,
-      maxItem: 2,
-      all: true,
-      pro: false,
-      //show pros false
-      con: false,
-      //show cons false
-      experience: false //show experiences false
-
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShowMore", function () {
-      _this.setState({
-        maxItem: 10,
-        showUpIcon: true
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShowLess", function () {
-      _this.setState({
-        maxItem: 2,
-        showUpIcon: false
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "showAll", function () {
-      _this.setState(function (previousState) {
-        return {
-          all: true,
-          pro: false,
-          con: false,
-          experience: false
-        };
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "showExperiences", function () {
-      _this.setState(function (previousState) {
-        return {
-          experience: true,
-          pro: false,
-          con: false,
-          all: false
-        };
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "showPros", function () {
-      _this.setState(function (previousState) {
-        return {
-          pro: !previousState.pro,
-          con: false,
-          all: false,
-          experience: false
-        };
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "showCons", function () {
-      _this.setState(function (previousState) {
-        return {
-          con: true,
-          pro: false,
-          all: false,
-          experience: false
-        };
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(CustomTab, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      //do something here
-      this.getOptionCons(this.props.id);
-      this.getOptionPros(this.props.id);
-    }
-  }, {
-    key: "getOptionPros",
-    value: function getOptionPros(id) {
-      var _this2 = this;
-
-      //Do something here
-      Object(apiRequests["I" /* GetOptionPros */])(id).then(function (result) {
-        // console.log(result.data);
-        _this2.setState({
-          pros: result.data
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    }
-  }, {
-    key: "getOptionCons",
-    value: function getOptionCons(id) {
-      var _this3 = this;
-
-      //Do something here
-      Object(apiRequests["H" /* GetOptionCons */])(id).then(function (result) {
-        // console.log(result.data);
-        _this3.setState({
-          cons: result.data
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this4 = this;
-
-      var _this$state = this.state,
-          all = _this$state.all,
-          experience = _this$state.experience,
-          pro = _this$state.pro,
-          con = _this$state.con,
-          pros = _this$state.pros,
-          cons = _this$state.cons,
-          showUpIcon = _this$state.showUpIcon,
-          maxItem = _this$state.maxItem;
-      var _this$props = this.props,
-          experiences = _this$props.experiences,
-          id = _this$props.id;
-      var holder = [];
-      var allItems = holder.concat(pros, cons); // holder.push(this.props.pros, this.props.cons, experiences);
-      // // holder.push(pros, cons, experiences);
-      // const flattenArray = arr => {
-      //   return [].concat(...arr);
-      // };
-      // const flattenedArray = flattenArray(holder);
-
-      return external_react_default.a.createElement(external_react_["Fragment"], null, external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tab"
-      }, external_react_default.a.createElement("button", {
-        onClick: this.showAll,
-        className: "jsx-691326785" + " " + ((all ? "tablinks active" : "tablinks") || "")
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-691326785" + " " + ((all ? "activeAll" : "") || "")
-      }, "All ", pros.length + cons.length)), external_react_default.a.createElement("button", {
-        onClick: this.showExperiences,
-        className: "jsx-691326785" + " " + ((experience ? "tablinks active" : "tablinks") || "")
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-691326785" + " " + ((experience ? "activeAll" : "") || "")
-      }, "Experiences ", experiences ? experiences.length : 0)), external_react_default.a.createElement("button", {
-        onClick: this.showPros,
-        className: "jsx-691326785" + " " + ((pro ? "tablinks active" : "tablinks") || "")
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-691326785" + " " + ((pro ? "activeAll" : "") || "")
-      }, "Pros ", pros ? pros.length : 0)), external_react_default.a.createElement("button", {
-        onClick: this.showCons,
-        className: "jsx-691326785" + " " + ((con ? "tablinks active" : "tablinks") || "")
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-691326785" + " " + ((con ? "activeAll" : "") || "")
-      }, "Cons ", cons ? cons.length : 0))), external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "fix"
-      }), all && external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tab-content-holder"
-      }, allItems ? external_react_default.a.createElement(external_react_["Fragment"], null, allItems.slice(0, maxItem).map(function (item, i) {
-        var userImage = item.userImage ? item.userImage : "/static/gravatar.png";
-        var check = item.type === "pro";
-        return external_react_default.a.createElement("div", {
-          key: i,
-          className: "jsx-691326785" + " " + "tab-content-item"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "profile-image"
-        }, external_react_default.a.createElement("img", {
-          src: userImage,
-          alt: "user",
-          className: "jsx-691326785" + " " + "user-image"
-        })), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "user-rec-details"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + ((check ? "rec-card-content-pro" : "rec-card-content-con") || "")
-        }, external_react_default.a.createElement("span", {
-          className: "jsx-691326785"
-        }, check ? "Pro" : "Con", external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-          trigger: external_react_default.a.createElement("span", {
-            className: "jsx-691326785" + " " + "more-icon"
-          }, external_react_default.a.createElement(Icons["m" /* More */], {
-            color: "transparent"
-          })),
-          content: external_react_default.a.createElement("strong", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("p", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement(link_default.a, {
-            as: "/option-pro?id=".concat(item._id),
-            href: "/option-pro?id=".concat(item._id)
-          }, external_react_default.a.createElement("a", {
-            className: "jsx-691326785"
-          }, "See Update History"))), external_react_default.a.createElement("p", {
-            onClick: function onClick() {
-              return _this4.props.UpdatePro(true, item.title, item.description, item._id, _this4.props.question, _this4.props.option, _this4.props.id);
-            },
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("a", {
-            style: {
-              cursor: "pointer"
-            },
-            className: "jsx-691326785"
-          }, check ? "Update Pro" : "Update Con"))),
-          hideOnScroll: true,
-          position: "bottom right",
-          on: "click"
-        }))), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "caption"
-        }, item.title), external_react_default.a.createElement("p", {
-          className: "jsx-691326785" + " " + "text"
-        }, item.description)));
-      })) : ""), !showUpIcon && allItems.length !== 0 && external_react_default.a.createElement("span", {
-        onClick: this.handleShowMore,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "See All", external_react_default.a.createElement(Icons["e" /* CardDownArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), showUpIcon && external_react_default.a.createElement("span", {
-        onClick: this.handleShowLess,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "Hide", external_react_default.a.createElement(Icons["f" /* CardUpArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      }))), experience && external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tab-content-holder"
-      }, experiences ? external_react_default.a.createElement(external_react_["Fragment"], null, experiences.slice(0, maxItem).map(function (item, i) {
-        var userImage = _this4.props.userAvatar ? _this4.props.userAvatar : "/static/gravatar.png";
-        return external_react_default.a.createElement("div", {
-          key: i,
-          className: "jsx-691326785" + " " + "tab-content-item"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "profile-image"
-        }, external_react_default.a.createElement("img", {
-          src: userImage,
-          alt: "user",
-          className: "jsx-691326785" + " " + "user-image"
-        })), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "user-rec-details"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "rec-card-content-experience"
-        }), external_react_default.a.createElement("p", {
-          className: "jsx-691326785" + " " + "text"
-        }, item)));
-      })) : ""), !showUpIcon && experiences.length !== 0 && external_react_default.a.createElement("span", {
-        onClick: this.handleShowMore,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "See All", external_react_default.a.createElement(Icons["e" /* CardDownArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), showUpIcon && external_react_default.a.createElement("span", {
-        onClick: this.handleShowLess,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "Hide", external_react_default.a.createElement(Icons["f" /* CardUpArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      }))), pro && external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tab-content-holder"
-      }, pros ? external_react_default.a.createElement(external_react_["Fragment"], null, pros.slice(0, maxItem).map(function (item, i) {
-        var userImage = item.userImage ? item.userImage : "/static/gravatar.png";
-        return external_react_default.a.createElement("div", {
-          key: item._id,
-          className: "jsx-691326785" + " " + "tab-content-item"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "profile-image"
-        }, external_react_default.a.createElement("img", {
-          src: userImage,
-          alt: "user",
-          className: "jsx-691326785" + " " + "user-image"
-        })), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "user-rec-details"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "rec-card-content-pro"
-        }, external_react_default.a.createElement("span", {
-          className: "jsx-691326785"
-        }, "Pro", external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-          trigger: external_react_default.a.createElement("span", {
-            className: "jsx-691326785" + " " + "more-icon"
-          }, external_react_default.a.createElement(Icons["m" /* More */], {
-            color: "transparent"
-          })),
-          content: external_react_default.a.createElement("strong", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("p", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement(link_default.a, {
-            as: "/option-pro?id=".concat(item._id),
-            href: "/option-pro?id=".concat(item._id)
-          }, external_react_default.a.createElement("a", {
-            className: "jsx-691326785"
-          }, "See Update History"))), external_react_default.a.createElement("p", {
-            onClick: function onClick() {
-              return _this4.props.UpdatePro(true, item.title, item.description, item._id, _this4.props.question, _this4.props.option, _this4.props.id);
-            },
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("a", {
-            style: {
-              cursor: "pointer"
-            },
-            className: "jsx-691326785"
-          }, "Update Pro"))),
-          hideOnScroll: true,
-          position: "bottom right",
-          on: "click"
-        }))), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "caption"
-        }, item.title), external_react_default.a.createElement("p", {
-          className: "jsx-691326785" + " " + "text"
-        }, item.description)));
-      })) : ""), !showUpIcon && pros.length !== 0 && external_react_default.a.createElement("span", {
-        onClick: this.handleShowMore,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "See All", external_react_default.a.createElement(Icons["e" /* CardDownArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), showUpIcon && external_react_default.a.createElement("span", {
-        onClick: this.handleShowLess,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "Hide", external_react_default.a.createElement(Icons["f" /* CardUpArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      }))), con && external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tabcontent"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-691326785" + " " + "tab-content-holder"
-      }, cons ? external_react_default.a.createElement(external_react_["Fragment"], null, cons.slice(0, maxItem).map(function (item, i) {
-        var userImage = item.userImage ? item.userImage : "/static/gravatar.png";
-        return external_react_default.a.createElement("div", {
-          key: item._id,
-          className: "jsx-691326785" + " " + "tab-content-item"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "profile-image"
-        }, external_react_default.a.createElement("img", {
-          src: userImage,
-          alt: "user",
-          className: "jsx-691326785" + " " + "user-image"
-        })), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "user-rec-details"
-        }, external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "rec-card-content-con"
-        }, external_react_default.a.createElement("span", {
-          className: "jsx-691326785"
-        }, "Con", external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-          trigger: external_react_default.a.createElement("span", {
-            className: "jsx-691326785" + " " + "more-icon"
-          }, external_react_default.a.createElement(Icons["m" /* More */], {
-            color: "transparent"
-          })),
-          content: external_react_default.a.createElement("strong", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("p", {
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement(link_default.a, {
-            as: "/option-con?id=".concat(item._id),
-            href: "/option-con?id=".concat(item._id)
-          }, external_react_default.a.createElement("a", {
-            className: "jsx-691326785"
-          }, "See Update History"))), external_react_default.a.createElement("p", {
-            onClick: function onClick() {
-              return _this4.props.UpdateCon(true, item.title, item.description, item._id, _this4.props.question, _this4.props.option, _this4.props.id);
-            },
-            className: "jsx-691326785"
-          }, external_react_default.a.createElement("a", {
-            style: {
-              cursor: "pointer"
-            },
-            className: "jsx-691326785"
-          }, "Update Con"))),
-          hideOnScroll: true,
-          position: "bottom right",
-          on: "click"
-        }))), external_react_default.a.createElement("div", {
-          className: "jsx-691326785" + " " + "caption"
-        }, item.title), external_react_default.a.createElement("p", {
-          className: "jsx-691326785" + " " + "text"
-        }, item.description)));
-      })) : ""), !showUpIcon && cons.length !== 0 && external_react_default.a.createElement("span", {
-        onClick: this.handleShowMore,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "See All", external_react_default.a.createElement(Icons["e" /* CardDownArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      })), showUpIcon && external_react_default.a.createElement("span", {
-        onClick: this.handleShowLess,
-        className: "jsx-691326785" + " " + "view-more-item"
-      }, "Hide", external_react_default.a.createElement(Icons["f" /* CardUpArrow */], {
-        width: 24,
-        height: 24,
-        color: "#fff"
-      }))), external_react_default.a.createElement(style_default.a, {
-        id: "691326785"
-      }, [".tab.jsx-691326785{overflow:hidden;margin-top:8px;font-family:Cabin;}", ".fix.jsx-691326785{margin-bottom:20px;}", "a.jsx-691326785{color:#000;}", "h3.jsx-691326785{position:relative;left:15px;font-family:Cabin !important;font-weight:600;color:rgb(91,56,141);}", ".tablinks.jsx-691326785{color:#444;text-transform:uppercase;white-space:nowrap;font-size:400;font-family:inherit;}", ".tab-p.jsx-691326785{text-align:center;padding:10px;height:auto;}", ".tab-content-holder.jsx-691326785{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0;margin:auto;width:100%;box-sizing:border-box;}", ".tab-content-item.jsx-691326785{display:block;width:50%;}", ".tab-text.jsx-691326785{overflow-wrap:break-word;box-sizing:border-box;white-space:normal;margin-bottom:4px;max-width:200px;height:auto;overflow-x:hidden;padding:2px;text-align:center;border-radius:4px;}", ".rec-card-content-con.jsx-691326785,.rec-card-content-pro.jsx-691326785,.rec-card-content-experience.jsx-691326785{font-weight:bold;margin-right:15px;font-size:14px;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;text-transform:uppercase;}", ".rec-card-content-con.jsx-691326785{color:#cb1a4a;}", ".rec-card-content-pro.jsx-691326785{color:#1d9127;}", ".rec-card-content-experience.jsx-691326785{color:#1b9ad1;}", ".tab.jsx-691326785 button.jsx-691326785{background-color:transparent;float:left;border:none;outline:none;cursor:pointer;padding:14px 16px;-webkit-transition:0.3s;transition:0.3s;font-size:0.9em;font-family:Cabin;}", ".activeAll.jsx-691326785{font-weight:600;}", ".activeExperience.jsx-691326785{color:#000;font-weight:600;}", ".activePro.jsx-691326785{color:#000;font-weight:600;}", ".activeCon.jsx-691326785{color:#000;font-weight:600;}", ".active.jsx-691326785{background-color:#ddd !important;border-radius:5px;font-weight:600;}", ".tabcontent.jsx-691326785{display:block;padding:6px 12px;border-top:none;}", ".profile-image.jsx-691326785{border-radius:50px;width:50px;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:50px;border:1px solid grey;}", ".user-image.jsx-691326785{width:100%;padding:2px;}", ".user-rec-details.jsx-691326785{position:relative;left:15%;top:-50px;width:85%;box-sizing:border-box;word-break:normal;}", ".caption.jsx-691326785{font-weight:600;color:#0d0d0d;line-height:24px;font-size:1.3em;}", ".text.jsx-691326785{font-size:18px;font-weight:500;color:#595959;word-break:break-word;}", ".more-icon.jsx-691326785{border:0;cursor:pointer;border-radius:35px;outline:0;padding:0;height:25px;width:25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin-left:94%;margin-top:-20px;}", ".view-more-item.jsx-691326785{font-size:14px;font-weight:600;text-transform:uppercase;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#fff;position:relative;left:42%;cursor:pointer;background-color:rgb(91,56,141);border-radius:9px;padding:3px 12px 3px 18px;-webkit-transition:background-color 0.15s;transition:background-color 0.15s;}", "@media screen and (max-width:768px){.user-rec-details.jsx-691326785{left:26%;top:-50px;}.caption.jsx-691326785{font-size:1em;}.text.jsx-691326785{font-size:14px;font-weight:500;color:#595959;word-break:break-word;}.more-icon.jsx-691326785{margin-left:82%;}}"]));
-    }
-  }]);
-
-  return CustomTab;
-}(external_react_default.a.Component);
-
-/* harmony default export */ var tab = (tab_CustomTab);
-// EXTERNAL MODULE: external "react-bootstrap"
-var external_react_bootstrap_ = __webpack_require__("IZS3");
-
-// EXTERNAL MODULE: ./pages/signin.js + 2 modules
-var signin = __webpack_require__("DB6d");
-
-// EXTERNAL MODULE: ./pages/signup.js
-var signup = __webpack_require__("vL9u");
-
-// EXTERNAL MODULE: ./components/modal/topicviewPopupModal.js
-var topicviewPopupModal = __webpack_require__("tdmr");
-
-// CONCATENATED MODULE: ./components/topicview/optionList.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var socket = external_socket_io_client_default()(config["c" /* default */]);
-var imageArr = ["/static/thishouse.png", "/static/avatar.png", "/static/thishouse.png"];
-
-var optionList_OptionList =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(OptionList, _Component);
-
-  function OptionList() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, OptionList);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(OptionList)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      inc: 0,
-      //inc stands for increase
-      dec: 0,
-      //dec stands for decrease
-      experience: "",
-      showClass: false,
-      clickedOptionDetails: {},
-      user_data: {},
-      type: "",
-      data: _this.props.data,
-      ioResponseLike: false,
-      ioResponseDisLike: false,
-      UserLoggedIn: true,
-      showSignInOverlay: false,
-      UserClickedLogin: false,
-      UserClickedSignup: false,
-      rxn: null,
-      showUpdateModal: false,
-      show: false,
-      updatedOption: "",
-      updatedOptionLink: "",
-      proTitle: "",
-      conTitle: "",
-      proDescription: "",
-      conDescription: "",
-      updateCon: false,
-      updatePro: false,
-      question: "",
-      option: "",
-      optionId: "",
-      updateImage: false,
-      imageLink: "",
-      mediaArr: null,
-      LikeColor: _this.props.LikeColor,
-      DisLikeColor: _this.props.DisLikeColor,
-      LikeNumber: _this.props.LikeNumber,
-      DisLikeNumber: _this.props.DisLikeNumber // user_id : this.props.user_id
-
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "getSocketResponse", function () {
-      socket.on("rec_added", function (data) {
-        if (data.type === "like") {
-          _this.setState({
-            ioResponseLike: true,
-            _like: data.like
-          });
-
-          return;
-        }
-
-        if (data.type === "dislike") {
-          _this.setState({
-            ioResponseDisLike: true,
-            _dislike: data.dislike
-          });
-
-          return;
-        }
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDivClose", function (e) {
-      if (e.target === _this.div) {
-        _this.setState(function (previousState) {
-          return {
-            showSignInOverlay: !previousState.showSignInOverlay
-          };
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openLoginOverlay", function () {
-      _this.setState({
-        UserClickedSignup: false,
-        UserLoggedIn: false,
-        showSignInOverlay: true
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openSignupOverlay", function () {
-      _this.setState({
-        UserClickedSignup: !_this.state.UserClickedSignup,
-        UserLoggedIn: true,
-        showSignInOverlay: false
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openBtn", function () {
-      _this.setState({
-        showClass: true
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeBtn", function () {
-      _this.setState({
-        showClass: false
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeModal", function (e) {
-      if (e.target === _this.recCard) {
-        _this.setState({
-          showClass: false
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handlelike",
-    /*#__PURE__*/
-    function () {
-      var _ref = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee(data) {
-        var color, colo, LikeNumber, DisLikeNumber, _user, rxn;
-
-        return regenerator_default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                color = _this.state.LikeColor;
-                colo = _this.state.DisLikeColor;
-                LikeNumber = _this.state.LikeNumber;
-                DisLikeNumber = _this.state.DisLikeNumber;
-
-                if (color[data.option] == "grey" && colo[data.option] == "grey") {
-                  color[data.option] = "blue";
-                  LikeNumber[data.option] = LikeNumber[data.option] + 1;
-                  colo[data.option] = "grey";
-                } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
-                  color[data.option] = "blue";
-                  LikeNumber[data.option] = LikeNumber[data.option] + 1;
-                  DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
-                  colo[data.option] = "grey";
-                } else {
-                  LikeNumber[data.option] = LikeNumber[data.option] - 1;
-                  color[data.option] = "grey";
-                } // console.log("+++++++++++");
-                // console.log(LikeNumber , "  " , DisLikeNumber);
-                // console.log("+++++++++++++");
-
-
-                _context.next = 7;
-                return _this.setState({
-                  LikeColor: color,
-                  DisLikeColor: colo,
-                  LikeNumber: LikeNumber,
-                  DisLikeNumber: DisLikeNumber
-                });
-
-              case 7:
-                _user = JSON.parse(localStorage.getItem("user_details"));
-                rxn = {
-                  userId: _user._id,
-                  option: data.option,
-                  type: true
-                };
-                _context.next = 11;
-                return Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(function (res) {}).catch(function (err) {
-                  console.log(err);
-                  console.log(err.response.data);
-                });
-
-              case 11:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      return function (_x) {
-        return _ref.apply(this, arguments);
-      };
-    }());
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDislike",
-    /*#__PURE__*/
-    function () {
-      var _ref2 = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee3(data) {
-        var color, colo, LikeNumber, DisLikeNumber, _user, rxn;
-
-        return regenerator_default.a.wrap(function _callee3$(_context3) {
-          while (1) {
-            switch (_context3.prev = _context3.next) {
-              case 0:
-                color = _this.state.DisLikeColor;
-                colo = _this.state.LikeColor;
-                LikeNumber = _this.state.LikeNumber;
-                DisLikeNumber = _this.state.DisLikeNumber;
-
-                if (color[data.option] == "grey" && colo[data.option] == "grey") {
-                  color[data.option] = "blue";
-                  colo[data.option] = "grey";
-                  DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
-                } else if (color[data.option] == "grey" && colo[data.option] == "blue") {
-                  color[data.option] = "blue";
-                  colo[data.option] = "grey";
-                  DisLikeNumber[data.option] = DisLikeNumber[data.option] + 1;
-                  LikeNumber[data.option] = LikeNumber[data.option] - 1;
-                } else {
-                  color[data.option] = "grey";
-                  DisLikeNumber[data.option] = DisLikeNumber[data.option] - 1;
-                } // console.log("+++++++++++");
-                // console.log(LikeNumber , "  " , DisLikeNumber);
-                // console.log("+++++++++++++");
-
-
-                _context3.next = 7;
-                return _this.setState({
-                  DisLikeColor: color,
-                  LikeColor: colo,
-                  DisLikeNumber: DisLikeNumber,
-                  LikeNumber: LikeNumber
-                });
-
-              case 7:
-                _user = JSON.parse(localStorage.getItem("user_details"));
-                rxn = {
-                  userId: _user._id,
-                  option: data.option,
-                  type: false
-                };
-                _context3.next = 11;
-                return Object(apiRequests["f" /* AddUserReactionToOption */])(rxn).then(
-                /*#__PURE__*/
-                function () {
-                  var _ref3 = Object(asyncToGenerator["a" /* default */])(
-                  /*#__PURE__*/
-                  regenerator_default.a.mark(function _callee2(res) {
-                    return regenerator_default.a.wrap(function _callee2$(_context2) {
-                      while (1) {
-                        switch (_context2.prev = _context2.next) {
-                          case 0:
-                          case "end":
-                            return _context2.stop();
-                        }
-                      }
-                    }, _callee2);
-                  }));
-
-                  return function (_x3) {
-                    return _ref3.apply(this, arguments);
-                  };
-                }()).catch(function (err) {
-                  console.log(err);
-                  console.log(err.response.data);
-                });
-
-              case 11:
-              case "end":
-                return _context3.stop();
-            }
-          }
-        }, _callee3);
-      }));
-
-      return function (_x2) {
-        return _ref2.apply(this, arguments);
-      };
-    }());
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleInputChange", function (_ref4) {
-      var _ref4$target = _ref4.target,
-          value = _ref4$target.value,
-          name = _ref4$target.name;
-
-      _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleSpam", function (option) {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-
-      if (!user) {
-        alert("Sign in to carry out this action");
-        return;
-      }
-
-      var _data = {
-        option: option,
-        isSpam: true,
-        userIdWhoMarkedAsSpam: user._id
-      }; //Mark option as spam
-
-      Object(apiRequests["Z" /* MarkOptionAsSpam */])(_data).then(function (response) {
-        alert("Option Marked as Spam");
-      }).catch(function (error) {
-        return console.log(error);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "toggle", function () {
-      _this.setState({
-        modal: !_this.state.modal
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleClose", function () {
-      _this.setState({
-        show: false
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShow", function () {
-      _this.setState({
-        show: true
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "onOptionUpdateChange", function (_ref5) {
-      var _ref5$target = _ref5.target,
-          value = _ref5$target.value,
-          name = _ref5$target.name;
-
-      _this.setState(Object(defineProperty["a" /* default */])({}, name, value));
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleSaveUpdatedOption", function () {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-      var _this$state = _this.state,
-          updatedOption = _this$state.updatedOption,
-          updatedOptionLink = _this$state.updatedOptionLink,
-          optionId = _this$state.optionId;
-
-      if (!user) {
-        alert("Login to carry out this action");
-        return;
-      }
-
-      if (updatedOption === "" || updatedOptionLink === "" || !optionId) {
-        alert("no way");
-        console.log("no way");
-        return;
-      }
-
-      var _saveUpdateHistory = {
-        option: updatedOption,
-        optionId: optionId,
-        username: user.username,
-        userId: user._id
-      };
-      Object(apiRequests["jb" /* UpdateOption */])(optionId, user._id, updatedOption, updatedOptionLink).then(function (result) {
-        alert("Option Updated");
-
-        _this.setState({
-          show: false
-        });
-
-        Object(apiRequests["eb" /* SaveUpdateHistory */])(_saveUpdateHistory).then(function () {
-          return console.log("saved");
-        }).catch(function (err) {
-          return console.log(err.response);
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleUpdatePro", function (visible, caption, pro, id, question, option, optionId) {
-      _this.setState({
-        updatePro: visible,
-        proTitle: caption,
-        proDescription: pro,
-        proId: id,
-        question: question,
-        option: option,
-        optionId: optionId
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleUpdateCon", function (visible, caption, con, id, question, option, optionId) {
-      _this.setState({
-        updateCon: visible,
-        conTitle: caption,
-        conDescription: con,
-        conId: id,
-        question: question,
-        option: option,
-        optionId: optionId
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleProUpdate", function () {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-      var _this$state2 = _this.state,
-          proTitle = _this$state2.proTitle,
-          proDescription = _this$state2.proDescription,
-          proId = _this$state2.proId,
-          option = _this$state2.option,
-          optionId = _this$state2.optionId,
-          question = _this$state2.question;
-
-      if (!user) {
-        alert("Login to carry out this action");
-        return;
-      }
-
-      if (proTitle === "" || proDescription === "") {
-        alert("It can't be empty");
-        return;
-      }
-
-      var data = {
-        option: option,
-        username: user.username,
-        optionId: optionId,
-        title: proTitle,
-        description: proDescription,
-        userId: user._id,
-        question: question,
-        proId: proId
-      };
-      Object(apiRequests["kb" /* UpdatePro */])(proId, user._id, proTitle.replace("%", " percent"), proDescription.replace("%", " percent"), option, optionId, question).then(function (result) {
-        alert("updated");
-
-        _this.setState({
-          updatePro: false
-        });
-
-        Object(apiRequests["db" /* SaveProHistory */])(data).then(function () {
-          return console.log("saved");
-        }).catch(function (err) {
-          return console.log(err.response);
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleConUpdate", function () {
-      var user = JSON.parse(localStorage.getItem("user_details"));
-      var _this$state3 = _this.state,
-          conTitle = _this$state3.conTitle,
-          option = _this$state3.option,
-          question = _this$state3.question,
-          optionId = _this$state3.optionId,
-          conDescription = _this$state3.conDescription,
-          conId = _this$state3.conId;
-
-      if (!user) {
-        alert("Login to carry out this action");
-        return;
-      }
-
-      if (conTitle === "" || conDescription === "") {
-        alert("It can't be empty");
-        return;
-      }
-
-      var data = {
-        option: option,
-        username: user.username,
-        optionId: optionId,
-        title: conTitle,
-        description: conDescription,
-        userId: user._id,
-        question: question,
-        conId: conId
-      };
-      Object(apiRequests["ib" /* UpdateCon */])(conId, user._id, conTitle.replace("%", " percent"), conDescription.replace("%", " percent"), option, optionId, question).then(function (result) {
-        alert("updated");
-
-        _this.setState({
-          updateCon: false
-        });
-
-        Object(apiRequests["cb" /* SaveConHistory */])(data).then(function (result) {
-          return console.log(result);
-        }).catch(function (err) {
-          return console.log(err.response);
-        });
-      }).catch(function (err) {
-        console.log(err);
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleUpdateImage", function () {
-      //Parameters here
-      var _this$state4 = _this.state,
-          newImage = _this$state4.newImage,
-          optionId = _this$state4.optionId;
-      Object(apiRequests["d" /* AddOptionImage */])(optionId, newImage).then(function (axiosResponse) {
-        _this.setState({
-          optionImageAdded: true
-        });
-      }).catch(function (err) {
-        _this.setState({
-          err: err
-        });
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "addImageUrlToImageArray", function (_ref6) {
-      var _ref6$target = _ref6.target,
-          value = _ref6$target.value,
-          name = _ref6$target.name;
-
-      _this.setState({
-        newImage: value
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleShowModal", function (visible, mediaArr, optionId) {
-      _this.setState({
-        updateImage: visible,
-        mediaArr: mediaArr,
-        optionId: optionId
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(OptionList, [{
-    key: "componentDidMount",
-    value: function () {
-      var _componentDidMount = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee4() {
-        var LikeColor, DisLikeColor;
-        return regenerator_default.a.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                this.getSocketResponse();
-
-                if (!JSON.parse(localStorage.getItem("user_details"))) {
-                  _context4.next = 9;
-                  break;
-                }
-
-                _context4.next = 4;
-                return Object(apiRequests["X" /* GetUserReactionToLikeOption */])(JSON.parse(localStorage.getItem("user_details"))._id, this.state.data);
-
-              case 4:
-                LikeColor = _context4.sent;
-                _context4.next = 7;
-                return Object(apiRequests["W" /* GetUserReactionToDisLikeOption */])(JSON.parse(localStorage.getItem("user_details"))._id, this.state.data);
-
-              case 7:
-                DisLikeColor = _context4.sent;
-                this.setState({
-                  LikeColor: LikeColor.data,
-                  DisLikeColor: DisLikeColor.data
-                });
-
-              case 9:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function componentDidMount() {
-        return _componentDidMount.apply(this, arguments);
-      }
-
-      return componentDidMount;
-    }()
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state5 = this.state,
-          showClass = _this$state5.showClass,
-          clickedOptionDetails = _this$state5.clickedOptionDetails,
-          ioResponseLike = _this$state5.ioResponseLike,
-          ioResponseDisLike = _this$state5.ioResponseDisLike,
-          UserLoggedIn = _this$state5.UserLoggedIn,
-          showSignInOverlay = _this$state5.showSignInOverlay,
-          _disliked = _this$state5._disliked,
-          _liked = _this$state5._liked,
-          UserClickedSignup = _this$state5.UserClickedSignup,
-          rxn = _this$state5.rxn,
-          show = _this$state5.show,
-          optionItems = _this$state5.optionItems,
-          proDescription = _this$state5.proDescription,
-          proTitle = _this$state5.proTitle,
-          conDescription = _this$state5.conDescription,
-          conTitle = _this$state5.conTitle,
-          updateCon = _this$state5.updateCon,
-          updatePro = _this$state5.updatePro,
-          link = _this$state5.link,
-          mediaArr = _this$state5.mediaArr,
-          newImage = _this$state5.newImage,
-          optionImageAdded = _this$state5.optionImageAdded;
-      var profileImageUrl = this.props.user.image ? this.props.user.image : "/static/wor.jpg";
-      var Likecolor = rxn ? "blue" : "grey";
-      var disLikeColor = _disliked ? "blue" : "grey";
-      return external_react_default.a.createElement(external_react_["Fragment"], null, this.props.data.map(function (item) {
-        var like = ioResponseLike ? _this2.state._like : item.like;
-        var dislike = ioResponseDisLike ? _this2.state._dislike : item.dislike;
-
-        if (item.mediaUrl.length < 2) {
-          return external_react_default.a.createElement("div", {
-            key: item._id,
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "card-list"
-          }, external_react_default.a.createElement("div", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("h2", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-name"
-          }, external_react_default.a.createElement("span", {
-            style: {
-              marginRight: "15px",
-              marginLeft: "10px"
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "score-card"
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "score"
-          }, _this2.state.LikeNumber[item.option] - _this2.state.DisLikeNumber[item.option])), external_react_default.a.createElement(link_default.a, {
-            prefetch: true,
-            href: "/option/".concat(item.option)
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-name-question"
-          }, item.option)), external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "more-icon"
-          }, external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-            trigger: external_react_default.a.createElement("button", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "more-icon-button"
-            }, external_react_default.a.createElement(Icons["m" /* More */], {
-              color: "transparent"
-            })),
-            on: "click",
-            content: external_react_default.a.createElement("strong", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, external_react_default.a.createElement("p", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, external_react_default.a.createElement("a", {
-              onClick: function onClick() {
-                if (!JSON.parse(localStorage.getItem("user_details"))) {
-                  _this2.setState({
-                    UserLoggedIn: false,
-                    showSignInOverlay: true
-                  });
-
-                  return;
-                }
-
-                var _unique = {
-                  option: item.option,
-                  question: item.question,
-                  optionImage: item.optionImage ///OptionID and QuestionId may be added
-
-                };
-
-                _this2.setState({
-                  clickedOptionDetails: _unique,
-                  showClass: true
-                });
-              },
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, "Add Pros and Cons")), external_react_default.a.createElement("p", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, external_react_default.a.createElement(link_default.a, {
-              href: "/updatehistory/".concat(item.option)
-            }, external_react_default.a.createElement("a", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, "See Update History"))), external_react_default.a.createElement("p", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, external_react_default.a.createElement("a", {
-              style: {
-                cursor: "pointer"
-              },
-              onClick: function onClick() {
-                _this2.setState({
-                  show: true,
-                  updatedOption: item.option,
-                  updatedOptionLink: item.link,
-                  optionId: item._id
-                });
-              },
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, "Update Option")), external_react_default.a.createElement("p", {
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, external_react_default.a.createElement("a", {
-              style: {
-                color: "#E91E63",
-                cursor: "pointer"
-              },
-              onClick: function onClick() {
-                return _this2.handleSpam(item.option);
-              },
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-            }, "Mark Option as Spam"))),
-            hideOnScroll: true,
-            position: "bottom right"
-          })))), external_react_default.a.createElement("div", {
-            style: {
-              marginBottom: "10px"
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "carousel"
-          }), external_react_default.a.createElement("div", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "little-card"
-          }, item.mediaUrl.slice(0, 3).map(function (item, index) {
-            return external_react_default.a.createElement("div", {
-              key: index,
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "twoo"
-            }, external_react_default.a.createElement("img", {
-              src: item,
-              className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-image"
-            }));
-          }), external_react_default.a.createElement("div", {
-            onClick: function onClick() {
-              return _this2.handleShowModal(true, item.mediaUrl, item._id);
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "twoo add-media"
-          }, external_react_default.a.createElement("div", {
-            style: {
-              display: "flex",
-              justifyContent: "center",
-              alignItems: " center",
-              flexDirection: "column"
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement(Icons["a" /* AddIcon */], {
-            color: "#58647b"
-          })), external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, "Add Image or Video")))), external_react_default.a.createElement("div", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "fix"
-          }), external_react_default.a.createElement(tab, {
-            experiences: item.experiences,
-            userAvatar: item.userImage,
-            pros: item.pros,
-            cons: item.cons,
-            id: item._id,
-            option: item.option,
-            question: item.question,
-            UpdateCon: _this2.handleUpdateCon,
-            UpdatePro: _this2.handleUpdatePro
-          }), external_react_default.a.createElement("div", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "rec-btn"
-          }, external_react_default.a.createElement("div", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("button", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "get-it-btn"
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon"
-          }, external_react_default.a.createElement(Icons["i" /* InsertLink */], {
-            color: "#fff"
-          })), external_react_default.a.createElement(link_default.a, {
-            href: "http://".concat(item.link)
-          }, external_react_default.a.createElement("a", {
-            target: "_blank",
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "btn-content get-it"
-          }, item.price && " $ ".concat(item.price), !item.price && " GET IT HERE")))), external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "rec-holder"
-          }, external_react_default.a.createElement("button", {
-            onClick: function onClick() {
-              if (!JSON.parse(localStorage.getItem("user_details"))) {
-                _this2.setState({
-                  UserLoggedIn: false,
-                  showSignInOverlay: true
-                });
-
-                return;
-              }
-
-              var _unique = {
-                option: item.option,
-                question: item.question,
-                optionImage: item.mediaUrl,
-                optionId: item._id ///OptionID and QuestionId may be added
-
-              }; // this.setState(
-              //   {
-              //     clickedOptionDetails: _unique,
-              //     type: "like",
-              //     showClass: true
-              //   },
-              //   () => {
-              //     this.setState(previousState => ({
-              //       inc: previousState.inc + 1
-              //     }));
-              //   }
-              // );
-
-              {
-                _this2.handlelike(_unique);
-              }
-              ;
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "like-btn"
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon lik"
-          }, external_react_default.a.createElement(Icons["s" /* Thumb_up */], {
-            color: _this2.state.LikeColor[item.option]
-          })), external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((like ? "btn-content btn-content-active" : "btn-content") || "")
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "recommend-text num"
-          }, _this2.state.LikeNumber[item.option]))), external_react_default.a.createElement("button", {
-            onClick: function onClick() {
-              if (!JSON.parse(localStorage.getItem("user_details"))) {
-                _this2.setState({
-                  UserLoggedIn: false,
-                  showSignInOverlay: true
-                });
-
-                return;
-              }
-
-              if (JSON.parse(localStorage.getItem("user_details"))) {
-                var _unique = {
-                  option: item.option,
-                  question: item.question,
-                  optionImage: item.mediaUrl,
-                  optionId: item._id ///OptionID and QuestionId may be added
-
-                }; // this.setState(
-                //   {
-                //     clickedOptionDetails: _unique,
-                //     type: "dislike",
-                //     showClass: true
-                //   },
-                //   () => {
-                //     this.setState(previousState => ({
-                //       dec: previousState.dec + 1
-                //     }));
-                //   }
-                // );
-
-                {
-                  _this2.handleDislike(_unique);
-                }
-                ;
-                return;
-              }
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "dislike-btn"
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon dis"
-          }, external_react_default.a.createElement(Icons["r" /* Thumb_down */], {
-            color: _this2.state.DisLikeColor[item.option]
-          })), external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((_disliked ? "btn-content btn-content-active" : "btn-content") || "")
-          }, external_react_default.a.createElement("span", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "recommend-text num"
-          }, _this2.state.DisLikeNumber[item.option]))))));
-        }
-
-        return external_react_default.a.createElement("div", {
-          key: item._id,
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "card-list"
-        }, external_react_default.a.createElement("div", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "card-list-top-header"
-        }, external_react_default.a.createElement("h2", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-name"
-        }, external_react_default.a.createElement("span", {
-          style: {
-            marginRight: "3px"
-          },
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "score-card"
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "score"
-        }, item.rating)), external_react_default.a.createElement(link_default.a, {
-          prefetch: true,
-          as: "/option/".concat(item.option),
-          href: "/option/".concat(item.option)
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-name-question"
-        }, item.option)), external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "more-icon"
-        }, external_react_default.a.createElement(external_semantic_ui_react_["Popup"], {
-          trigger: external_react_default.a.createElement("button", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "more-icon-button"
-          }, external_react_default.a.createElement(Icons["m" /* More */], {
-            color: "transparent"
-          })),
-          on: "click",
-          content: external_react_default.a.createElement("strong", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("p", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("a", {
-            onClick: function onClick() {
-              if (!JSON.parse(localStorage.getItem("user_details"))) {
-                _this2.setState({
-                  UserLoggedIn: false,
-                  showSignInOverlay: true
-                });
-
-                return;
-              }
-
-              var _unique = {
-                option: item.option,
-                question: item.question,
-                optionImage: item.optionImage ///OptionID and QuestionId may be added
-
-              };
-
-              _this2.setState({
-                clickedOptionDetails: _unique,
-                showClass: true
-              });
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, "Add Pros and Cons")), external_react_default.a.createElement("p", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement(link_default.a, {
-            href: "/updatehistory/".concat(item.option)
-          }, external_react_default.a.createElement("a", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, "See Update History"))), external_react_default.a.createElement("p", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("a", {
-            style: {
-              cursor: "pointer"
-            },
-            onClick: function onClick() {
-              _this2.setState({
-                show: true,
-                updatedOption: item.option,
-                updatedOptionLink: item.link,
-                optionId: item._id
-              });
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, "Update Option")), external_react_default.a.createElement("p", {
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, external_react_default.a.createElement("a", {
-            style: {
-              color: "#E91E63",
-              cursor: "pointer"
-            },
-            onClick: function onClick() {
-              return _this2.handleSpam(item.option);
-            },
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-          }, "Mark Option as Spam"))),
-          hideOnScroll: true,
-          position: "bottom right"
-        })))), external_react_default.a.createElement("div", {
-          style: {
-            marginBottom: "10px"
-          },
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "carousel"
-        }), external_react_default.a.createElement("div", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "little-card"
-        }, item.mediaUrl.slice(0, 2).map(function (item, index) {
-          return external_react_default.a.createElement("div", {
-            key: index,
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "twoo"
-          }, external_react_default.a.createElement("img", {
-            src: item,
-            className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "option-image"
-          }));
-        })), external_react_default.a.createElement("div", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "fix"
-        }), external_react_default.a.createElement(tab, {
-          experiences: item.experiences,
-          userAvatar: item.userImage,
-          pros: item.pros,
-          cons: item.cons,
-          id: item._id,
-          option: item.option,
-          question: item.question,
-          UpdateCon: _this2.handleUpdateCon,
-          UpdatePro: _this2.handleUpdatePro
-        }), external_react_default.a.createElement("div", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "rec-btn"
-        }, external_react_default.a.createElement("div", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-        }, external_react_default.a.createElement("button", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "get-it-btn"
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon"
-        }, external_react_default.a.createElement(Icons["i" /* InsertLink */], {
-          color: "#fff"
-        })), external_react_default.a.createElement(link_default.a, {
-          href: "http://".concat(item.link)
-        }, external_react_default.a.createElement("a", {
-          target: "_blank",
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "btn-content get-it"
-        }, item.price && " $ ".concat(item.price), !item.price && " GET IT HERE")))), external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "rec-holder"
-        }, external_react_default.a.createElement("button", {
-          onClick: function onClick() {
-            if (!JSON.parse(localStorage.getItem("user_details"))) {
-              _this2.setState({
-                UserLoggedIn: false,
-                showSignInOverlay: true
-              });
-
-              return;
-            }
-
-            var _unique = {
-              option: item.option,
-              question: item.question,
-              optionImage: item.mediaUrl,
-              optionId: item._id ///OptionID and QuestionId may be added
-
-            }; // this.setState(
-            //   {
-            //     clickedOptionDetails: _unique,
-            //     type: "like",
-            //     showClass: true
-            //   },
-            //   () => {
-            //     this.setState(previousState => ({
-            //       inc: previousState.inc + 1
-            //     }));
-            //   }
-            // );
-
-            {
-              _this2.handlelike(_unique);
-            }
-            ;
-          },
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "like-btn"
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon lik"
-        }, external_react_default.a.createElement(Icons["s" /* Thumb_up */], {
-          color: _this2.state.LikeColor[item.option]
-        })), external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((like ? "btn-content btn-content-active" : "btn-content") || "")
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "recommend-text num"
-        }, _this2.state.LikeNumber[item.option]))), external_react_default.a.createElement("button", {
-          onClick: function onClick() {
-            if (!JSON.parse(localStorage.getItem("user_details"))) {
-              _this2.setState({
-                UserLoggedIn: false,
-                showSignInOverlay: true
-              });
-
-              return;
-            }
-
-            if (JSON.parse(localStorage.getItem("user_details"))) {
-              var _unique = {
-                option: item.option,
-                question: item.question,
-                optionImage: item.mediaUrl,
-                optionId: item._id ///OptionID and QuestionId may be added
-
-              }; // this.setState(
-              //   {
-              //     clickedOptionDetails: _unique,
-              //     type: "dislike",
-              //     showClass: true
-              //   },
-              //   () => {
-              //     this.setState(previousState => ({
-              //       dec: previousState.dec + 1
-              //     }));
-              //   }
-              // );
-
-              {
-                _this2.handleDislike(_unique);
-              }
-              ;
-              return;
-            }
-          },
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "dislike-btn"
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "thumb-icon dis"
-        }, external_react_default.a.createElement(Icons["r" /* Thumb_down */], {
-          color: _this2.state.DisLikeColor[item.option]
-        })), external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((_disliked ? "btn-content btn-content-active" : "btn-content") || "")
-        }, external_react_default.a.createElement("span", {
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "recommend-text num"
-        }, _this2.state.DisLikeNumber[item.option]))))));
-      }), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this2.handleDivClose(e);
-        },
-        ref: function ref(el) {
-          return _this2.div = el;
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((showSignInOverlay ? "overlayShow showSignin-container" : "overlay") || "")
-      }, external_react_default.a.createElement("em", {
-        onClick: function onClick() {
-          _this2.setState({
-            showSignInOverlay: false,
-            UserLoggedIn: false
-          });
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "close"
-      }, "\xD7"), !UserLoggedIn && external_react_default.a.createElement(signin["default"], {
-        openSignup: this.openSignupOverlay
-      })), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this2.handleDivClose(e);
-        },
-        ref: function ref(el) {
-          return _this2.div = el;
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((UserClickedSignup ? "overlayShow showSignin-container" : "overlay") || "")
-      }, external_react_default.a.createElement("em", {
-        onClick: function onClick() {
-          _this2.setState({
-            UserClickedSignup: false
-          });
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "close"
-      }, "\xD7"), UserClickedSignup && external_react_default.a.createElement(signup["default"], {
-        openLogin: this.openLoginOverlay
-      })), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this2.closeModal(e);
-        },
-        ref: function ref(el) {
-          return _this2.recCard = el;
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + ((showClass ? "overlayShowie" : "overlay") || "")
-      }, external_react_default.a.createElement("section", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "add-rec-popup-section"
-      }, external_react_default.a.createElement(topicviewPopupModal["a" /* default */], {
-        profileImage: profileImageUrl,
-        option: clickedOptionDetails.option,
-        closeBtn: this.closeBtn,
-        question: clickedOptionDetails.question,
-        optionImage: clickedOptionDetails.optionImage,
-        optionId: clickedOptionDetails.optionId,
-        type: this.state.type,
-        socketId: socket.id
-      })), external_react_default.a.createElement("div", {
-        style: {
-          top: "4%",
-          fontSize: "60px",
-          cursor: "pointer",
-          position: "absolute"
-        },
-        onClick: this.closeBtn,
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "topicview-close-icon"
-      }, "\xD7")), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: show,
-        onHide: this.handleClose
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Update Option")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        onChange: this.onOptionUpdateChange,
-        name: "updatedOption",
-        value: this.state.updatedOption,
-        style: {
-          width: "100px !important"
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        value: this.state.updatedOptionLink,
-        name: "updatedOptionLink",
-        onChange: this.onOptionUpdateChange,
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: this.handleClose
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        style: {
-          backgroundColor: "rgb(91, 56, 141)",
-          border: 0
-        },
-        onClick: function onClick() {
-          return _this2.handleSaveUpdatedOption();
-        }
-      }, "Save Changes")))), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: updatePro,
-        onHide: function onHide() {
-          return _this2.handleUpdatePro(false);
-        }
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Update Pro")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        name: "proTitle",
-        value: proTitle,
-        style: {
-          width: "100px !important"
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        value: proDescription,
-        name: "proDescription",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: function onClick() {
-          return _this2.handleUpdatePro(false);
-        }
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        style: {
-          backgroundColor: "rgb(91, 56, 141)",
-          border: 0
-        },
-        onClick: this.handleProUpdate
-      }, "Save Changes")))), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: updateCon,
-        onHide: function onHide() {
-          return _this2.handleUpdateCon(false);
-        }
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Update Con")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        name: "conTitle",
-        value: conTitle,
-        style: {
-          width: "100px !important"
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "text",
-        value: conDescription,
-        name: "conDescription",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: function onClick() {
-          return _this2.handleUpdateCon(false);
-        }
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        style: {
-          backgroundColor: "rgb(91, 56, 141)",
-          border: 0
-        },
-        onClick: function onClick() {
-          return _this2.handleConUpdate();
-        }
-      }, "Save Changes")))), external_react_default.a.createElement(external_react_default.a.Fragment, null, external_react_default.a.createElement(external_react_bootstrap_["Modal"], {
-        style: {
-          marginTop: "70px"
-        },
-        show: this.state.updateImage,
-        onHide: function onHide() {
-          return _this2.handleShowModal(false);
-        }
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Header, {
-        closeButton: true
-      }, external_react_default.a.createElement(external_react_bootstrap_["Modal"].Title, null, "Add Image")), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Body, null, external_react_default.a.createElement("form", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option-form"
-      }, external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("input", {
-        type: "url",
-        onChange: function onChange(e) {
-          return _this2.onOptionUpdateChange(e);
-        },
-        onKeyUp: function onKeyUp(e) {
-          return _this2.addImageUrlToImageArray(e);
-        } // onBlur={}
-        ,
-        name: "imageLink",
-        value: this.state.imageLink,
-        style: {
-          width: "100px !important"
-        },
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "update-option"
-      })), external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "image-container"
-      }, mediaArr && external_react_default.a.createElement(external_react_default.a.Fragment, null, mediaArr.slice(0, 4).map(function (item, index) {
-        return external_react_default.a.createElement("div", {
-          key: index,
-          onClick: function onClick() {
-            return _this2.setState({
-              imageLink: item
-            });
-          },
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-        }, external_react_default.a.createElement("img", {
-          src: item,
-          className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "im"
-        }));
-      })), newImage ? external_react_default.a.createElement("div", {
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]])
-      }, external_react_default.a.createElement("img", {
-        src: newImage,
-        className: style_default.a.dynamic([["1464024445", [profileImageUrl]]]) + " " + "im"
-      })) : external_react_default.a.createElement(external_semantic_ui_react_["Placeholder"], {
-        style: {
-          height: "50px",
-          width: "50px"
-        }
-      }, external_react_default.a.createElement(external_semantic_ui_react_["Placeholder"].Image, {
-        square: true
-      })))))), external_react_default.a.createElement(external_react_bootstrap_["Modal"].Footer, null, external_react_default.a.createElement(external_react_bootstrap_["Button"], {
-        variant: "secondary",
-        onClick: function onClick() {
-          return _this2.handleShowModal(false);
-        }
-      }, "Close"), external_react_default.a.createElement(external_react_bootstrap_["Button"] // variant="primary"
-      , {
-        style: {
-          backgroundColor: "rgb(91, 56, 141)",
-          border: 0
-        },
-        onClick: function onClick() {
-          return _this2.handleUpdateImage();
-        },
-        disabled: optionImageAdded
-      }, optionImageAdded ? "Saved" : "Save Changes")))), external_react_default.a.createElement(style_default.a, {
-        id: "1464024445",
-        dynamic: [profileImageUrl]
-      }, [".image-container.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".image-container.__jsx-style-dynamic-selector div.__jsx-style-dynamic-selector{width:50px;height:50px;border:1px solid grey;padding:5px;border-radius:4px;margin-right:6px;}", ".im.__jsx-style-dynamic-selector{max-width:100%;vertical-align:middle;}", ".card-list.__jsx-style-dynamic-selector{overflow:hidden;background-color:#fdfdfd;margin-bottom:36px;padding:18px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);border:1px solid #e6e8eb;border-radius:15px;min-width:850px;min-height:300px;box-sizing:border-box;font-family:Cabin;}", ".fix.__jsx-style-dynamic-selector{margin-bottom:30px;}", ".topicview-close-icon.__jsx-style-dynamic-selector{left:91%;color:rgb(91,56,141);background:#e6ecf0;}", ".update-option.__jsx-style-dynamic-selector{width:300px;border:1px solid grey;border-radius:3px;padding:10px;outline:0;font-family:inherit;font-weight:600;}", ".update-option-form.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}", ".add-rec-popup-section.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}", ".update-option-form.__jsx-style-dynamic-selector div.__jsx-style-dynamic-selector{padding:6px;}", ".score-card.__jsx-style-dynamic-selector{cursor:pointer;background-image:linear-gradient(135deg,#737373,#171717);color:#fff;text-align:center;width:30px;height:30px;display:inline-block;border-radius:2px;}", ".score.__jsx-style-dynamic-selector{position:relative;top:4px;}", ".showSignin-container.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".close.__jsx-style-dynamic-selector{font-size:56px;position:relative;margin-top:-550px;left:50%;color:rgb(91,56,141);cursor:pointer;}", "a.__jsx-style-dynamic-selector{color:#222;}", ".more-icon-button.__jsx-style-dynamic-selector{background:#eee;border:0;cursor:pointer;border-radius:35px;outline:0;height:35px;width:35px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".option-name.__jsx-style-dynamic-selector{display:inline-block;width:100%;}", ".option-name-question.__jsx-style-dynamic-selector:hover{color:rgb(96,56,141);cursor:pointer;}", ".option-name-question.__jsx-style-dynamic-selector{font-size:24px;position:relative;top:7px;text-transform:Capitalize;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;}", ".option-image.__jsx-style-dynamic-selector{width:100%;height:100%;margin:0;padding:0;}", ".little-card.__jsx-style-dynamic-selector{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;}", ".little-card.__jsx-style-dynamic-selector .two.__jsx-style-dynamic-selector{padding:5px;background:#fdfdfd;height:180px;width:33.33%;border:1px solid transparent;border-radius:9px;box-shadow:0 4px 19px 0 rgba(0,0,0,0.07);text-align:center;margin-top:15px;margin-right:6px;box-sizing:border-box;}", ".little-card.__jsx-style-dynamic-selector .twoo.__jsx-style-dynamic-selector{padding:5px;background:#fdfdfd;height:180px;width:50%;border:1px solid transparent;border-radius:9px;box-shadow:0 4px 19px 0 rgba(0,0,0,0.07);text-align:center;margin-top:15px;margin-right:6px;box-sizing:border-box;}", ".add-media.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#58647b;background-color:#f7f7f7 !important;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".hideonMoblie.__jsx-style-dynamic-selector{display:block;}", "@media screen and (max-width:768px){.hideonMoblie.__jsx-style-dynamic-selector{display:none;}}", ".little-card.__jsx-style-dynamic-selector .twoo.__jsx-style-dynamic-selector:hover{background:linear-gradient(to left,#fafafa,#eee);cursor:pointer;}", ".none.__jsx-style-dynamic-selector{cursor:not-allowed !important;color:#c3c3c3 !important;}", ".my-experience.__jsx-style-dynamic-selector{display:block;padding-bottom:10px;padding-top:10px;}", ".thumb-icon.__jsx-style-dynamic-selector{position:relative;top:2px;}", ".btn-content.__jsx-style-dynamic-selector{position:relative;top:-05px;margin-right:3px;color:grey;}", ".btn-content.get-it.__jsx-style-dynamic-selector{color:#fff !important;}", ".dis.__jsx-style-dynamic-selector{top:3px;}", "h2.__jsx-style-dynamic-selector{font-size:1.2em;font-family:inherit;}", ".option.__jsx-style-dynamic-selector{position:relative;top:-110px;left:100px;font-family:Cabin;}", ".action-button.__jsx-style-dynamic-selector{font-size:1.2em;font-weight:600;padding:10px;font-family:inherit;border-radius:2px;border:0;margin-bottom:10px;}", ".cancel.__jsx-style-dynamic-selector{margin-left:200px;}", ".submit.__jsx-style-dynamic-selector{margin-left:10px;}", ".add.__jsx-style-dynamic-selector{position:relative;left:-47px;top:20px;font-size:0.95em;font-weight:600;font-family:inherit;cursor:pointer;}", ".form-rec-holder.__jsx-style-dynamic-selector{margin-bottom:30px;}", ".textarea-1.__jsx-style-dynamic-selector{width:40vw;height:60px;border-radius:5px;outline:0;padding:10px;resize:none;font-family:inherit;font-weight:700;}", ".textarea-2.__jsx-style-dynamic-selector{width:40vw;height:60px;outline:0;padding:10px;resize:none;border:1px solid #e6e8eb;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-family:inherit;font-weight:700;}", ".__jsx-style-dynamic-selector::-webkit-input-placeholder{font-size:0.9em;font-family:Cabin;font-weight:600;}", ".__jsx-style-dynamic-selector::-moz-placeholder{font-size:0.9em;font-family:Cabin;font-weight:600;}", ".__jsx-style-dynamic-selector:-ms-input-placeholder{font-size:0.9em;font-family:Cabin;font-weight:600;}", ".__jsx-style-dynamic-selector::placeholder{font-size:0.9em;font-family:Cabin;font-weight:600;}", ".pro-input-text.__jsx-style-dynamic-selector{width:40vw;height:100%;border-top-right-radius:5px;border-top-left-radius:5px;border:1px solid #e6e8eb;padding:10px;outline:0;font-family:inherit;font-weight:700;}", ".form-holder.__jsx-style-dynamic-selector{padding-left:10%;padding-top:2px;}", ".get-it-btn.__jsx-style-dynamic-selector{font-family:Cabin;font-weight:600;font-size:1em;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;height:40px;outline:0;border:2px solid #4a4a4a;cursor:pointer !important;background:#4a4a4a;border-radius:9px;}", ".more-icon.__jsx-style-dynamic-selector{position:relative;float:right;display:inline-block;cursor:pointer;}", ".rec-btn.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;box-sizing:border-box;margin-top:5px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".rec-btn.__jsx-style-dynamic-selector .rec-holder.__jsx-style-dynamic-selector{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".recommend-text.num.__jsx-style-dynamic-selector{position:relative;top:-2px;left:2px;}", ".recommend-text.numie.__jsx-style-dynamic-selector{position:relative;top:-4px;left:5px;}", "@media only screen and (max-width:360px){.rec-btn.__jsx-style-dynamic-selector .rec-holder.__jsx-style-dynamic-selector{position:relative;}}", "@media only screen and (min-width:360px) and (max-width:470px){.rec-btn.__jsx-style-dynamic-selector .rec-holder.__jsx-style-dynamic-selector{top:10px;position:relative;}.close.__jsx-style-dynamic-selector{font-size:56px;position:relative;margin-top:-500px;left:80%;}}", ".like-btn.__jsx-style-dynamic-selector{font-size:1.2em;font-family:Cabin;font-weight:600;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;border-top-left-radius:9px;border-bottom-left-radius:9px;outline:0;padding:0;border:0;height:40px;cursor:pointer !important;background:#fff;text-align:center;margin-right:5px;}", ".dislike-btn.__jsx-style-dynamic-selector{font-size:1.2em;font-family:Cabin;font-weight:600;-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;border-top-right-radius:9px;border-bottom-right-radius:9px;height:40px;outline:0;border:0;cursor:pointer !important;color:grey;background:#fff;padding-left:8px;}", ".overlay.__jsx-style-dynamic-selector{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgba(0,0,0,0.05);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".overlayShow.__jsx-style-dynamic-selector{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:#fdfdfd;overflow-x:hidden;overflow-y:visible;-webkit-transition:0.5s;transition:0.5s;}", ".overlayShowie.__jsx-style-dynamic-selector{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.5);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".user-chip.__jsx-style-dynamic-selector{background-image:url(".concat(profileImageUrl, ");background-repeat:no-repeat;background-size:cover;background-position:center;width:50px;height:50px;border-radius:50px;position:relative;top:-60px;left:10px;z-index:1;}"), ".user-rec-img.__jsx-style-dynamic-selector{width:100%;height:200px;}", ".user-rec-card.__jsx-style-dynamic-selector{position:relative;width:50%;min-height:550px;left:25%;background-color:#fafafa;box-sizing:border-box;border-radius:10px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);margin-bottom:10px;}", "@media (min-width:768px){.topicview-close-icon.__jsx-style-dynamic-selector{left:80%;}}", "@media screen and (min-width:320px) and (max-width:509px){.card-list.__jsx-style-dynamic-selector{min-width:0px;width:93vw;min-height:300px;margin-left:0;}}", "@media (min-width:509px) and (max-width:600px){.card-list.__jsx-style-dynamic-selector{min-width:0px;width:94vw;min-height:300px;margin-left:0;}}", "@media (min-width:600px) and (max-width:900px){.card-list.__jsx-style-dynamic-selector{min-width:0px;width:94vw;min-height:300px;margin-left:0;}}"]));
-    }
-  }]);
-
-  return OptionList;
-}(external_react_["Component"]);
-
-
-// CONCATENATED MODULE: ./components/topicview/UserAddedQuestionCard.js
-
-
-
-
-var UserAddedQuestionCard_UserAddedQuestionCard = function UserAddedQuestionCard(_ref) {
-  var url = _ref.url;
-  return external_react_default.a.createElement("div", {
-    className: "jsx-1082840909" + " " + "card-list"
-  }, external_react_default.a.createElement("div", {
-    className: "jsx-1082840909" + " " + "hello"
-  }, external_react_default.a.createElement("div", {
-    className: "jsx-1082840909" + " " + "hello-header"
-  }, "Thanks for asking this question!"), external_react_default.a.createElement("div", {
-    className: "jsx-1082840909" + " " + "text"
-  }, "The Community will add options and share their opinions."), external_react_default.a.createElement("div", {
-    className: "jsx-1082840909" + " " + "text"
-  }, "Meanwhile, share your question to get answers from your network."), external_react_default.a.createElement("div", {
-    style: {
-      display: "flex",
-      marginTop: "5px"
-    },
-    className: "jsx-1082840909"
-  }, external_react_default.a.createElement("span", {
-    className: "jsx-1082840909" + " " + "span"
-  }, external_react_default.a.createElement(external_react_share_["FacebookShareButton"], null, external_react_default.a.createElement(external_react_share_["FacebookIcon"], {
-    size: 32,
-    round: true,
-    url: url
-  }))), external_react_default.a.createElement("span", {
-    className: "jsx-1082840909" + " " + "span"
-  }, external_react_default.a.createElement(external_react_share_["TwitterShareButton"], {
-    url: url
-  }, external_react_default.a.createElement(external_react_share_["TwitterIcon"], {
-    size: 32,
-    round: true
-  }))))), external_react_default.a.createElement(style_default.a, {
-    id: "1082840909"
-  }, [".card-list.jsx-1082840909{overflow:hidden;background-color:#fdfdfd;margin-bottom:36px;padding:18px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);border:1px solid #e6e8eb;border-radius:15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;box-sizing:border-box;font-family:Cabin;}", ".text.jsx-1082840909{font-size:16px;text-align:center;}", ".hello-header.jsx-1082840909{margin-bottom:20px;font-size:18px;font-weight:600;-webkit-letter-spacing:0.4px;-moz-letter-spacing:0.4px;-ms-letter-spacing:0.4px;letter-spacing:0.4px;}", ".span.jsx-1082840909{padding:10px;}", ".hello.jsx-1082840909{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}", "@media (min-width:900px){.card-list.jsx-1082840909{overflow:hidden;background-color:#fdfdfd;margin-bottom:36px;padding:18px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);border:1px solid #e6e8eb;border-radius:15px;min-width:850px;min-height:250px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;box-sizing:border-box;font-family:Cabin;}}"]));
-};
-
-/* harmony default export */ var topicview_UserAddedQuestionCard = (UserAddedQuestionCard_UserAddedQuestionCard);
-// CONCATENATED MODULE: ./pages/topicview.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return topicview_default; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var topicview_socket = external_socket_io_client_default()(config["c" /* default */]); // function GetLikeNumber(data){
-//   let obj = {};
-// for(let i=0;i<data.length;i++){
-// obj[data[i].option] = data[i].like
-// }
-// return obj;
-// }
-// function GetDisLikeNumber(data){
-//   let obj = {};
-// for(let i=0;i<data.length;i++){
-// obj[data[i].option] = data[i].dislike
-// }
-// return obj;
-//   }
-
-function topicview_color(data) {
-  var obj = {};
-
-  for (var i = 0; i < data.length; i++) {
-    obj[data[i].option] = "grey";
-  }
-
-  return obj;
-}
-
-var topicview_default =
-/*#__PURE__*/
-function (_Component) {
-  Object(inherits["a" /* default */])(_default, _Component);
-
-  function _default() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(classCallCheck["a" /* default */])(this, _default);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["a" /* default */])(this, (_getPrototypeOf2 = Object(getPrototypeOf["a" /* default */])(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "state", {
-      question: _this.props.question,
-      data: _this.props.data.data.data,
-      lastUpdated: _this.props.updatedAt,
-      numOfRecs: _this.props.numOfRecs,
-      optionConsidered: _this.props.data.data.optionConsidered,
-      tagie: _this.props.data.data.tagie,
-      relatedTopics: _this.props.relatedTopic.data,
-      recommendations: _this.props.RecsActivity,
-      user: {},
-      UserClickedLogin: false,
-      UserClickedSignup: false,
-      LikeColor: _this.props.LikeColor,
-      DisLikeColor: _this.props.DisLikeColor,
-      LikeNumber: _this.props.LikeNumber,
-      DisLikeNumber: _this.props.DisLikeNumber
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "checkIfUserAddedQuestion", function (question, id) {
-      Object(apiRequests["i" /* CheckIfUserAddedQuestion */])(question, id).then(function (response) {
-        _this.setState({
-          addedQuestion: response.data
-        });
-      }).catch(function (err) {
-        _this.setState({
-          err: err
-        });
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDivCloseSignIn", function (e) {
-      if (e.target === _this.div) {
-        _this.setState(function (previousState) {
-          return {
-            UserClickedLogin: !previousState.UserClickedLogin
-          };
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "handleDivCloseSignUp", function (e) {
-      if (e.target === _this.div) {
-        _this.setState(function (previousState) {
-          return {
-            UserClickedSignup: !previousState.UserClickedSignup
-          };
-        });
-      }
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openLoginOverlay", function () {
-      //alert("click");
-      _this.setState({
-        UserClickedSignup: false,
-        UserClickedLogin: !_this.state.UserClickedLogin
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "openSignupOverlay", function () {
-      _this.setState({
-        UserClickedLogin: false,
-        UserClickedSignup: !_this.state.UserClickedSignup
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeSignupOverlay", function () {
-      _this.setState({
-        UserClickedSignup: !_this.state.UserClickedSignup
-      });
-    });
-
-    Object(defineProperty["a" /* default */])(Object(assertThisInitialized["a" /* default */])(_this), "closeLoginOverlay", function () {
-      _this.setState({
-        UserClickedLogin: !_this.state.UserClickedLogin
-      });
-    });
-
-    return _this;
-  }
-
-  Object(createClass["a" /* default */])(_default, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      if (JSON.parse(localStorage.getItem("user_details"))) {
-        var user = JSON.parse(localStorage.getItem("user_details"));
-        this.setState({
-          user: user
-        }, function () {
-          _this2.checkIfUserAddedQuestion(_this2.props.question, user._id);
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this3 = this;
-
-      var _this$state = this.state,
-          optionConsidered = _this$state.optionConsidered,
-          UserClickedLogin = _this$state.UserClickedLogin,
-          UserClickedSignup = _this$state.UserClickedSignup,
-          question = _this$state.question,
-          addedQuestion = _this$state.addedQuestion;
-      var questionRejected = this.props.questionRejected;
-      var tag = this.state.tagie.map(function (item) {
-        return item.tag;
-      });
-      return external_react_default.a.createElement(external_react_["Fragment"], null, external_react_default.a.createElement(Layout["a" /* default */] // {...this.state}
-      , {
-        data: this.props.topics.data,
-        openSignup: this.openSignupOverlay,
-        openLogin: this.openLoginOverlay,
-        topicview: true,
-        title: this.state.question
-      }), external_react_default.a.createElement(topicViewLandingPage, Object(esm_extends["a" /* default */])({}, this.state, {
-        tag: tag,
-        questionRejected: questionRejected
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1215392393" + " " + "view-container"
-      }, external_react_default.a.createElement("div", {
-        className: "jsx-1215392393" + " " + "considered-option-card"
-      }, optionConsidered !== 0 && external_react_default.a.createElement(optionCardComponent, this.state)), optionConsidered === 0 && addedQuestion && questionRejected === false && external_react_default.a.createElement(topicview_UserAddedQuestionCard, {
-        url: question
-      }), optionConsidered !== 0 && questionRejected === false && external_react_default.a.createElement(optionList_OptionList, Object(esm_extends["a" /* default */])({}, this.state, {
-        user_id: this.state.user._id
-      })), questionRejected === true && external_react_default.a.createElement(reactionBanner, null)), external_react_default.a.createElement("div", {
-        className: "jsx-1215392393" + " " + "related-questions"
-      }, external_react_default.a.createElement(relatedOptionsComponent, this.state)), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this3.handleDivCloseSignUp(e);
-        },
-        ref: function ref(el) {
-          return _this3.div = el;
-        },
-        className: "jsx-1215392393" + " " + ((UserClickedSignup ? "overlayShow" : "overlay") || "")
-      }, external_react_default.a.createElement("span", {
-        onClick: this.closeSignupOverlay,
-        className: "jsx-1215392393" + " " + "close-icon"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-1215392393"
-      }, "\xD7")), UserClickedSignup && external_react_default.a.createElement(signup["default"], {
-        openLogin: this.openLoginOverlay
-      })), external_react_default.a.createElement("div", {
-        onClick: function onClick(e) {
-          return _this3.handleDivCloseSignIn(e);
-        },
-        ref: function ref(el) {
-          return _this3.div = el;
-        },
-        className: "jsx-1215392393" + " " + ((UserClickedLogin ? "overlayShow showSignin-container" : "overlay") || "")
-      }, external_react_default.a.createElement("span", {
-        onClick: this.closeLoginOverlay,
-        className: "jsx-1215392393" + " " + "close-icon"
-      }, external_react_default.a.createElement("span", {
-        className: "jsx-1215392393"
-      }, "\xD7")), UserClickedLogin && external_react_default.a.createElement(signin["default"], {
-        openSignup: this.openSignupOverlay
-      })), external_react_default.a.createElement("div", {
-        className: "jsx-1215392393" + " " + "related-items-card"
-      }), external_react_default.a.createElement(style_default.a, {
-        id: "1215392393"
-      }, [".view-container.jsx-1215392393{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;width:65%;top:90px;left:4vw;}", ".related-questions.jsx-1215392393{position:absolute;left:72%;top:346px;}", ".close-icon.jsx-1215392393{position:absolute;top:20px;left:90%;min-height:20px;max-height:100px;padding:9px;background:#e6ecf0;font-size:55px !important;color:rgb(91,56,141);cursor:pointer;z-index:2000;border-radius:5px;}", ".close-icon.jsx-1215392393>span.jsx-1215392393{position:relative;top:-2px;}", ".overlay.jsx-1215392393{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.05);overflow-x:hidden;}", ".overlayShow.jsx-1215392393{height:100%;width:100%;position:fixed;z-index:9000;top:0;left:0;background-color:#fdfdfd;overflow-x:hidden;overflow-y:visible;}", ".overlayShowie.jsx-1215392393{height:100%;width:100%;position:fixed;z-index:9000;top:0;left:0;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.05);overflow-x:hidden;}", ".related-items-card.jsx-1215392393{position:absolute;left:920px;top:580px;}", ".considered-option-card.jsx-1215392393{margin-bottom:30px;}", "@media screen and (max-width:768px){.considered-option-card.jsx-1215392393{display:none;}.related-questions.jsx-1215392393{display:none;}.view-container.jsx-1215392393{width:88%;left:6.2vw;}}"]));
-    }
-  }], [{
-    key: "getInitialProps",
-    value: function () {
-      var _getInitialProps = Object(asyncToGenerator["a" /* default */])(
-      /*#__PURE__*/
-      regenerator_default.a.mark(function _callee(_ref) {
-        var name, question, res, Color, LikeNumber, DisLikeNumber, relatedTopicResponse, questionUpdatedAt, questionNumOfRecs, recsActivity, rejectedResponse, response;
-        return regenerator_default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                name = _ref.query.name;
-                question = Object(removeSpaces["a" /* AddSpacesRemoveHyphen */])(name);
-                _context.next = 4;
-                return external_axios_default()(Object(apiRequests["w" /* GET_SPECIFIC_TOPIC_URL */])(question));
-
-              case 4:
-                res = _context.sent;
-                _context.next = 7;
-                return topicview_color(res.data.data.data);
-
-              case 7:
-                Color = _context.sent;
-                _context.next = 10;
-                return Object(apiRequests["F" /* GetLikeNumber */])(res.data.data.data);
-
-              case 10:
-                LikeNumber = _context.sent;
-                _context.next = 13;
-                return Object(apiRequests["D" /* GetDisLikeNumber */])(res.data.data.data);
-
-              case 13:
-                DisLikeNumber = _context.sent;
-                _context.next = 16;
-                return external_axios_default()(Object(apiRequests["s" /* GET_RELATED_TOPICS_URL */])(question));
-
-              case 16:
-                relatedTopicResponse = _context.sent;
-                _context.next = 19;
-                return Object(apiRequests["R" /* GetQuestionUpdatedAt */])(question);
-
-              case 19:
-                questionUpdatedAt = _context.sent;
-                _context.next = 22;
-                return Object(apiRequests["O" /* GetQuestionNumOfRecs */])(question);
-
-              case 22:
-                questionNumOfRecs = _context.sent;
-                _context.next = 25;
-                return Object(apiRequests["U" /* GetTopicRecommendations */])(question);
-
-              case 25:
-                recsActivity = _context.sent;
-                _context.next = 28;
-                return Object(apiRequests["h" /* CheckIfQuestionHasBeenRejected */])(question);
-
-              case 28:
-                rejectedResponse = _context.sent;
-                _context.next = 31;
-                return external_axios_default()(apiRequests["ob" /* _GET_TOPICS */]);
-
-              case 31:
-                response = _context.sent;
-                return _context.abrupt("return", {
-                  question: question,
-                  data: res.data,
-                  relatedTopic: relatedTopicResponse.data,
-                  updatedAt: questionUpdatedAt.data,
-                  numOfRecs: questionNumOfRecs.data,
-                  RecsActivity: recsActivity.data,
-                  topics: response.data,
-                  questionRejected: rejectedResponse.data,
-                  LikeColor: Color,
-                  DisLikeColor: Color,
-                  LikeNumber: LikeNumber.data,
-                  DisLikeNumber: DisLikeNumber.data
-                });
-
-              case 33:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      function getInitialProps(_x) {
-        return _getInitialProps.apply(this, arguments);
-      }
-
-      return getInitialProps;
-    }()
-  }]);
-
-  return _default;
-}(external_react_["Component"]);
-
-
-
-/***/ }),
-
 /***/ "Sndy":
 /***/ (function(module, exports) {
 
@@ -4545,6 +1548,32 @@ module.exports = require("@material-ui/core/Chip");
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("o5io");
+
+/***/ }),
+
+/***/ "T7hD":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var ErrorSnackbar = function ErrorSnackbar(_ref) {
+  var message = _ref.message,
+      showclass = _ref.showclass;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "snackbar",
+    className: "jsx-2457805773" + " " + "show"
+  }, message), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2457805773"
+  }, ["#snackbar.jsx-2457805773{visibility:hidden;min-width:200px;margin-left:-125px;background-color:#d32f2f;color:#fff;text-align:center;border-radius:2px;padding:13px;-webkit-letter-spacing:0.1px;-moz-letter-spacing:0.1px;-ms-letter-spacing:0.1px;letter-spacing:0.1px;position:fixed;z-index:1;left:10%;bottom:44px;font-size:17px;}", "#snackbar.show.jsx-2457805773{visibility:visible;-webkit-animation:fadein 0.5s,fadeout 0.5s 2.5s;-webkit-animation:fadein-jsx-2457805773 0.5s,fadeout-jsx-2457805773 0.5s 2.5s;animation:fadein-jsx-2457805773 0.5s,fadeout-jsx-2457805773 0.5s 2.5s;}", "@-webkit-keyframes fadein{from.jsx-2457805773{bottom:0;opacity:0;}to.jsx-2457805773{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadein-jsx-2457805773{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@keyframes fadein-jsx-2457805773{from{bottom:0;opacity:0;}to{bottom:30px;opacity:1;}}", "@-webkit-keyframes fadeout{from.jsx-2457805773{bottom:30px;opacity:1;}to.jsx-2457805773{bottom:0;opacity:0;}}", "@-webkit-keyframes fadeout-jsx-2457805773{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@keyframes fadeout-jsx-2457805773{from{bottom:30px;opacity:1;}to{bottom:0;opacity:0;}}", "@media screen and (max-width:768px){#snackbar.jsx-2457805773{left:30%;padding:10px;}}"]));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ErrorSnackbar);
 
 /***/ }),
 
@@ -4636,71 +1665,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "WaSu":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export DateConversion */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return timeDifference; });
-/* unused harmony export timeConverter */
-function DateConversion(mydate) {
-  var _d = new Date(mydate);
-
-  var date = _d.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric"
-  });
-
-  return date;
-}
-function timeDifference(current, previous) {
-  var msPerMinute = 60 * 1000;
-  var msPerHour = msPerMinute * 60;
-  var msPerDay = msPerHour * 24;
-  var msPerMonth = msPerDay * 30;
-  var msPerYear = msPerDay * 365;
-  var elapsed = current - previous;
-
-  if (elapsed < msPerMinute) {
-    return Math.round(elapsed / 1000) + " seconds";
-  } else if (elapsed < msPerHour) {
-    return Math.round(elapsed / msPerMinute) + " minutes";
-  } else if (elapsed < msPerDay) {
-    return Math.round(elapsed / msPerHour) + " hours ago";
-  } else if (elapsed < msPerMonth) {
-    return Math.round(elapsed / msPerDay) + " days ago";
-  } else if (elapsed < msPerYear) {
-    return Math.round(elapsed / msPerMonth) + " months ago";
-  } else {
-    return Math.round(elapsed / msPerYear) + " years ago";
-  }
-}
-function timeConverter(current, previous) {
-  var msPerMinute = 60 * 1000;
-  var msPerHour = msPerMinute * 60;
-  var msPerDay = msPerHour * 24;
-  var msPerMonth = msPerDay * 30;
-  var msPerYear = msPerDay * 365;
-  var elapsed = current - previous;
-
-  if (elapsed < msPerMinute) {
-    return Math.round(elapsed / 1000) + " seconds";
-  } else if (elapsed < msPerHour) {
-    return Math.round(elapsed / msPerMinute) + " minutes";
-  } else if (elapsed < msPerDay) {
-    return Math.round(elapsed / msPerHour) + " hours";
-  } else if (elapsed < msPerMonth) {
-    return Math.round(elapsed / msPerDay) + " days";
-  } else if (elapsed < msPerYear) {
-    return Math.round(elapsed / msPerMonth) + " months";
-  } else {
-    return Math.round(elapsed / msPerYear) + " years";
-  }
-}
 
 /***/ }),
 
@@ -6240,38 +3204,435 @@ module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
 
-/***/ "oZBK":
+/***/ "o9Up":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RemoveSpacesAddHyphen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSpacesRemoveHyphen; });
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ln6h");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("O40h");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("kOwS");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("dfwq");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("0iUn");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("sLSF");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("MI3g");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("a7VT");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("AT/M");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("Tit0");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("vYYK");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("MX0m");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("zr5I");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("Sndy");
+/* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("qt1I");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("rhLc");
+/* harmony import */ var _layouts_Layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("JwBy");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("OcYQ");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("pI2v");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _signin__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__("DB6d");
+/* harmony import */ var _signup__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__("vL9u");
+/* harmony import */ var _components_snackbar_SuccessSnackbar__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__("NBss");
+/* harmony import */ var _components_snackbar_ErrorSnackbar__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__("T7hD");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var socket = socket_io_client__WEBPACK_IMPORTED_MODULE_20___default()(_config_config__WEBPACK_IMPORTED_MODULE_19__[/* default */ "c"]);
+
 var cyrillicToTranslitJs = __webpack_require__("S41T");
 
-function RemoveSpacesAddHyphen(string) {
-  //Removes spaces
-  var newString = string.replace(/\s+/g, "-"); // console.log("+++++++++++++++++++");
-  // console.log(cyrillicToTranslitJs().transform("что такое хорошая еда"));
-  // console.log(cyrillicToTranslitJs().transform("What are the good languages"));
-  // console.log("+++++++++++++++++++");
+var Ask =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(Ask, _React$Component);
 
-  return newString;
-}
-function AddSpacesRemoveHyphen(string) {
-  var oldString = string.replace(/-/g, " ");
-  return oldString;
-} // var cyrillicToTranslitJs = require("cyrillic-to-translit-js")
-// export default function RemoveSpacesAddHyphen(string) {
-//   //Removes spaces
-//   const newString = string.replace(/\s+/g, "-");
-//  // console.log(cyrillicToTranslitJs().transform(newString));
-//   return  cyrillicToTranslitJs().reverse(newString);
-// }
-// export function AddSpacesRemoveHyphen(string) {
-//   const oldString = cyrillicToTranslitJs().transform(string);
-//  // console.log(oldString.replace(/-/g, " "));
-//   return oldString.replace(/-/g, " "); 
-// }
+  function Ask() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(this, Ask);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Ask)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "state", {
+      chipData: [],
+      tag: [],
+      tagie: "",
+      question: "What are the ",
+      ask: false,
+      data: _this.props.data.data,
+      checkTagArray: [],
+      UserClickedLogin: false,
+      UserClickedSignup: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleDivClose", function (e) {
+      if (e.target === _this.div) {
+        _this.setState(function (previousState) {
+          return {
+            showClass: !previousState
+          };
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "openLoginOverlay", function () {
+      //alert("click");
+      _this.setState({
+        UserClickedLogin: !_this.state.UserClickedLogin,
+        UserClickedSignup: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "openSignupOverlay", function () {
+      _this.setState({
+        UserClickedSignup: !_this.state.UserClickedSignup,
+        UserClickedLogin: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "closeLoginOverlay", function () {
+      _this.setState({
+        UserClickedLogin: !_this.state.UserClickedLogin
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "closeSignupOverlay", function () {
+      _this.setState({
+        UserClickedSignup: !_this.state.UserClickedSignup
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleDelete", function (data) {
+      return function () {
+        _this.setState(function (state) {
+          var tag = Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(state.tag);
+
+          var chipToDelete = tag.indexOf(data);
+          tag.splice(chipToDelete, 1);
+          return {
+            tag: tag
+          };
+        });
+      };
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleSubmit", function (e) {
+      e.preventDefault();
+      var token = localStorage.getItem("user_token");
+      var user_data = JSON.parse(localStorage.getItem("user_details"));
+
+      if (!token) {
+        alert("Kindly Sign up to add a question");
+        return;
+      }
+
+      var _this$state = _this.state,
+          tag = _this$state.tag,
+          question = _this$state.question;
+      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* NewAddTopic */ "ab"])(question, tag, user_data._id, socket.id).then(function (result) {
+        _this.setState({
+          tag: [],
+          question: "What are the ",
+          showSnackbar: true,
+          message: "Question Added"
+        }); //Synchronous
+
+
+        setTimeout(function () {
+          _this.setState({
+            showSnackbar: false
+          });
+        }, 4000);
+        window.location = "/";
+      }).catch(function (error) {
+        _this.setState({
+          showErrorSnackbar: true,
+          message: error.response.data || "Operation Unsuccessful "
+        }); //Synchronous
+
+
+        setTimeout(function () {
+          _this.setState({
+            showErrorSnackbar: false
+          });
+        }, 4000); // console.log(error.response);
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "addNewTag", function (e) {
+      //if user is unable to find tag in list
+      _this.setState(function (previousState) {
+        return {
+          tag: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(previousState.tag), [_this.state.tagie]),
+          tagie: "",
+          ask: false
+        };
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "add", function (value) {
+      _this.setState(function (previousState) {
+        return {
+          tag: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(previousState.tag), [value]),
+          tagie: "",
+          ask: false
+        };
+      }); //console.log(this.state.tag)
+
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "showButton", function (_ref) {
+      var _ref$target = _ref.target,
+          name = _ref$target.name,
+          value = _ref$target.value;
+
+      var hold = _this.state.data.map(function (item) {
+        return item.tag;
+      }); //This funtion flattens the array
+
+
+      var flattenArray = function flattenArray(arr) {
+        var _ref2;
+
+        return (_ref2 = []).concat.apply(_ref2, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(arr));
+      };
+
+      var flattenedArray = flattenArray(hold);
+      var checkTagArray = flattenedArray.filter(function (item) {
+        return item.toLowerCase().indexOf(value.toLowerCase()) !== -1;
+      }); // console.log(checkTagArray)
+
+      if (value === "") {
+        _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({
+          ask: false
+        }, name, ""));
+      } else {
+        _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({
+          checkTagArray: checkTagArray,
+          ask: true
+        }, name, value));
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_this), "handleQuestionInput", function (_ref3) {
+      var _ref3$target = _ref3.target,
+          name = _ref3$target.name,
+          value = _ref3$target.value;
+
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])({}, name, value));
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Ask, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state2 = this.state,
+          tagie = _this$state2.tagie,
+          ask = _this$state2.ask,
+          question = _this$state2.question,
+          checkTagArray = _this$state2.checkTagArray,
+          UserClickedLogin = _this$state2.UserClickedLogin,
+          UserClickedSignup = _this$state2.UserClickedSignup,
+          showSnackbar = _this$state2.showSnackbar,
+          showErrorSnackbar = _this$state2.showErrorSnackbar,
+          message = _this$state2.message;
+
+      var CustomStrongElement = function CustomStrongElement(value, i) {
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("strong", {
+          style: {
+            display: "block"
+          },
+          key: i,
+          value: value,
+          onClick: function onClick() {
+            _this2.add(value);
+          }
+        }, value);
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_layouts_Layout__WEBPACK_IMPORTED_MODULE_17__[/* default */ "a"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])({
+        openSignup: this.openSignupOverlay,
+        openLogin: this.openLoginOverlay
+      }, this.state), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "cont"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", {
+        className: "jsx-1783110031"
+      }, "Ask your question, get the best recommendation"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("form", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("textarea", {
+        name: "question",
+        placeholder: "Ask your question here",
+        value: question,
+        onChange: function onChange(e) {
+          return _this2.handleQuestionInput(e);
+        },
+        autoFocus: true,
+        className: "jsx-1783110031"
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("input", {
+        type: "text",
+        name: "tagie",
+        value: tagie,
+        onChange: function onChange(e) {
+          return _this2.showButton(e);
+        },
+        placeholder: "Add Tags",
+        className: "jsx-1783110031"
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "add-button-class"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
+        onClick: this.handleSubmit,
+        disabled: !question,
+        className: "jsx-1783110031" + " " + "add-question-btn"
+      }, "Add Question"))), ask ? react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-1783110031" + " " + "show-tag"
+      }, checkTagArray.map(function (item, i) {
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_12__["Fragment"], {
+          key: i
+        }, CustomStrongElement(item, i));
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("em", {
+        className: "jsx-1783110031"
+      }, "Tag not found?", react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        onClick: this.addNewTag,
+        className: "jsx-1783110031" + " " + "but"
+      }, "Add Tag"))) : "", react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          padding: "2px",
+          borderRadius: "3px",
+          marginTop: "10px"
+        }
+      }, this.state.tag.map(function (data, index) {
+        var icon = null;
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          key: index,
+          icon: icon,
+          label: data,
+          onDelete: _this2.handleDelete(data)
+        });
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        onClick: function onClick(e) {
+          return _this2.handleDivClose(e);
+        },
+        ref: function ref(el) {
+          return _this2.div = el;
+        },
+        className: "jsx-1783110031" + " " + ((UserClickedSignup ? "overlayShowie" : "overlay") || "")
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        onClick: this.closeSignupOverlay,
+        className: "jsx-1783110031" + " " + "close-icon"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        className: "jsx-1783110031"
+      }, "\xD7")), UserClickedSignup && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_signup__WEBPACK_IMPORTED_MODULE_22__["default"], {
+        openLogin: this.openLoginOverlay
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        onClick: function onClick(e) {
+          return _this2.handleDivClose(e);
+        },
+        ref: function ref(el) {
+          return _this2.div = el;
+        },
+        className: "jsx-1783110031" + " " + ((UserClickedLogin ? "overlayShowie" : "overlay") || "")
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        onClick: this.closeLoginOverlay,
+        className: "jsx-1783110031" + " " + "close-icon"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        className: "jsx-1783110031"
+      }, "\xD7")), UserClickedLogin && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_signin__WEBPACK_IMPORTED_MODULE_21__["default"], {
+        openSignup: this.openSignupOverlay
+      })), showSnackbar && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_snackbar_SuccessSnackbar__WEBPACK_IMPORTED_MODULE_23__[/* default */ "a"], {
+        message: message
+      }), showErrorSnackbar && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_snackbar_ErrorSnackbar__WEBPACK_IMPORTED_MODULE_24__[/* default */ "a"], {
+        message: message
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        id: "1783110031"
+      }, [".add-button-class.jsx-1783110031{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".show-tag.jsx-1783110031{text-align:center;box-sizing:border-box;padding:5px;margin-top:10px;}", "em.jsx-1783110031{font-weight:100;font-family:inherit;display:block;}", ".but.jsx-1783110031{outline:none;cursor:pointer;font-weight:600;font-family:inherit;color:rgb(96,51,141) !important;margin-left:3px;padding:0.1em;}", ".overlay.jsx-1783110031{height:100%;width:0;position:fixed;z-index:6000;top:0;left:0;background-color:rgba(0,0,0,0.05);overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".overlayShowie.jsx-1783110031{height:100%;width:100%;position:fixed;z-index:5000;top:0;left:0;background-color:#fff;overflow-x:hidden;-webkit-transition:0.5s;transition:0.5s;}", ".close-icon.jsx-1783110031{position:absolute;top:20px;left:90%;min-height:20px;max-height:100px;padding:9px;background:#e6ecf0;font-size:55px !important;color:rgb(91,56,141);cursor:pointer;z-index:2000;border-radius:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".close-icon.jsx-1783110031>span.jsx-1783110031{position:relative;top:-2px;}", ".cont.jsx-1783110031{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;box-sizing:border-box;position:relative;top:70px;box-sizing:border-box;}", "input[type=\"text\"].jsx-1783110031{width:30vw;height:40px;border:2px solid rgb(96,51,141);border-radius:5px;outline:0;padding:10px;margin:10px 0;font-size:Cabin;font-weight:600;}", "textarea.jsx-1783110031{width:30vw;min-height:18px;height:40px;border:2px solid rgb(96,51,141);border-radius:5px;outline:0;padding:10px;resize:none;font-family:Cabin;font-weight:600;}", ".add-question-btn.jsx-1783110031{position:relative;width:120px;padding:10px;border:1px solid rgb(96,51,141);outline:none;cursor:pointer;border-radius:4px;background:rgb(96,51,141);font-weight:100;font-family:inherit;color:#fff;}", ".add-question-btn.jsx-1783110031:hover{background-color:#e6ecf0;color:rgb(96,51,141);border:1px solid rgb(96,51,141);-webkit-transition:1s;transition:1s;}", ".add-question-btn.jsx-1783110031:disabled{cursor:not-allowed;background:#e6e8eb;color:#8d959c;}", ".jsx-1783110031::-webkit-input-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031::-moz-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031:-ms-input-placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", ".jsx-1783110031::placeholder{font-weight:bold;font-size:1em;font-family:inherit;}", "h1.jsx-1783110031{font-size:1.3em;text-align:center;word-spacing:0.3px;font-family:inherit;}", "@media screen and (max-width:600px){input[type=\"text\"].jsx-1783110031{width:250px;}textarea.jsx-1783110031{width:250px;}.add-question-btn.jsx-1783110031{margin-top:5px;}}"])));
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function () {
+      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var res;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios__WEBPACK_IMPORTED_MODULE_13___default()(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_16__[/* _GET_TOPICS */ "ob"]);
+
+              case 2:
+                res = _context.sent;
+                return _context.abrupt("return", {
+                  data: res.data
+                });
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function getInitialProps() {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
+  }]);
+
+  return Ask;
+}(react__WEBPACK_IMPORTED_MODULE_12___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_18__["withRouter"])(Ask));
 
 /***/ }),
 
@@ -6293,6 +3654,13 @@ module.exports = require("next-server/dist/lib/utils");
 /***/ (function(module, exports) {
 
 module.exports = require("socket.io-client");
+
+/***/ }),
+
+/***/ "qt1I":
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 
@@ -6817,353 +4185,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 /***/ }),
 
-/***/ "tdmr":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("dfwq");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("0iUn");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("sLSF");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("MI3g");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("a7VT");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("AT/M");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("Tit0");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("vYYK");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("MX0m");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("rhLc");
-
-
-
-
-
-
-
-
-
-
-
-
-var TopicViewPopupModal =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TopicViewPopupModal, _Component);
-
-  function TopicViewPopupModal() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this, TopicViewPopupModal);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(TopicViewPopupModal)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "state", {
-      pro: [],
-      con: [],
-      addPro: "",
-      addCon: "",
-      experience: "",
-      addMoreDetails: [],
-      _addMoreDetails2: [],
-      proDetails: "",
-      conDetails: ""
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "handleSubmit", function () {
-      var _user = JSON.parse(localStorage.getItem("user_details"));
-
-      var _this$state = _this.state,
-          pro = _this$state.pro,
-          con = _this$state.con,
-          experience = _this$state.experience,
-          addMoreDetails = _this$state.addMoreDetails,
-          _addMoreDetails2 = _this$state._addMoreDetails2;
-      var _this$props = _this.props,
-          question = _this$props.question,
-          type = _this$props.type,
-          option = _this$props.option,
-          optionImage = _this$props.optionImage,
-          socketId = _this$props.socketId;
-      var _data = {
-        pro: pro,
-        con: con,
-        experience: experience,
-        addMoreDetails: addMoreDetails,
-        _addMoreDetails2: _addMoreDetails2,
-        username: _user.username,
-        //displayname maybe used instead
-        userId: _user._id,
-        userImage: _user.image,
-        option: option,
-        optionImage: optionImage,
-        question: question,
-        type: type,
-        socketId: socketId
-      };
-
-      var _type = type === "like" ? true : false;
-
-      var rxn = {
-        userId: _user._id,
-        option: option,
-        type: _type
-      };
-      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_10__[/* user_recommendation */ "vb"])(_data).then(function (result) {
-        return console.log(result);
-      }).catch(function (error) {
-        return console.log(error);
-      });
-      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_10__[/* AddUserReactionToOption */ "f"])(rxn).then(function (res) {
-        return console.log(res.data);
-      }).catch(function (err) {
-        return console.log(err.response.data);
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "handleInputChange", function (_ref) {
-      var _ref$target = _ref.target,
-          value = _ref$target.value,
-          name = _ref$target.name;
-
-      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])({}, name, value));
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "closeBtn", function () {
-      _this.setState({
-        showClass: false
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "handleAddCon", function (e) {
-      e.preventDefault();
-      var _this$state2 = _this.state,
-          user = _this$state2.user,
-          addCon = _this$state2.addCon,
-          conDetails = _this$state2.conDetails;
-      var _this$props2 = _this.props,
-          option = _this$props2.option,
-          optionId = _this$props2.optionId,
-          question = _this$props2.question;
-      var con_data = {
-        option: option,
-        option_id: optionId,
-        user_id: user._id,
-        title: addCon,
-        description: conDetails,
-        question: question,
-        userImage: user.image //UserImage may be added
-
-      };
-      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_10__[/* ADD_OPTION_CON */ "a"])(con_data).then(function (axiosResponse) {
-        // console.log(axiosResponse);
-        _this.setState(function (previousState) {
-          return {
-            con: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(previousState.con), [addCon]),
-            _addMoreDetails2: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(previousState._addMoreDetails2), [conDetails]),
-            addCon: "",
-            conDetails: ""
-          };
-        }); //remove in production
-
-
-        alert("con added");
-      }).catch(function (axiosResponseError) {
-        console.log(axiosResponseError);
-      }); //this.setState(previousState => ({ inc: previousState.inc + 1 }));
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this), "_handleAddPro", function (e) {
-      e.preventDefault();
-      var _this$state3 = _this.state,
-          user = _this$state3.user,
-          addPro = _this$state3.addPro,
-          proDetails = _this$state3.proDetails;
-      var _this$props3 = _this.props,
-          option = _this$props3.option,
-          optionId = _this$props3.optionId,
-          question = _this$props3.question;
-      var pro_data = {
-        option: option,
-        option_id: optionId,
-        user_id: user._id,
-        title: addPro,
-        description: proDetails,
-        question: question,
-        userImage: user.image
-      };
-      Object(_apiRequests_apiRequests__WEBPACK_IMPORTED_MODULE_10__[/* ADD_OPTION_PRO */ "b"])(pro_data).then(function (axiosResponse) {
-        // console.log(axiosResponse);
-        _this.setState(function (previousState) {
-          return {
-            pro: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(previousState.pro), [addPro]),
-            addMoreDetails: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(previousState.addMoreDetails), [proDetails]),
-            addPro: "",
-            proDetails: ""
-          };
-        }); //remove in production
-
-
-        alert("pro added");
-      }).catch(function (axiosResponseError) {
-        console.log(axiosResponseError);
-      });
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(TopicViewPopupModal, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      //Get user Details
-      var user = JSON.parse(localStorage.getItem("user_details"));
-
-      if (user) {
-        this.setState({
-          user: user
-        });
-      } else {
-        this.setState({
-          user: {}
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$state4 = this.state,
-          addCon = _this$state4.addCon,
-          addPro = _this$state4.addPro,
-          experience = _this$state4.experience,
-          conDetails = _this$state4.conDetails,
-          proDetails = _this$state4.proDetails;
-      var _this$props4 = this.props,
-          option = _this$props4.option,
-          optionImage = _this$props4.optionImage;
-      var profileImage = "/static/gravatar.png";
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        ref: function ref(el) {
-          return _this2.recCardie = el;
-        },
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "user-rec-card"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]])
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "bg-image-theme"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: optionImage ? optionImage : "/static/wor.jpg",
-        alt: "text",
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "user-rec-img"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "user-chip"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "option-theme"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "rec-recommendation"
-      }, "My Recommendation"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "rec-option"
-      }, option ? option : ""))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "form-holder"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]])
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "my-experience"
-      }, "My Experience"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("textarea", {
-        value: experience,
-        onChange: function onChange(e) {
-          return _this2.handleInputChange(e);
-        },
-        name: "experience",
-        placeholder: "Kindly share your experience using this product. What are the options you considered, if any",
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "textarea-1"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("form", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "form-rec-holder"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "my-experience"
-      }, "Reasons I recommend this"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]])
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
-        type: "text",
-        placeholder: "Add pro caption here",
-        name: "addPro",
-        value: addPro,
-        onChange: function onChange(e) {
-          return _this2.handleInputChange(e);
-        },
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "pro-input-text"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("textarea", {
-        placeholder: "Add additional details",
-        value: proDetails,
-        name: "proDetails",
-        onChange: function onChange(e) {
-          return _this2.handleInputChange(e);
-        },
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "textarea-2"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        onClick: this._handleAddPro,
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + ((addPro ? "add" : "add none") || "")
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "add-rec-text"
-      }, " Add pro")))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("form", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "form-rec-holder"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "my-experience"
-      }, "Reasons I wouldn't recommend this"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]])
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
-        type: "text",
-        placeholder: "Add con caption here",
-        name: "addCon",
-        value: addCon,
-        onChange: function onChange(e) {
-          return _this2.handleInputChange(e);
-        },
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "pro-input-text"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("textarea", {
-        value: conDetails,
-        name: "conDetails",
-        onChange: function onChange(e) {
-          return _this2.handleInputChange(e);
-        },
-        placeholder: "Add additional details",
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "textarea-2"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        onClick: this.handleAddCon,
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + ((addCon ? "add" : "add none") || "")
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "add-rec-text"
-      }, " Add con")))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "call-to-action-holder"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-        onClick: this.props.closeBtn,
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "action-button cancel"
-      }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-        disabled: !experience,
-        onClick: this.handleSubmit,
-        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a.dynamic([["914885280", [profileImage]]]) + " " + "action-button submit"
-      }, "Submit")))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        id: "914885280",
-        dynamic: [profileImage]
-      }, [".user-rec-card.__jsx-style-dynamic-selector{position:relative;width:100%;max-width:640px;min-height:550px;left:0;top:0;background-color:#fdfdfd;box-sizing:border-box;overflow:hidden;border-radius:15px;box-shadow:0 4px 16px 0 rgba(0,0,0,0.05);margin-bottom:10px;}", ".option-theme.__jsx-style-dynamic-selector{margin-top:-105px;margin-left:75px;}", ".rec-recommendation.__jsx-style-dynamic-selector{display:block;position:relative;font-size:20px !important;text-transform:capitalize;color:#fff;line-height:1.2;-webkit-letter-spacing:0.2px;-moz-letter-spacing:0.2px;-ms-letter-spacing:0.2px;letter-spacing:0.2px;}", ".rec-option.__jsx-style-dynamic-selector{font-size:20px !important;color:#fff;text-transform:capitalize;position:relative;-webkit-letter-spacing:0.2px;-moz-letter-spacing:0.2px;-ms-letter-spacing:0.2px;letter-spacing:0.2px;}", ".option-theme.__jsx-style-dynamic-selector>span.__jsx-style-dynamic-selector{font-size:1.13em;font-weight:550;}", ".bg-image-theme.__jsx-style-dynamic-selector{border:1px solid grey;overflow:hidden;width:100%;height:250px;background-image:linear-gradient( 180deg, rgba(28,41,62,0.2) 0, rgba(28,41,62,0.3) 30%, rgba(7,15,29,0.9) );background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".form-holder.__jsx-style-dynamic-selector{padding-left:40px;padding-right:10px;}", ".my-experience.__jsx-style-dynamic-selector{display:block;padding-bottom:10px;padding-top:10px;margin-top:20px;}", ".call-to-action-holder.__jsx-style-dynamic-selector{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".textarea-1.__jsx-style-dynamic-selector{width:95%;height:60px;border-radius:5px;outline:0;padding:10px;resize:none;font-family:inherit;font-weight:500;border:1px solid #e6e8eb;}", ".form-rec-holder.__jsx-style-dynamic-selector{margin-bottom:30px;}", ".pro-input-text.__jsx-style-dynamic-selector{width:95%;height:100%;border-top-right-radius:5px;border-top-left-radius:5px;border:1px solid #e6e8eb;padding:10px;outline:0;font-family:inherit;font-weight:500;}", ".textarea-2.__jsx-style-dynamic-selector{width:95%;height:60px;outline:0;padding:10px;resize:none;border:1px solid #e6e8eb;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-family:inherit;font-weight:500;}", ".action-button.__jsx-style-dynamic-selector{font-size:1.2em;font-weight:600;padding:10px;font-family:inherit;border-radius:2px;border:0;margin-bottom:15px;}", ".submit.__jsx-style-dynamic-selector{background-color:rgb(91,56,141);color:#fff;cursor:pointer;margin-left:10px;border:1px solid transparent;}", ".cancel.__jsx-style-dynamic-selector{background-color:#cb1a4a;color:#fff;}", ".submit.__jsx-style-dynamic-selector:hover{color:rgb(91,56,141);background-color:transparent;border:1px solid rgb(91,56,141);}", ".user-rec-img.__jsx-style-dynamic-selector{width:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:100%;vertical-align:middle;}", ".user-chip.__jsx-style-dynamic-selector{background-image:url(".concat(profileImage, ");background-repeat:no-repeat;background-size:cover;background-position:center;width:50px;height:50px;border-radius:50px;position:relative;top:-60px;left:10px;z-index:1;}"), ".add.__jsx-style-dynamic-selector{font-size:0.95em;font-weight:600;font-family:inherit;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;position:relative;left:-30px;}", ".none.__jsx-style-dynamic-selector{cursor:not-allowed !important;color:#c3c3c3 !important;}"])));
-    }
-  }]);
-
-  return TopicViewPopupModal;
-}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (TopicViewPopupModal);
-
-/***/ }),
-
 /***/ "uhWA":
 /***/ (function(module, exports) {
 
@@ -7601,13 +4622,6 @@ module.exports = require("core-js/library/fn/symbol");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "y6vh":
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/date/now");
 
 /***/ }),
 

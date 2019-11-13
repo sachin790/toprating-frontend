@@ -63,15 +63,15 @@ function color (data){
 export default class extends Component {
   static async getInitialProps({ query: { name } }) {
     const question = AddSpacesRemoveHyphen(name);
-    const res = await Axios(GET_SPECIFIC_TOPIC_URL(question));
+    const res = await Axios(GET_SPECIFIC_TOPIC_URL(encodeURI(question)));
    const Color = await color(res.data.data.data);
     const LikeNumber = await GetLikeNumber(res.data.data.data);
     const DisLikeNumber = await GetDisLikeNumber(res.data.data.data);
-    const relatedTopicResponse = await Axios(GET_RELATED_TOPICS_URL(question));
-    const questionUpdatedAt = await GetQuestionUpdatedAt(question);
-    const questionNumOfRecs = await GetQuestionNumOfRecs(question);
-    const recsActivity = await GetTopicRecommendations(question);
-    const rejectedResponse = await CheckIfQuestionHasBeenRejected(question);
+    const relatedTopicResponse = await Axios(GET_RELATED_TOPICS_URL(encodeURI(question)));
+    const questionUpdatedAt = await GetQuestionUpdatedAt(encodeURI(question));
+    const questionNumOfRecs = await GetQuestionNumOfRecs(encodeURI(question));
+    const recsActivity = await GetTopicRecommendations(encodeURI(question));
+    const rejectedResponse = await CheckIfQuestionHasBeenRejected(encodeURI(question));
     const response = await Axios(_GET_TOPICS);
 
     return {

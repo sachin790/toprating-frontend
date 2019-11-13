@@ -93,7 +93,7 @@ class Ask extends React.Component {
 
     let { tag, question } = this.state;
 
-    NewAddTopic(cyrillicToTranslitJs().transform(question), tag, user_data._id, socket.id)
+    NewAddTopic(question, tag, user_data._id, socket.id)
       .then(result => {
         this.setState({
           tag: [],
